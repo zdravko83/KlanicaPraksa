@@ -1,0 +1,669 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="calendar-bgr">
+    <img src="~/images/erp8.png" class="logo" alt="">
+    <img src="~/images/KlanicaOsnovnaSlika.png" alt="">
+</div>
+<main class="w-100 calendar-main">
+    <div class="grid-wrapper" style="grid-template-rows: auto auto auto;">
+        <div class="cart border-bottom-radius-none">
+            <div class="cart__header cart__header--tabs o-flex o-flex--center">
+                <ul class="tab-list o-flex o-flex--center mb0">
+                    <li><a href="#" class="is-active">PRADNI NALOZI KALENDAR</a></li>
+                    <li><a href="#">ZA URADITI</a></li>
+                    <li><a href="#">IMENIK</a></li>
+                    <li><a href="#">SKENER</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="cart border-bottom-radius-none border-top-radius-none pt0">
+
+            <div class="cart__body calendar-grid">
+                <div class="calendar-nav">
+                    <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--">
+                        <a href="#" class="button button--green-circle">
+                            <img src="~/images/_leftleft.png" alt="" style="margin-right: 3px;">
+                        </a>
+                        <div class="number-wrapper w-100 o-flex--justify-center">
+                            Nov 2022
+                        </div>
+                        <a href="#" class="button button--green-circle">
+                            <img src="~/images/_rightright.png" alt="" style="margin-left: 3px;">
+                        </a>
+                    </div>
+                </div>
+                <div class="calendar-day-name">PONEDELJAK</div>
+                <div class="calendar-day-name">UTORAK</div>
+                <div class="calendar-day-name">SREDA</div>
+                <div class="calendar-day-name">ČETVRTAK</div>
+                <div class="calendar-day-name">PETAK</div>
+                <div class="calendar-day-name">SUBOTA</div>
+                <div class="calendar-day-name">NEDELJA</div>
+                <div class="calendar-aside pr pt- pl">
+                    <div class="small-calendar mb+">
+                        <div class="small-calendar__header mb- o-flex o-flex--center o-flex--justify">
+                            <p class="mb0"><strong>November 2022</strong></p>
+                            <div class="o-flex o-flex--center">
+                                <a href="#" class="button button--green-circle mr-">
+                                    <img src="~/images/_add.png" alt="">
+                                </a>
+                                <a href="#" class="button button--green-circle">
+                                    <img src="~/images/_sync.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="small-calendar__body">
+                            <div class="cell cell--gray">
+                                S
+                            </div>
+                            <div class="cell cell--gray">
+                                M
+                            </div>
+                            <div class="cell cell--gray">
+                                T
+                            </div>
+                            <div class="cell cell--gray">
+                                W
+                            </div>
+                            <div class="cell cell--gray">
+                                T
+                            </div>
+                            <div class="cell cell--gray">
+                                F
+                            </div>
+                            <div class="cell cell--gray">
+                                S
+                            </div>
+                            <div class="cell"><span>1</span></div>
+                            <div class="cell"><span>2</span></div>
+                            <div class="cell"><span>3</span></div>
+                            <div class="cell"><span>4</span></div>
+                            <div class="cell"><span>5</span></div>
+                            <div class="cell"><span>6</span></div>
+                            <div class="cell"><span>7</span></div>
+                            <div class="cell"><span>8</span></div>
+                            <div class="cell"><span>9</span></div>
+                            <div class="cell"><span>10</span></div>
+                            <div class="cell"><span>11</span></div>
+                            <div class="cell"><span>12</span></div>
+                            <div class="cell"><span>13</span></div>
+                            <div class="cell"><span>14</span></div>
+                            <div class="cell"><span>15</span></div>
+                            <div class="cell"><span>16</span></div>
+                            <div class="cell"><span>17</span></div>
+                            <div class="cell"><span>18</span></div>
+                            <div class="cell"><span>19</span></div>
+                            <div class="cell"><span>20</span></div>
+                            <div class="cell cell--current"><span>21</span></div>
+                            <div class="cell"><span>22</span></div>
+                            <div class="cell"><span>23</span></div>
+                            <div class="cell"><span>24</span></div>
+                            <div class="cell"><span>25</span></div>
+                            <div class="cell"><span>26</span></div>
+                            <div class="cell"><span>27</span></div>
+                            <div class="cell"><span>28</span></div>
+                            <div class="cell"><span>29</span></div>
+                            <div class="cell"><span>30</span></div>
+                            <div class="cell cell--gray"><span>1</span></div>
+                            <div class="cell cell--gray"><span>2</span></div>
+                            <div class="cell cell--gray"><span>3</span></div>
+                            <div class="cell cell--gray"><span>4</span></div>
+                            <div class="cell cell--gray"><span>5</span></div>
+                            <div class="cell cell--gray"><span>6</span></div>
+                            <div class="cell cell--gray"><span>7</span></div>
+                            <div class="cell cell--gray"><span>8</span></div>
+                            <div class="cell cell--gray"><span>9</span></div>
+                            <div class="cell cell--gray"><span>10</span></div>
+                            <div class="cell cell--gray"><span>11</span></div>
+                            <div class="cell cell--gray"><span>12</span></div>
+                        </div>
+                    </div>
+
+                    <div class="my-calendars">
+                        <div class="my-calendars-header o-flex o-flex--center o-flex--justify">
+                            <p class="mb0"><strong>My calendars</strong></p>
+                            <svg width="13" viewBox="0 0 384 512">
+                                <path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z" />
+                            </svg>
+                        </div>
+                        <div class="my-calendars-body">
+                            <div class="check-box check-box--blue">
+                                <input id="check1" type="checkbox" name="">
+                                <label for="check1">
+                                    <div class="check-icon mr-"></div>
+                                    <span class="checkbox-text">Sastanci</span>
+                                </label>
+                            </div>
+                            <div class="check-box check-box--green">
+                                <input id="check2" type="checkbox" name="">
+                                <label for="check2">
+                                    <div class="check-icon mr-"></div>
+                                    <span class="checkbox-text">Online sastanci</span>
+                                </label>
+                            </div>
+                            <div class="check-box check-box--purple">
+                                <input id="check3" type="checkbox" name="">
+                                <label for="check3">
+                                    <div class="check-icon mr-"></div>
+                                    <span class="checkbox-text">Podsetnici</span>
+                                </label>
+                            </div>
+                            <div class="check-box check-box--blue-dark">
+                                <input id="check4" type="checkbox" name="">
+                                <label for="check4">
+                                    <div class="check-icon mr-"></div>
+                                    <span class="checkbox-text">Zadaci</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        1 Nov
+                    </span>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        2
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        3
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        4
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        5
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        6
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        7
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        8
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        9
+                    </span>
+                    <div class="calendar-day-box">
+                        <div class="row-box row-box--red">
+                            Kontrola minusna k.
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        10
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        11
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        12
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        13
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        14
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        15
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        16
+                    </span>
+                    <div class="calendar-day-box">
+                        <div class="row-box row-box--blue">
+                            Sastanak Mesko
+                        </div>
+                        <div class="row-box row-box--red">
+                            Kontrola proizvodnje
+                        </div>
+                        <div class="row-box row-box--blue-purple">
+                            Sastanak Extra farma
+                        </div>
+                        <div class="row-box row-box--purple">
+                            Izveštaj ekspedicije
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day calendar-day-current">
+                    <span>
+                        17
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        18
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        19
+                    </span>
+                    <div class="calendar-day-box">
+                        <div class="row-box row-box--blue-purple">
+                            Otkazivanje usluge
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        20
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        21
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        22
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        23
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        24
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        25
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        26
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        27
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        28
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        29
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        30
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        1 Dec
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        2
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        3
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        4
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <span>
+                        5
+                    </span>
+                    <div class="calendar-day-box">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="cart border-top-radius-none">
+            <div class="cart__header o-flex o-flex--center o-flex--justify pb-" style="border-bottom: 1px solid #444444;">
+                <h4 class="mb0">17.11.2022.</h4>
+            </div>
+            <div class="cart__body">
+                <div class="table-responsive" style="max-height: 20vh;">
+                    <table class="table table--no-row-numb mb0">
+                        <thead>
+                            <tr>
+                                <th class="u-text-center" style="background-color: #fff;"><strong>VREME OD</strong></th>
+                                <th class="u-text-center"><strong>VREME DO</strong></th>
+                                <th class="u-text-center"><strong>KREIRAO</strong></th>
+                                <th class="u-text-center"><strong>NAZIV</strong></th>
+                                <th class="u-text-center"><strong>OPIS</strong></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="u-text-center">08:15</td>
+                                <td class="u-text-center">09:30</td>
+                                <td>Petar Perić</td>
+                                <td>
+                                    <div class="row-box row-box--big row-box--blue">
+                                        Sastanak Mesko
+                                    </div>
+                                </td>
+                                <td>sastanak povodom pružanja usluge uslužnog klanja</td>
+                                <td style="width: 50px;">
+                                    <div class="o-flex o-flex--center">
+                                        <a href="#" class="mr-">
+                                            <svg height="18" width="18" viewBox="0 0 18 18">
+                                                <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                            </svg>
+                                        </a>
+
+                                        <a href="#">
+                                            <svg width="25" viewBox="0 0 48 48">
+                                                <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                <path d="M0 0h48v48H0z" fill="none"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="u-text-center">08:15</td>
+                                <td class="u-text-center">09:30</td>
+                                <td>Petar Perić</td>
+                                <td>
+                                    <div class="row-box row-box--big row-box--red">
+                                        Kontrola proizvodnje
+                                    </div>
+                                </td>
+                                <td>sastanak povodom pružanja usluge uslužnog klanja</td>
+                                <td style="width: 50px;">
+                                    <div class="o-flex o-flex--center">
+                                        <a href="#" class="mr-">
+                                            <svg height="18" width="18" viewBox="0 0 18 18">
+                                                <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                            </svg>
+                                        </a>
+
+                                        <a href="#">
+                                            <svg width="25" viewBox="0 0 48 48">
+                                                <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                <path d="M0 0h48v48H0z" fill="none"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="u-text-center">08:15</td>
+                                <td class="u-text-center">09:30</td>
+                                <td>Petar Perić</td>
+                                <td>
+                                    <div class="row-box row-box--big row-box--blue-purple">
+                                        Sastanak Extra farma
+                                    </div>
+                                </td>
+                                <td>sastanak povodom pružanja usluge uslužnog klanja</td>
+                                <td style="width: 50px;">
+                                    <div class="o-flex o-flex--center">
+                                        <a href="#" class="mr-">
+                                            <svg height="18" width="18" viewBox="0 0 18 18">
+                                                <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                            </svg>
+                                        </a>
+
+                                        <a href="#">
+                                            <svg width="25" viewBox="0 0 48 48">
+                                                <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                <path d="M0 0h48v48H0z" fill="none"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="u-text-center">08:15</td>
+                                <td class="u-text-center">09:30</td>
+                                <td>Petar Perić</td>
+                                <td>
+                                    <div class="row-box row-box--big row-box--purple">
+                                        Izveštaj ekspedicije
+                                    </div>
+                                </td>
+                                <td>sastanak povodom pružanja usluge uslužnog klanja</td>
+                                <td style="width: 50px;">
+                                    <div class="o-flex o-flex--center">
+                                        <a href="#" class="mr-">
+                                            <svg height="18" width="18" viewBox="0 0 18 18">
+                                                <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                            </svg>
+                                        </a>
+
+                                        <a href="#">
+                                            <svg width="25" viewBox="0 0 48 48">
+                                                <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                <path d="M0 0h48v48H0z" fill="none"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="u-text-center">08:15</td>
+                                <td class="u-text-center">09:30</td>
+                                <td>Petar Perić</td>
+                                <td>
+                                    <div class="row-box row-box--big row-box--blue">
+                                        Sastanak Mesko
+                                    </div>
+                                </td>
+                                <td>sastanak povodom pružanja usluge uslužnog klanja</td>
+                                <td style="width: 50px;">
+                                    <div class="o-flex o-flex--center">
+                                        <a href="#" class="mr-">
+                                            <svg height="18" width="18" viewBox="0 0 18 18">
+                                                <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                            </svg>
+                                        </a>
+
+                                        <a href="#">
+                                            <svg width="25" viewBox="0 0 48 48">
+                                                <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                <path d="M0 0h48v48H0z" fill="none"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="u-text-center">08:15</td>
+                                <td class="u-text-center">09:30</td>
+                                <td>Petar Perić</td>
+                                <td>
+                                    <div class="row-box row-box--big row-box--red">
+                                        Kontrola proizvodnje
+                                    </div>
+                                </td>
+                                <td>sastanak povodom pružanja usluge uslužnog klanja</td>
+                                <td style="width: 50px;">
+                                    <div class="o-flex o-flex--center">
+                                        <a href="#" class="mr-">
+                                            <svg height="18" width="18" viewBox="0 0 18 18">
+                                                <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                            </svg>
+                                        </a>
+
+                                        <a href="#">
+                                            <svg width="25" viewBox="0 0 48 48">
+                                                <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                <path d="M0 0h48v48H0z" fill="none"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="u-text-center">08:15</td>
+                                <td class="u-text-center">09:30</td>
+                                <td>Petar Perić</td>
+                                <td>
+                                    <div class="row-box row-box--big row-box--blue-purple">
+                                        Sastanak Extra farma
+                                    </div>
+                                </td>
+                                <td>sastanak povodom pružanja usluge uslužnog klanja</td>
+                                <td style="width: 50px;">
+                                    <div class="o-flex o-flex--center">
+                                        <a href="#" class="mr-">
+                                            <svg height="18" width="18" viewBox="0 0 18 18">
+                                                <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                            </svg>
+                                        </a>
+
+                                        <a href="#">
+                                            <svg width="25" viewBox="0 0 48 48">
+                                                <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                <path d="M0 0h48v48H0z" fill="none"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="u-text-center">08:15</td>
+                                <td class="u-text-center">09:30</td>
+                                <td>Petar Perić</td>
+                                <td>
+                                    <div class="row-box row-box--big row-box--purple">
+                                        Izveštaj ekspedicije
+                                    </div>
+                                </td>
+                                <td>sastanak povodom pružanja usluge uslužnog klanja</td>
+                                <td style="width: 50px;">
+                                    <div class="o-flex o-flex--center">
+                                        <a href="#" class="mr-">
+                                            <svg height="18" width="18" viewBox="0 0 18 18">
+                                                <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                            </svg>
+                                        </a>
+
+                                        <a href="#">
+                                            <svg width="25" viewBox="0 0 48 48">
+                                                <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                <path d="M0 0h48v48H0z" fill="none"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
