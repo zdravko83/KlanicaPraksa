@@ -1,0 +1,245 @@
+﻿@page "/MainMenuExpedition"
+@model KlanicaPraksa.Pages.MainMenu.MainMenuExpeditionModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<main class="w-100">
+    <div class="cart w-100 cart-main-menu">
+        <ul class="o-flex o-flex--center">
+            <li>
+                <a href="#" class="menu-link menu-link--green">
+                    <img src="~/images/___requisition.png" alt="">
+                    <span>
+                        TREBOVANJE
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link menu-link--green">
+                    <img src="~/images/___requisitionReview.png" alt="">
+                    <span>PREGLED
+                   <br/>TREBOVANJE
+                    </span>
+                </a>
+            </li>
+            <li style="margin-left:20px">
+                <a href="#" class="menu-link menu-link--green">
+                    <img src="~/images/___waybill.png" alt="">
+                    <span>TOVARNI
+                      <br/>LIST
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link menu-link--green">
+                    <img src="~/images/___waybillRoutePointer.png" alt="">
+                    <span>KAMIONI
+                  <br/>SA LOKACIJAMA
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link menu-link--green">
+                    <img src="~/images/___waybillHistory.png" alt="">
+                    <span>KAMIONI
+                    <br/>ISTORIJA
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link menu-link--green">
+                    <img src="~/images/__traceability.png" alt="">
+                    <span>POTPUNA
+                   <br/>SLEDLJIVOST
+                    </span>
+                </a>
+            </li>
+            <li style="margin-left:20px">
+                <a href="#" class="menu-link menu-link--green">
+                    <img src="~/images/___requisition.png" alt="">
+                    <span>
+                        Pramen
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <ul class="o-flex o-flex--center">
+            <li>
+                <a href="#" class="menu-link menu-link--dark-grey">
+                    <img src="~/images/___fastExspedition.png" alt="">
+                    <span>BRZA
+                   <br/>EKSPECIDIJA
+                    </span>
+                </a>
+            </li>
+            <li style="margin-left:20px">
+                <a href="#" class="menu-link menu-link--dark-grey">
+                    <img src="~/images/___exspeditionDetail.png" alt="">
+                    <span>DETALJNO
+                    <br/>EKSPEDICIJA
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link menu-link--dark-grey">
+                    <img src="~/images/__businessPartnerExpedition.png" alt="">
+                    <span>IZLAZ</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link menu-link--dark-grey">
+                    <img src="~/images/___expeditionReview.png" alt="">
+                    <span>PREGLED
+                    <br/>EKSPEDICIJA
+                    </span>
+                </a>
+            </li>
+            <li style="margin-left:20px">
+                <a href="#" class="menu-link menu-link--dark-grey">
+                    <img src="~/images/___invoice.png" alt="">
+                    <span>FAKTURE</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link menu-link--dark-grey">
+                    <img src="~/images/___invoicesReview.png" alt="">
+                    <span>FAKTURE
+                     <br/>PREGLED
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <ul class="o-flex o-flex--center">
+            <li>
+                <a href="#" class="menu-link menu-link--green">
+                    <img src="~/images/__retail1.png" alt="">
+                    <span>MALOPRODAJA</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link menu-link--green">
+                    <img src="~/images/__retailReview.png" alt="">
+                    <span>MALOPRODAJA
+                       <br/>PREGLED
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link menu-link--green">
+                    <img src="~/images/___retailList.png" alt="">
+                    <span>
+                        MALOPRODAJA
+                     <br/>POPIS
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link menu-link--green">
+                    <img src="~/images/__retailSales1.png" alt="">
+                    <span>PRODAJA IZ
+                     <br/>MALOPRODAJA
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <ul class="o-flex o-flex--center">
+            <li>
+                <a href="#" class="menu-link menu-link--dark-grey">
+                    <img src="~/images/__stockExspedition.png" alt="">
+                    <span>
+                        MESO
+                   <br/>LAGER
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link menu-link--dark-grey">
+                    <img src="~/images/__cardMeat.png" alt="">
+                    <span>MESO
+                    <br/>KARTICA
+                    </span>
+                </a>
+            </li>
+            <li style="margin-left:20px">
+                <a href="#" class="menu-link menu-link--dark-grey">
+                    <img src="~/images/___meatList.png" alt="">
+                    <span>MESO
+                     <br/>POPIS
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link menu-link--dark-grey">
+                    <img src="~/images/___meatwriteoff.png" alt="">
+                    <span>MESO
+                     <br/>OTPIS
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link menu-link--dark-grey">
+                    <img src="~/images/___meatTransfer.png" alt="">
+                    <span>MESO
+                    <br/>PRENOS
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link menu-link--dark-grey">
+                    <img src="~/images/___meatValue.png" alt="">
+                    <span>MESO
+                   <br/>VREDNOST
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <ul class="o-flex o-flex--center">
+            <li>
+                <a href="#" class="menu-link menu-link--green">
+                    <img src="~/images/__report1.png" alt="">
+                    <span>
+                        IZVEŠTAJI
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link menu-link--green">
+                    <img src="~/images/__calculation1.png" alt="">
+                    <span>EKSPEDICIJA
+                     <br/>KALKULACIJA
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link menu-link--green">
+                    <img src="~/images/__photo.png" alt="">
+                    <span>FOTO
+                     <br/>MODUL
+                    </span>
+                </a>
+            </li>
+            <li style="margin-left:20px">
+                <a href="#" class="menu-link menu-link--green">
+                    <img src="~/images/___visibilityItem.png" alt="">
+                    <span>ARTIKLI
+                    <br/>VIDLJIVOST
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link menu-link--green">
+                    <img src="~/images/__stock.png" alt="">
+                    <span>MAGACINI
+                    <br/>VIDLJIVOST
+                    </span>
+                </a>
+            </li>
+            <li style="margin-left:20px">
+                <a href="#" class="menu-link menu-link--green">
+                    <img src="~/images/__labelSlaughter.png" alt="">
+                    <span>ETIKETA</span>
+                </a>
+            </li>
+        </ul>
+
+</main>
