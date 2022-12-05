@@ -1,0 +1,51 @@
+﻿@page "/MainMenuAdmin"
+@model KlanicaPraksa.Pages.MainMenu.MainMenuAdminModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<main class="w-100">
+    <div class="cart w-100 cart-main-menu">
+        <ul class="o-flex o-flex--center">
+            <li>
+                <a href="#" class="menu-link menu-link--green">
+                    <img src="~/images/___firmConfiguration.png" alt="">
+                    <span>
+                        KONFIG
+                        <br />
+                        FIRME
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link menu-link--green">
+                    <img src="~/images/___users.png" alt="">
+                    <span>KORISNICI</span>
+                </a>
+            </li>
+            
+        </ul>
+        <ul class="o-flex o-flex--center">
+            <li>
+                <a href="#" class="menu-link menu-link--dark-grey">
+                    <img src="~/images/___reportInputNote.png" alt="">
+                    <span>
+                        IZVEŠTAJ
+                        <br />
+                        PRIJEMA GRLA
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link menu-link--dark-grey">
+                    <img src="~/images/___forecasting.png" alt="">
+                    <span>
+                        PREDIKCIJA
+                        <br />
+                        EKSPEDICIJE
+                    </span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</main>
