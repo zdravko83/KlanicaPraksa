@@ -146,13 +146,13 @@ html {
     #PAGE
 \*------------------------------------ */
 html {
-  color: #000;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  background-color: #d1d8e7;
-  overflow: hidden; }
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    background-color: #d1d8e7;
+}
 
 body {
   padding: 56px 10px 10px;
