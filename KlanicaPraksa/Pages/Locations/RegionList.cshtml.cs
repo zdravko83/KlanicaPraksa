@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace KlanicaPraksa.Pages.Products
+namespace KlanicaPraksa.Pages.Locations
 {
-    public class FavorAddEditModel : PageModel
+    public class RegionListModel : PageModel
     {
         public void OnGet()
         {

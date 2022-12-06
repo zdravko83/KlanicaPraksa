@@ -1347,7 +1347,7 @@ a {
     .table th:not(:first-child) {
       border-bottom: 1px solid #a2a2a2; }
   .table td {
-    padding: 5px 10px;
+    padding: 0px 5px;
     border-right: 1px solid #a2a2a2;
     color: #000000;
     font-size: 12px;
