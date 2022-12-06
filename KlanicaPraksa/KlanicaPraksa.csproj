@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Folder Include="Pages\Drivers\" />
+    <Folder Include="Pages\Warehouses\" />
     <Folder Include="Pages\Products\" />
   </ItemGroup>
 
