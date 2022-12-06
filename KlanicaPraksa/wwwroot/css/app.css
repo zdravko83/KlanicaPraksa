@@ -157,7 +157,9 @@ html {
 body {
   padding: 56px 10px 10px;
   display: flex;
-  gap: 10px; }
+  /*gap: 10px;*/ 
+
+}
 
 address,
 h1,
