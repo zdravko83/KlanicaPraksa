@@ -1,0 +1,1578 @@
+﻿@page
+@model KlanicaPraksa.Pages.Warehouses.DepotListModel
+@{
+}
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+
+<body class="homepage">
+
+  <header class="header-main">
+    <div class="header-main__nav-left o-flex o-flex--center">
+      <a class="bars mr" href="javascript:;">
+        <svg width="22" viewBox="0 0 512 512">
+          <g data-name="1">
+            <path fill="#fff" d="M441.13 166.52h-372a15 15 0 1 1 0-30h372a15 15 0 0 1 0 30ZM441.13 279.72h-372a15 15 0 1 1 0-30h372a15 15 0 0 1 0 30ZM441.13 392.92h-372a15 15 0 1 1 0-30h372a15 15 0 0 1 0 30Z" />
+          </g>
+        </svg>
+      </a>
+      <p class="mb0 clr-white">PRIJEM GRLA - BRZI UNOS</p>
+    </div>
+    <a href="javascript:;" class="refresh">
+      <svg height="24" width="24">
+        <path fill="#fff" d="M17.807 7C16.447 5.079 14.394 4 12 4a8 8 0 0 0-8 8H2C2 6.477 6.477 2 12 2c2.804 0 5.275 1.183 7 3.27V2h2v7h-7V7h3.807ZM6.193 17c1.36 1.921 3.413 3 5.807 3a8 8 0 0 0 8-8h2c0 5.523-4.477 10-10 10-2.804 0-5.275-1.183-7-3.27V22H3v-7h7v2H6.193Z" fill-rule="evenodd" />
+      </svg>
+    </a>
+    <nav class="header-main__nav">
+      <ul class="nav__list o-flex o-flex--center">
+        <li class="nav__list-item">
+          <a href="#" class="nav__link">
+            <img src="assets/images/nav/__input.png" alt="">
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link">
+            <img src="assets/images/nav/__slaughter.png" alt="">
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link is-active">
+            <img src="assets/images/nav/__quarteringWhite1.png" alt="">
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link">
+            <img src="assets/images/nav/__refinement.png" alt="">
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link">
+            <img src="assets/images/nav/__finalProduct.png" alt="">
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link">
+            <img src="assets/images/nav/__freeze.png" alt="">
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link">
+            <img src="assets/images/nav/__expedition1.png" alt="">
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link">
+            <img src="assets/images/nav/__specifications.png" alt="">
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link">
+            <img src="assets/images/nav/__euro.png" alt="">
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link">
+            <img src="assets/images/nav/__edit1.png" alt="">
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link">
+            <img src="assets/images/nav/__admin.png" alt="">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- TO SHOW SOME POPUP YOU NEED TO ADD CLASS '.is-active' TO .popup AND IT WILL SHOW. -->
+
+  <div class="popup">
+    <div class="popup__overlay"></div>
+    <a href="javascript:;" class="close-popup button button--green-circle">
+      <img src="assets/images/menu-icon-white-png-5.jpg" alt="">
+    </a>
+    <div class="popup__content">
+
+      <div class="cart">
+        <div class="cart__header">
+          <h2 class="clr-green u-text-center mb-"><strong>OSNOVNI PODACI O LOTOVIMA</strong></h2>
+        </div>
+        <div class="cart__body">
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>ŠIFRA :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box input-box--date relative">
+                <p>DATUM ZA LOT :</p>
+                <svg width="28" viewBox="0 0 139 139" xml:space="preserve">
+                  <path fill="444444" d="M113.8 22.905h-13.514v-5.406c0-3.215-2.631-5.845-5.846-5.845s-5.844 2.63-5.844 5.845v5.406h-38.19v-5.406c0-3.215-2.63-5.845-5.845-5.845s-5.845 2.63-5.845 5.845v5.406H25.202c-5.533 0-10.035 4.501-10.035 10.034v74.122c0 5.533 4.501 10.034 10.035 10.034h79.632c10.478 0 19-8.522 19-19V32.939c0-5.533-4.501-10.034-10.034-10.034zm-88.598 8h13.521c.077 3.149 2.671 5.702 5.838 5.702 3.166 0 5.759-2.553 5.837-5.702h38.205c.078 3.149 2.67 5.702 5.837 5.702s5.761-2.553 5.839-5.702H113.8c1.104 0 2.034.932 2.034 2.034v15.624H23.167V32.939c0-1.103.932-2.034 2.035-2.034zm-2.035 76.156V56.438h92.667V91.5H99.487l-.12 17.595H25.202c-1.103 0-2.035-.932-2.035-2.034zm84.203 1.727.064-9.288h8.299c-.585 4.558-3.963 8.244-8.363 9.288z" />
+                  <path fill="444444" d="M46.491 75.32c.04-3.665 1.347-6.345 3.445-8.132 2.099-1.743 4.951-2.592 8.039-2.592 7.999 0 10.652 5.363 10.652 7.998 0 6.524-3.644 6.524-3.644 6.658v.089c0 .358 4.514.358 4.514 7.284 0 3.798-2.534 9.785-11.563 9.785-12.396 0-12.434-9.831-12.236-12.153h7.523c-.04 1.654.317 2.903 1.069 3.708.752 1.027 1.901 1.386 3.287 1.386 2.257 0 3.683-.938 3.683-3.485 0-2.727-1.861-3.218-3.683-3.218-1.149 0-1.703.135-2.297.225v-6.078c.594.045 1.228.179 2.297.179 1.664 0 3.762-.401 3.762-2.813 0-1.967-1.98-2.727-3.603-2.727-2.139 0-3.881 1.295-3.802 3.887h-7.443zM81.264 78.135h-6.455v-6.434c3.999.09 7.96-1.607 8.196-6.747H89.5v31.099h-8.236V78.135z" />
+                </svg>
+                <input type="date" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>GRUPA PROCESA :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>DATUM PRIJEMA :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-12">
+              <div class="input-box">
+                <p>NAPOMENA :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="u-text-center">
+        <button class="button button--primary">
+          <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
+            <path fill="#fff" d="M448 71.9c-17.3-13.4-41.5-9.3-54.1 9.1L214 344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8-15.6 15.5-16.4 41.6-1.7 58.1 0 0 120.4 133.6 137.7 147 17.3 13.4 41.5 9.3 54.1-9.1l206.3-301.7c12.6-18.5 8.7-44.2-8.6-57.5z" />
+          </svg>
+          <strong>
+            SAČUVAJ
+          </strong>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="popup">
+    <div class="popup__overlay"></div>
+    <a href="javascript:;" class="close-popup button button--green-circle">
+      <img src="assets/images/menu-icon-white-png-5.jpg" alt="">
+    </a>
+    <div class="popup__content">
+
+      <div class="cart">
+        <div class="cart__header">
+          <h2 class="clr-green u-text-center mb0"><strong>ZAGLAVLJE PRIJEMNICE</strong></h2>
+        </div>
+        <div class="cart__body">
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>LOT :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box input-box--date relative">
+                <p>DATUM PRIJEMNICE : </p>
+                <svg width="28" viewBox="0 0 139 139" xml:space="preserve">
+                  <path fill="444444" d="M113.8 22.905h-13.514v-5.406c0-3.215-2.631-5.845-5.846-5.845s-5.844 2.63-5.844 5.845v5.406h-38.19v-5.406c0-3.215-2.63-5.845-5.845-5.845s-5.845 2.63-5.845 5.845v5.406H25.202c-5.533 0-10.035 4.501-10.035 10.034v74.122c0 5.533 4.501 10.034 10.035 10.034h79.632c10.478 0 19-8.522 19-19V32.939c0-5.533-4.501-10.034-10.034-10.034zm-88.598 8h13.521c.077 3.149 2.671 5.702 5.838 5.702 3.166 0 5.759-2.553 5.837-5.702h38.205c.078 3.149 2.67 5.702 5.837 5.702s5.761-2.553 5.839-5.702H113.8c1.104 0 2.034.932 2.034 2.034v15.624H23.167V32.939c0-1.103.932-2.034 2.035-2.034zm-2.035 76.156V56.438h92.667V91.5H99.487l-.12 17.595H25.202c-1.103 0-2.035-.932-2.035-2.034zm84.203 1.727.064-9.288h8.299c-.585 4.558-3.963 8.244-8.363 9.288z" />
+                  <path fill="444444" d="M46.491 75.32c.04-3.665 1.347-6.345 3.445-8.132 2.099-1.743 4.951-2.592 8.039-2.592 7.999 0 10.652 5.363 10.652 7.998 0 6.524-3.644 6.524-3.644 6.658v.089c0 .358 4.514.358 4.514 7.284 0 3.798-2.534 9.785-11.563 9.785-12.396 0-12.434-9.831-12.236-12.153h7.523c-.04 1.654.317 2.903 1.069 3.708.752 1.027 1.901 1.386 3.287 1.386 2.257 0 3.683-.938 3.683-3.485 0-2.727-1.861-3.218-3.683-3.218-1.149 0-1.703.135-2.297.225v-6.078c.594.045 1.228.179 2.297.179 1.664 0 3.762-.401 3.762-2.813 0-1.967-1.98-2.727-3.603-2.727-2.139 0-3.881 1.295-3.802 3.887h-7.443zM81.264 78.135h-6.455v-6.434c3.999.09 7.96-1.607 8.196-6.747H89.5v31.099h-8.236V78.135z" />
+                </svg>
+                <input type="date" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box input-box--date relative">
+                <p>DATUM UTOVARA :</p>
+                <svg width="28" viewBox="0 0 139 139" xml:space="preserve">
+                  <path fill="444444" d="M113.8 22.905h-13.514v-5.406c0-3.215-2.631-5.845-5.846-5.845s-5.844 2.63-5.844 5.845v5.406h-38.19v-5.406c0-3.215-2.63-5.845-5.845-5.845s-5.845 2.63-5.845 5.845v5.406H25.202c-5.533 0-10.035 4.501-10.035 10.034v74.122c0 5.533 4.501 10.034 10.035 10.034h79.632c10.478 0 19-8.522 19-19V32.939c0-5.533-4.501-10.034-10.034-10.034zm-88.598 8h13.521c.077 3.149 2.671 5.702 5.838 5.702 3.166 0 5.759-2.553 5.837-5.702h38.205c.078 3.149 2.67 5.702 5.837 5.702s5.761-2.553 5.839-5.702H113.8c1.104 0 2.034.932 2.034 2.034v15.624H23.167V32.939c0-1.103.932-2.034 2.035-2.034zm-2.035 76.156V56.438h92.667V91.5H99.487l-.12 17.595H25.202c-1.103 0-2.035-.932-2.035-2.034zm84.203 1.727.064-9.288h8.299c-.585 4.558-3.963 8.244-8.363 9.288z" />
+                  <path fill="444444" d="M46.491 75.32c.04-3.665 1.347-6.345 3.445-8.132 2.099-1.743 4.951-2.592 8.039-2.592 7.999 0 10.652 5.363 10.652 7.998 0 6.524-3.644 6.524-3.644 6.658v.089c0 .358 4.514.358 4.514 7.284 0 3.798-2.534 9.785-11.563 9.785-12.396 0-12.434-9.831-12.236-12.153h7.523c-.04 1.654.317 2.903 1.069 3.708.752 1.027 1.901 1.386 3.287 1.386 2.257 0 3.683-.938 3.683-3.485 0-2.727-1.861-3.218-3.683-3.218-1.149 0-1.703.135-2.297.225v-6.078c.594.045 1.228.179 2.297.179 1.664 0 3.762-.401 3.762-2.813 0-1.967-1.98-2.727-3.603-2.727-2.139 0-3.881 1.295-3.802 3.887h-7.443zM81.264 78.135h-6.455v-6.434c3.999.09 7.96-1.607 8.196-6.747H89.5v31.099h-8.236V78.135z" />
+                </svg>
+                <input type="date" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box input-box--date relative">
+                <p>DATUM PRIJEMA : </p>
+                <svg width="28" viewBox="0 0 139 139" xml:space="preserve">
+                  <path fill="444444" d="M113.8 22.905h-13.514v-5.406c0-3.215-2.631-5.845-5.846-5.845s-5.844 2.63-5.844 5.845v5.406h-38.19v-5.406c0-3.215-2.63-5.845-5.845-5.845s-5.845 2.63-5.845 5.845v5.406H25.202c-5.533 0-10.035 4.501-10.035 10.034v74.122c0 5.533 4.501 10.034 10.035 10.034h79.632c10.478 0 19-8.522 19-19V32.939c0-5.533-4.501-10.034-10.034-10.034zm-88.598 8h13.521c.077 3.149 2.671 5.702 5.838 5.702 3.166 0 5.759-2.553 5.837-5.702h38.205c.078 3.149 2.67 5.702 5.837 5.702s5.761-2.553 5.839-5.702H113.8c1.104 0 2.034.932 2.034 2.034v15.624H23.167V32.939c0-1.103.932-2.034 2.035-2.034zm-2.035 76.156V56.438h92.667V91.5H99.487l-.12 17.595H25.202c-1.103 0-2.035-.932-2.035-2.034zm84.203 1.727.064-9.288h8.299c-.585 4.558-3.963 8.244-8.363 9.288z" />
+                  <path fill="444444" d="M46.491 75.32c.04-3.665 1.347-6.345 3.445-8.132 2.099-1.743 4.951-2.592 8.039-2.592 7.999 0 10.652 5.363 10.652 7.998 0 6.524-3.644 6.524-3.644 6.658v.089c0 .358 4.514.358 4.514 7.284 0 3.798-2.534 9.785-11.563 9.785-12.396 0-12.434-9.831-12.236-12.153h7.523c-.04 1.654.317 2.903 1.069 3.708.752 1.027 1.901 1.386 3.287 1.386 2.257 0 3.683-.938 3.683-3.485 0-2.727-1.861-3.218-3.683-3.218-1.149 0-1.703.135-2.297.225v-6.078c.594.045 1.228.179 2.297.179 1.664 0 3.762-.401 3.762-2.813 0-1.967-1.98-2.727-3.603-2.727-2.139 0-3.881 1.295-3.802 3.887h-7.443zM81.264 78.135h-6.455v-6.434c3.999.09 7.96-1.607 8.196-6.747H89.5v31.099h-8.236V78.135z" />
+                </svg>
+                <input type="date" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box input-box--date relative">
+                <p>DATUM VALUTE :</p>
+                <svg width="28" viewBox="0 0 139 139" xml:space="preserve">
+                  <path fill="444444" d="M113.8 22.905h-13.514v-5.406c0-3.215-2.631-5.845-5.846-5.845s-5.844 2.63-5.844 5.845v5.406h-38.19v-5.406c0-3.215-2.63-5.845-5.845-5.845s-5.845 2.63-5.845 5.845v5.406H25.202c-5.533 0-10.035 4.501-10.035 10.034v74.122c0 5.533 4.501 10.034 10.035 10.034h79.632c10.478 0 19-8.522 19-19V32.939c0-5.533-4.501-10.034-10.034-10.034zm-88.598 8h13.521c.077 3.149 2.671 5.702 5.838 5.702 3.166 0 5.759-2.553 5.837-5.702h38.205c.078 3.149 2.67 5.702 5.837 5.702s5.761-2.553 5.839-5.702H113.8c1.104 0 2.034.932 2.034 2.034v15.624H23.167V32.939c0-1.103.932-2.034 2.035-2.034zm-2.035 76.156V56.438h92.667V91.5H99.487l-.12 17.595H25.202c-1.103 0-2.035-.932-2.035-2.034zm84.203 1.727.064-9.288h8.299c-.585 4.558-3.963 8.244-8.363 9.288z" />
+                  <path fill="444444" d="M46.491 75.32c.04-3.665 1.347-6.345 3.445-8.132 2.099-1.743 4.951-2.592 8.039-2.592 7.999 0 10.652 5.363 10.652 7.998 0 6.524-3.644 6.524-3.644 6.658v.089c0 .358 4.514.358 4.514 7.284 0 3.798-2.534 9.785-11.563 9.785-12.396 0-12.434-9.831-12.236-12.153h7.523c-.04 1.654.317 2.903 1.069 3.708.752 1.027 1.901 1.386 3.287 1.386 2.257 0 3.683-.938 3.683-3.485 0-2.727-1.861-3.218-3.683-3.218-1.149 0-1.703.135-2.297.225v-6.078c.594.045 1.228.179 2.297.179 1.664 0 3.762-.401 3.762-2.813 0-1.967-1.98-2.727-3.603-2.727-2.139 0-3.881 1.295-3.802 3.887h-7.443zM81.264 78.135h-6.455v-6.434c3.999.09 7.96-1.607 8.196-6.747H89.5v31.099h-8.236V78.135z" />
+                </svg>
+                <input type="date" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>RADNI NALOG :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>DEPO :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>TIP GRLA : </p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>POD TIP :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>POSLOVNI PARTNER :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>DRŽAVA :</p>
+                <select name="" id="" class="input input--primary">
+                  <option value=""></option>
+                  <option value="">Tip 2</option>
+                  <option value="">Tip 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>BROJ OTPREMNICE :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>ZDRAVSTVENO UVERENJE :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>TEŽINA NA FARMI :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>KOLIČINA :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>IME VOZAČA :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>LIČNA KARTA VOZAČA :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>BROJ REGISTRACIJE :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>REGISTRACIJA PRIKOLICE :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>TIP PLAĆANJA :</p>
+                <select name="" id="" class="input input--primary">
+                  <option value="">Ziva vaga</option>
+                  <option value="">Tip 2</option>
+                  <option value="">Tip 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>JEDINIČNA CENA (ZA KALKULACIJU) :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>NAPOMENA :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart cart--accordion">
+        <div class="cart__header">
+          <a href="#" class="h2 clr-green u-text-center">
+            <img class="mr-" width="30" src="assets/images/arrow-down.png" alt="">
+            <strong>KONTROLNA LISTA</strong>
+          </a>
+        </div>
+        <div class="cart__body" style="display: none;">
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>TEŽINA I KOLIČINA SU ISTE NA PRIJEMU : </p>
+                <select name="" id="" class="input input--primary">
+                  <option value="">Ziva vaga</option>
+                  <option value="">Da</option>
+                  <option value="">Ne</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>AUTOMATSKI UNESI PASOŠE :</p>
+                <select name="" id="" class="input input--primary">
+                  <option value="">Da</option>
+                  <option value="">Ne</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart cart--accordion">
+        <div class="cart__header">
+          <a href="#" class="h2 clr-green u-text-center is-active">
+            <img class="mr-" width="30" src="assets/images/arrow-down.png" alt="">
+            <strong>OPCIJE ZA BRZI UNOS PODATAKA</strong>
+          </a>
+        </div>
+        <div class="cart__body">
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>TEŽINA I KOLIČINA SU ISTE NA PRIJEMU : </p>
+                <select name="" id="" class="input input--primary">
+                  <option value="">Ziva vaga</option>
+                  <option value="">Da</option>
+                  <option value="">Ne</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>AUTOMATSKI UNESI PASOŠE :</p>
+                <select name="" id="" class="input input--primary">
+                  <option value="">Da</option>
+                  <option value="">Ne</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="u-text-center">
+        <button class="button button--primary">
+          <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
+            <path fill="#fff" d="M448 71.9c-17.3-13.4-41.5-9.3-54.1 9.1L214 344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8-15.6 15.5-16.4 41.6-1.7 58.1 0 0 120.4 133.6 137.7 147 17.3 13.4 41.5 9.3 54.1-9.1l206.3-301.7c12.6-18.5 8.7-44.2-8.6-57.5z" />
+          </svg>
+          <strong>
+            SAČUVAJ
+          </strong>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup">
+    <div class="popup__overlay"></div>
+    <a href="javascript:;" class="close-popup button button--green-circle">
+      <img src="assets/images/menu-icon-white-png-5.jpg" alt="">
+    </a>
+    <div class="popup__content">
+
+      <div class="cart">
+        <div class="cart__header">
+          <h2 class="clr-green u-text-center mb0"><strong>PODACI O ARTIKLU</strong></h2>
+        </div>
+        <div class="cart__body">
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>ŠIFRA :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>IME PROIZVODA :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>TIP PROIZVODA :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>POD TIP :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>PODRAZUMEVANA GRUPA :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>JEDINICA MERE :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>MINIMALNA KOLIČINA :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>TEMPERATURA ČUVANJA :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>ROK UPOTREBE (DANA) :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>PLANSKA CENA :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>PDV % :</p>
+                <select name="" id="" class="input input--primary">
+                  <option value=""></option>
+                  <option value="">Tip 2</option>
+                  <option value="">Tip 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>TRŽIŠNA CENA :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>PROSEČNA TEŽINA :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>KATEGORIJA :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-12">
+              <div class="input-box">
+                <p>NAPOMENA :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-12">
+              <div class="input-box">
+                <p>SASTAV :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart">
+        <div class="cart__header">
+          <h2 class="clr-green u-text-center mb0"><strong>PAKOVANJA</strong></h2>
+        </div>
+        <div class="cart__body">
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>VELIČINA PAKETA :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>TEŽINA PAKETA :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>VELIČINA KUTIJE :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>TEŽINA KUTIJE :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart">
+        <div class="cart__header">
+          <h2 class="clr-green u-text-center mb0"><strong>BARKODOVI I PAKOVANJA</strong></h2>
+        </div>
+        <div class="cart__body">
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>OSNOVNI BARKOD :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>OSNOVNO PAKOVANJE :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>PRODAJNI BARKOD :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>PRODAJNO PAKOVANJE :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>NABAVNI BARKOD :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>NABAVNO PAKOVANJE :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>TEŽINSKI BARKOD :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="input-box">
+                <p>PROIZVODNI BARKOD :</p>
+                <input type="text" class="input input--primary">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="u-text-center">
+        <button class="button button--primary">
+          <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
+            <path fill="#fff" d="M448 71.9c-17.3-13.4-41.5-9.3-54.1 9.1L214 344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8-15.6 15.5-16.4 41.6-1.7 58.1 0 0 120.4 133.6 137.7 147 17.3 13.4 41.5 9.3 54.1-9.1l206.3-301.7c12.6-18.5 8.7-44.2-8.6-57.5z" />
+          </svg>
+          <strong>
+            SAČUVAJ
+          </strong>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <aside class="aside-menu cart" style="display: flex;">
+    <ul class="aside-menu__list">
+      <li>
+        <a href="#" class="is-active">
+          <img src="assets/images/" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="assets/images/" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="assets/images/" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="assets/images/" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="assets/images/" alt="">
+        </a>
+      </li>
+    </ul>
+  </aside>
+  <main>
+
+    <div class="grid-wrapper">
+      <div class="cart cart--accordion">
+        <div class="cart__header">
+          <a href="javascript:;" class="search-trigger o-flex o-flex--center text-decoration-none clr-dark"><img class="mr-" src="assets/images/arrow-down.png" alt="">PRETRAGA</a>
+        </div>
+
+        <!-- When you click on .search-trigger, .cart__body will be display block -->
+
+        <div class="cart__body" style="display: none;">
+          <form action="" class="o-flex o-flex--center">
+            <div class="row w-100">
+              <div class="col-xs-12 col-md-6">
+                <div class="input-box">
+                  <p>LOT:</p>
+                  <input type="text" class="input input--primary">
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <div class="input-box">
+                  <p>POSLOVNI PARTNER:</p>
+                  <input type="text" class="input input--primary">
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-md-6">
+                <div class="input-box input-box--date relative">
+                  <p>DATUM OD :</p>
+                  <svg width="28" viewBox="0 0 139 139" xml:space="preserve">
+                    <path fill="444444" d="M113.8 22.905h-13.514v-5.406c0-3.215-2.631-5.845-5.846-5.845s-5.844 2.63-5.844 5.845v5.406h-38.19v-5.406c0-3.215-2.63-5.845-5.845-5.845s-5.845 2.63-5.845 5.845v5.406H25.202c-5.533 0-10.035 4.501-10.035 10.034v74.122c0 5.533 4.501 10.034 10.035 10.034h79.632c10.478 0 19-8.522 19-19V32.939c0-5.533-4.501-10.034-10.034-10.034zm-88.598 8h13.521c.077 3.149 2.671 5.702 5.838 5.702 3.166 0 5.759-2.553 5.837-5.702h38.205c.078 3.149 2.67 5.702 5.837 5.702s5.761-2.553 5.839-5.702H113.8c1.104 0 2.034.932 2.034 2.034v15.624H23.167V32.939c0-1.103.932-2.034 2.035-2.034zm-2.035 76.156V56.438h92.667V91.5H99.487l-.12 17.595H25.202c-1.103 0-2.035-.932-2.035-2.034zm84.203 1.727.064-9.288h8.299c-.585 4.558-3.963 8.244-8.363 9.288z" />
+                    <path fill="444444" d="M46.491 75.32c.04-3.665 1.347-6.345 3.445-8.132 2.099-1.743 4.951-2.592 8.039-2.592 7.999 0 10.652 5.363 10.652 7.998 0 6.524-3.644 6.524-3.644 6.658v.089c0 .358 4.514.358 4.514 7.284 0 3.798-2.534 9.785-11.563 9.785-12.396 0-12.434-9.831-12.236-12.153h7.523c-.04 1.654.317 2.903 1.069 3.708.752 1.027 1.901 1.386 3.287 1.386 2.257 0 3.683-.938 3.683-3.485 0-2.727-1.861-3.218-3.683-3.218-1.149 0-1.703.135-2.297.225v-6.078c.594.045 1.228.179 2.297.179 1.664 0 3.762-.401 3.762-2.813 0-1.967-1.98-2.727-3.603-2.727-2.139 0-3.881 1.295-3.802 3.887h-7.443zM81.264 78.135h-6.455v-6.434c3.999.09 7.96-1.607 8.196-6.747H89.5v31.099h-8.236V78.135z" />
+                  </svg>
+                  <input type="date" class="input input--primary">
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <div class="input-box input-box--date relative">
+                  <p>DATUM DO :</p>
+                  <svg width="28" viewBox="0 0 139 139" xml:space="preserve">
+                    <path fill="444444" d="M113.8 22.905h-13.514v-5.406c0-3.215-2.631-5.845-5.846-5.845s-5.844 2.63-5.844 5.845v5.406h-38.19v-5.406c0-3.215-2.63-5.845-5.845-5.845s-5.845 2.63-5.845 5.845v5.406H25.202c-5.533 0-10.035 4.501-10.035 10.034v74.122c0 5.533 4.501 10.034 10.035 10.034h79.632c10.478 0 19-8.522 19-19V32.939c0-5.533-4.501-10.034-10.034-10.034zm-88.598 8h13.521c.077 3.149 2.671 5.702 5.838 5.702 3.166 0 5.759-2.553 5.837-5.702h38.205c.078 3.149 2.67 5.702 5.837 5.702s5.761-2.553 5.839-5.702H113.8c1.104 0 2.034.932 2.034 2.034v15.624H23.167V32.939c0-1.103.932-2.034 2.035-2.034zm-2.035 76.156V56.438h92.667V91.5H99.487l-.12 17.595H25.202c-1.103 0-2.035-.932-2.035-2.034zm84.203 1.727.064-9.288h8.299c-.585 4.558-3.963 8.244-8.363 9.288z" />
+                    <path fill="444444" d="M46.491 75.32c.04-3.665 1.347-6.345 3.445-8.132 2.099-1.743 4.951-2.592 8.039-2.592 7.999 0 10.652 5.363 10.652 7.998 0 6.524-3.644 6.524-3.644 6.658v.089c0 .358 4.514.358 4.514 7.284 0 3.798-2.534 9.785-11.563 9.785-12.396 0-12.434-9.831-12.236-12.153h7.523c-.04 1.654.317 2.903 1.069 3.708.752 1.027 1.901 1.386 3.287 1.386 2.257 0 3.683-.938 3.683-3.485 0-2.727-1.861-3.218-3.683-3.218-1.149 0-1.703.135-2.297.225v-6.078c.594.045 1.228.179 2.297.179 1.664 0 3.762-.401 3.762-2.813 0-1.967-1.98-2.727-3.603-2.727-2.139 0-3.881 1.295-3.802 3.887h-7.443zM81.264 78.135h-6.455v-6.434c3.999.09 7.96-1.607 8.196-6.747H89.5v31.099h-8.236V78.135z" />
+                  </svg>
+                  <input type="date" class="input input--primary">
+                </div>
+              </div>
+            </div>
+            <button class="button button--green-circle ml mr">
+              <svg width="30" viewBox="0 0 512 512">
+                <path fill="#fff" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="cart">
+        <div class="cart__header cart__header--grid o-flex o-flex--center">
+          <a href="#" class="button button--green-circle">
+            <img src="assets/images/_add.png" alt="">
+          </a>
+          <a href="#" class="button button--green-circle">
+            <img src="assets/images/Print.png" alt="">
+          </a>
+          <a href="#" class="button button--green-circle">
+            <img src="assets/images/power_bi-logoW.png" alt="">
+          </a>
+          <a href="#" class="button button--green-circle">
+            <img src="assets/images/_sync.png" alt="">
+          </a>
+
+          <div class="input-box input-box--search mb0 w-100 relative">
+            <svg width="20" viewBox="0 0 512 512">
+              <path fill="#7d7d7d" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z" />
+            </svg>
+            <input type="text" class="input input--secondary" placeholder="KLIKNITE ZA PRETRAGU PRIJEMNICA . . .">
+          </div>
+
+          <a href="#" class="button button--green-circle">
+            <img src="assets/images/_leftleft.png" alt="" style="margin-right: 3px;">
+          </a>
+          <a href="#" class="button button--green-circle">
+            <img src="assets/images/_left.png" alt="" style="margin-right: 3px;">
+          </a>
+          <div class="number-wrapper">
+            1 - 50 od 1927
+          </div>
+          <a href="#" class="button button--green-circle">
+            <img src="assets/images/_right.png" alt="" style="margin-left: 3px;">
+          </a>
+          <a href="#" class="button button--green-circle">
+            <img src="assets/images/_rightright.png" alt="" style="margin-left: 3px;">
+          </a>
+        </div>
+        <div class="cart__body mt-">
+          <div class="table-responsive" style="max-height: 77vh;">
+            <table class="table mb0">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>ŠIFRA</th>
+                  <th>DATUM PRIJEMA</th>
+                  <th>TIP GRLA</th>
+                  <th>PODTIP GRLA</th>
+                  <th>DOBAVLJAČ</th>
+                  <th class="u-text-center">DRŽAVA</th>
+                  <th>ZDR. UVERENJE</th>
+                  <th>TEŽINA NA FARMI</th>
+                  <th>TEŽINA NA PRIJEMU</th>
+                  <th class="u-text-center">KOLIČINA</th>
+                  <th class="u-text-center">UGINULO</th>
+                  <th class="u-text-center">KALO</th>
+                  <th>NAPOMENA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>PRIG/01974</td>
+                  <td>08.09.2022</td>
+                  <td>Goveda</td>
+                  <td>Junica</td>
+                  <td>AIK BACKA TOPOLA doo</td>
+                  <td>Srbija</td>
+                  <td>1</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">1,500.00</td>
+                  <td class="u-text-right">3</td>
+                  <td class="u-text-right">0</td>
+                  <td class="u-text-right">0.00</td>
+                  <td></td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- 
+
+<footer class="footer-main">
+
+</footer>
+-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="assets/js/app.js"></script>
+
+  <!-- <script>
+        $(document).ready(function(){
+            /*-------------------------------------------------*/	
+            /* =  Script
+            /*-------------------------------------------------*/
+
+        });
+    </script> -->
+
+</body>
+
+</html>
