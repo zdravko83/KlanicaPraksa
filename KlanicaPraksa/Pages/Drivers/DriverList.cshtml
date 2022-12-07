@@ -101,9 +101,9 @@
 
     <!-- TO SHOW SOME POPUP YOU NEED TO ADD CLASS '.is-active' TO .popup AND IT WILL SHOW. -->
 
-  <div class="popup">
-    <div class="popup__overlay"></div>
-        <a href="javascript:;" class="close-popup button button--green-circle">
+    <div id="UnitOfMeasurementAddEdit"  class="popup">
+        <div class="popup__overlay"></div>
+        <a id="UnitOfMeasurementClose" class="close-popup button button--green-circle">
             <img src="~/images/menu-icon-white-png-5.jpg" alt="">
         </a>
     <div class="popup__content">
@@ -210,7 +210,7 @@
      
       <div class="cart">
         <div class="cart__header cart__header--grid o-flex o-flex--center">
-          <a href="#" class="button button--green-circle">
+          <a id="UnitOfMeasurementAdd" class="button button--green-circle">
             <img src="~/images/_add.png" alt="">
           </a>
           <a href="#" class="button button--green-circle">
@@ -221,7 +221,7 @@
             <svg width="20" viewBox="0 0 512 512">
               <path fill="#7d7d7d" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z" />
             </svg>
-            <input type="text" class="input input--secondary" placeholder="KLIKNITE ZA PRETRAGU PRIJEMNICA . . .">
+            <input type="text" class="input input--secondary" placeholder="PRETRAGA . . .">
           </div>
 
           <a href="#" class="button button--green-circle">
@@ -319,6 +319,21 @@
 
 		});
 	</script> -->
+
+
+    @section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("#UnitOfMeasurementAdd").click(function () {
+                $("#UnitOfMeasurementAddEdit").addClass("is-active");
+            });
+
+            $("#UnitOfMeasurementClose").click(function () {
+                $("#UnitOfMeasurementAddEdit").removeClass("is-active");
+            });
+        });
+    </script>
+}
 
 </body>
 
