@@ -6,26 +6,745 @@
 <aside class="aside-menu cart" style="display: flex;">
     <ul class="aside-menu__list">
         <li>
-            <a href="/CountryList" class="is-active">
-                <img src="~/images/__enter.png" alt="">
+            <a href="/CountryList" >
+                <img src="~/images/__locationWhite.png" alt="">
             </a>
         </li>
         <li>
             <a href="/RegionList">
-                <img src="~/images/__enter.png" alt="">
+                <img src="~/images/__locationWhite.png" alt="">
             </a>
         </li>
         <li>
             <a href="/MunicipalityList">
-                <img src="~/images/__enter.png" alt="">
+                <img src="~/images/__locationWhite.png" alt="">
             </a>
         </li>
         <li>
-            <a href="/CityList">
-                <img src="~/images/__enter.png" alt="">
+            <a href="/CityList" class="is-active">
+                <img src="~/images/__locationWhite.png" alt="">
             </a>
         </li>
     </ul>
 </aside>
 
-<p>City</p>
+
+
+<main>
+    <div class="grid-wrapper">
+
+        <!--  Popup    -->
+        <div id="UnitOfMeasurementAddEdit" class="popup">
+            <div class="popup__overlay"></div>
+            <a id="UnitOfMeasurementClose" class="close-popup button button--green-circle">
+                <img src="images/menu-icon-white-png-5.jpg" alt="">
+            </a>
+            <div class="popup__content">
+
+                <div class="cart">
+                    <div class="cart__header">
+                        <h2 class="clr-green u-text-center mb-"><strong>OSNOVNI PODACI O JEDINICI MERE</strong></h2>
+                    </div>
+                    <div class="cart__body">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="input-box">
+                                    <p>Poštanski broj:</p>
+                                    <input type="text" class="input input--primary">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="input-box">
+                                    <p>Naziv grada:</p>
+                                    <input type="text" class="input input--primary">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="input-box">
+                                    <p>Država:</p>
+                                    <input type="text" class="input input--primary">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="input-box">
+                                    <p>Opština:</p>
+                                    <input type="text" class="input input--primary">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="u-text-center">
+                    <button class="button button--primary">
+                        <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
+                        <path fill="#fff" d="M448 71.9c-17.3-13.4-41.5-9.3-54.1 9.1L214 344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8-15.6 15.5-16.4 41.6-1.7 58.1 0 0 120.4 133.6 137.7 147 17.3 13.4 41.5 9.3 54.1-9.1l206.3-301.7c12.6-18.5 8.7-44.2-8.6-57.5z" />
+                                </svg>
+                        <strong>
+                            SAČUVAJ
+                        </strong>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart">        
+            <div class="cart__header cart__header--grid o-flex o-flex--center">
+                <a id="UnitOfMeasurementAdd" class="button button--green-circle" >
+                    <img src="images/_add.png" alt="">                
+                </a>
+                <a href="#" class="button button--green-circle">
+                    <img src="images/_sync.png" alt="">
+                </a>
+                <div class="input-box input-box--search mb0 w-100 relative">
+                    <svg width="20" viewBox="0 0 512 512">
+                        <path fill="#7d7d7d" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z" />
+                    </svg>
+                    <input type="text" class="input input--secondary" placeholder="Pretraga . . .">
+                </div>
+
+                <a href="#" class="button button--green-circle">
+                    <img src="images/_leftleft.png" alt="" style="margin-right: 3px;">
+                </a>
+                <a href="#" class="button button--green-circle">
+                    <img src="images/_left.png" alt="" style="margin-right: 3px;">
+                </a>
+                <div class="number-wrapper">
+                    1 - 50 od 1927
+                </div>
+                <a href="#" class="button button--green-circle">
+                    <img src="images/_right.png" alt="" style="margin-left: 3px;">
+                </a>
+                <a href="#" class="button button--green-circle">
+                    <img src="images/_rightright.png" alt="" style="margin-left: 3px;">
+                </a>
+            </div>
+            <div class="cart__body mt-">            
+                <table class="table mb0">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>POŠTANSKI BROJ</th>
+                            <th>NAZIV GRADA</th>
+                            <th>OPŠTINA</th>
+                            <th></th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <!-- Tables -->
+                        <tr>
+                            <td style="width: 50px;">1</td>
+                            <td style="width: 50px;">55555</td>
+                            <td>Palanzano</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50px;">2</td>
+                            <td style="width: 50px;">19304</td>
+                            <td>Jabukovac</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50px;">3</td>
+                            <td style="width: 50px;">19235</td>
+                            <td>Velika Jasikova</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50px;">4</td>
+                            <td style="width: 50px;">19250</td>
+                            <td>Majdanpek</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50px;">5</td>
+                            <td style="width: 50px;">19256</td>
+                            <td>Jasikovo</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                             <tr>
+                            <td style="width: 50px;">6</td>
+                            <td style="width: 50px;">19257</td>
+                            <td>Rudna Glava</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50px;">7</td>
+                            <td style="width: 50px;">19300</td>
+                            <td>Negotin</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50px;">8</td>
+                            <td style="width: 50px;">19303</td>
+                            <td>Štubik</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50px;">9</td>
+                            <td style="width: 50px;">19305</td>
+                            <td>Urovica</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                             <tr>
+                            <td style="width: 50px;">10</td>
+                            <td style="width: 50px;">19232</td>
+                            <td>Dubočane</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50px;">11</td>
+                            <td style="width: 50px;">19306</td>
+                            <td>Trnjane</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                             <tr>
+                            <td style="width: 50px;">12</td>
+                            <td style="width: 50px;">19307</td>
+                            <td>Plavna</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50px;">13</td>
+                            <td style="width: 50px;">19311</td>
+                            <td>Nikoličevo</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50px;">14</td>
+                            <td style="width: 50px;">19312</td>
+                            <td>Vražogrnac</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50px;">15</td>
+                            <td style="width: 50px;">19313</td>
+                            <td>Brusnik</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50px;">16</td>
+                            <td style="width: 50px;">19315</td>
+                            <td>Braćevac</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50px;">17</td>
+                            <td style="width: 50px;">19233</td>
+                            <td>Podgorac</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50px;">18</td>
+                            <td style="width: 50px;">19229</td>
+                            <td>Borski Brestovac</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50px;">19</td>
+                            <td style="width: 50px;">19318</td>
+                            <td>Rogljevo</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50px;">20</td>
+                            <td style="width: 50px;">19220</td>
+                            <td>Donji Milanovac</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50px;">21</td>
+                            <td style="width: 50px;">19210</td>
+                            <td>Bor</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50px;">22</td>
+                            <td style="width: 50px;">19213</td>
+                            <td>Donja Bela Reka</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td style="width: 50px;">23</td>
+                            <td style="width: 50px;">19214</td>
+                            <td>Rgotina</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50px;">24</td>
+                            <td style="width: 50px;">19215</td>
+                            <td>Zlot</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50px;">25</td>
+                            <td style="width: 50px;">19216</td>
+                            <td>Brestovačka Banja</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50px;">26</td>
+                            <td style="width: 50px;">19219</td>
+                            <td>Krivelj</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50px;">27</td>
+                            <td style="width: 50px;">19221</td>
+                            <td>Slatina</td>
+                            <td style="width: 50px;"></td>
+                            <td style="width: 50px;">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="mr-">
+                                        <svg height="18" width="18" viewBox="0 0 18 18">
+                                            <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="25" viewBox="0 0 48 48">
+                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("#UnitOfMeasurementAdd").click(function () {
+                $("#UnitOfMeasurementAddEdit").addClass("is-active");
+            });
+
+            $("#UnitOfMeasurementClose").click(function () {
+                $("#UnitOfMeasurementAddEdit").removeClass("is-active");
+            });
+        });
+    </script>
+}
