@@ -103,9 +103,9 @@
 
   <!-- TO SHOW SOME POPUP YOU NEED TO ADD CLASS '.is-active' TO .popup AND IT WILL SHOW. -->
 
-    <div  class="popup">
+    <div id="UnitOfMeasurementAddEdit" class="popup">
     <div class="popup__overlay"></div>
-        <a href="javascript:;" class="close-popup button button--green-circle">
+        <a id="UnitOfMeasurementClose" href="javascript:;" class="close-popup button button--green-circle">
       <img src="~/images/menu-icon-white-png-5.jpg" alt="">
     </a>
     <div class="popup__content">
@@ -152,8 +152,8 @@
 
     <div class="grid-wrapper">  
       <div class="cart">
-                <div class="cart__header cart__header--grid o-flex o-flex--center" onclick=" togglePopup()">
-                    <a href="#" class="button button--green-circle" onclick="togglePopup()">
+                <div class="cart__header cart__header--grid o-flex o-flex--center">
+                    <a href="#" id="UnitOfMeasurementAdd" class="button button--green-circle">
             <img src="~/images/_add.png" alt="">
           </a>        
           <a href="#" class="button button--green-circle">
@@ -227,22 +227,21 @@
     </div>
   </main>
 
-  <!-- 
-
-<footer class="footer-main">
-
-</footer>
--->
-
    
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="~/js/app.js"></script>
 
     <script>
         // Function to show and hide the popup
-         function togglePopup() {
-            $(".popup").toggle();
-        }
+        $(document).ready(function () {
+            $("#UnitOfMeasurementAdd").click(function () {
+                $("#UnitOfMeasurementAddEdit").addClass("is-active");
+            });
+
+            $("#UnitOfMeasurementClose").click(function () {
+                $("#UnitOfMeasurementAddEdit").removeClass("is-active");
+            });
+        });
     
     </script> 
 
