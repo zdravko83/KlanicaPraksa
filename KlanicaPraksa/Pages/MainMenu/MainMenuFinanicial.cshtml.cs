@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace KlanicaPraksa.Pages.MainMenu
 {
-    public class MaimMenuFinanicialModel : PageModel
+    public class MainMenuFinanicialModel : PageModel
     {
         public void OnGet()
         {
