@@ -3,83 +3,6 @@
 @{
 }
 
-<header class="header-main">
-    <div class="header-main__nav-left o-flex o-flex--center">
-        <a class="bars mr" href="javascript:;">
-            <svg width="22" viewBox="0 0 512 512">
-                <g data-name="1">
-                    <path fill="#fff" d="M441.13 166.52h-372a15 15 0 1 1 0-30h372a15 15 0 0 1 0 30ZM441.13 279.72h-372a15 15 0 1 1 0-30h372a15 15 0 0 1 0 30ZM441.13 392.92h-372a15 15 0 1 1 0-30h372a15 15 0 0 1 0 30Z" />
-                </g>
-            </svg>
-        </a>
-        <p class="mb0 clr-white">LOKACIJE</p>
-    </div>
-    <a href="javascript:;" class="refresh">
-        <svg height="24" width="24">
-            <path fill="#fff" d="M17.807 7C16.447 5.079 14.394 4 12 4a8 8 0 0 0-8 8H2C2 6.477 6.477 2 12 2c2.804 0 5.275 1.183 7 3.27V2h2v7h-7V7h3.807ZM6.193 17c1.36 1.921 3.413 3 5.807 3a8 8 0 0 0 8-8h2c0 5.523-4.477 10-10 10-2.804 0-5.275-1.183-7-3.27V22H3v-7h7v2H6.193Z" fill-rule="evenodd" />
-        </svg>
-    </a>
-    <nav class="header-main__nav">
-        <ul class="nav__list o-flex o-flex--center">
-            <li class="nav__list-item">
-                <a href="/MainMenuInputNote" class="nav__link is-active">
-                    <img src="~/images/nav/__input.png" alt="">
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="/MainMenuSlaughter" class="nav__link ">
-                    <img src="~/images/nav/__slaughter.png" alt="">
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="/MainMenuQuartering" class="nav__link">
-                    <img src="~/images/nav/__quarteringWhite1.png" alt="">
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="/MainMenuRefinement" class="nav__link">
-                    <img src="~/images/nav/__refinement.png" alt="">
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="/MainMenuFinalProduct" class="nav__link">
-                    <img src="~/images/nav/__finalProduct.png" alt="">
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="/MainMenuDeepFreeze" class="nav__link">
-                    <img src="~/images/nav/__freeze.png" alt="">
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="/MainMenuExpedition" class="nav__link">
-                    <img src="~/images/nav/__expedition1.png" alt="">
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="/MainMenuWorkOrders" class="nav__link">
-                    <img src="~/images/nav/__specifications.png" alt="">
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href=" /MainMenuFinancial" class="nav__link">
-                    <img src="~/images/nav/__euro.png" alt="">
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="/MainMenuBasic" class="nav__link">
-                    <img src="~/images/nav/__edit1.png" alt="">
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="/MainMenuAdmin" class="nav__link">
-                    <img src="~/images/nav/__admin.png" alt="">
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-
 
 <aside class="aside-menu cart" style="display: flex;">
     <ul class="aside-menu__list">
@@ -106,51 +29,51 @@
     </ul>
 </aside>
 
-<main>
-    <div class="grid-wrapper">
+<!--  Popup    -->
+<div id="Regionlist" class="popup">
+    <div class="popup__overlay"></div>
+    <a id="RegionlistClose" class="close-popup button button--green-circle">
+        <img src="images/menu-icon-white-png-5.jpg" alt="">
+    </a>
+    <div class="popup__content">
 
-        <!--  Popup    -->
-        <div id="Regionlist" class="popup">
-            <div class="popup__overlay"></div>
-            <a id="RegionlistClose" class="close-popup button button--green-circle">
-                <img src="images/menu-icon-white-png-5.jpg" alt="">
-            </a>
-            <div class="popup__content">
-
-                <div class="cart">
-                    <div class="cart__header">
-                        <h2 class="clr-green u-text-center mb-"><strong>OSNOVNI PODACI O DRŽAVAMA</strong></h2>
+        <div class="cart">
+            <div class="cart__header">
+                <h2 class="clr-green u-text-center mb-"><strong>OSNOVNI PODACI O DRŽAVAMA</strong></h2>
+            </div>
+            <div class="cart__body">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="input-box">
+                            <p>ŠIFRA(AUTOMATSKI):</p>
+                            <input type="text" class="input input--primary">
+                        </div>
                     </div>
-                    <div class="cart__body">
-                        <div class="row">
-                            <div class="col-xs-12 col-md-6">
-                                <div class="input-box">
-                                    <p>ŠIFRA(AUTOMATSKI):</p>
-                                    <input type="text" class="input input--primary">
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="input-box">
-                                    <p>NAZIV REGIONA</p>
-                                    <input type="text" class="input input--primary">
-                                </div>
-                            </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="input-box">
+                            <p>NAZIV REGIONA</p>
+                            <input type="text" class="input input--primary">
                         </div>
                     </div>
                 </div>
-
-                <div class="u-text-center">
-                    <button class="button button--primary">
-                        <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
-                        <path fill="#fff" d="M448 71.9c-17.3-13.4-41.5-9.3-54.1 9.1L214 344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8-15.6 15.5-16.4 41.6-1.7 58.1 0 0 120.4 133.6 137.7 147 17.3 13.4 41.5 9.3 54.1-9.1l206.3-301.7c12.6-18.5 8.7-44.2-8.6-57.5z" />
-                                </svg>
-                        <strong>
-                            PROKNJIŽI
-                        </strong>
-                    </button>
-                </div>
             </div>
         </div>
+
+        <div class="u-text-center">
+            <button class="button button--primary">
+                <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
+                <path fill="#fff" d="M448 71.9c-17.3-13.4-41.5-9.3-54.1 9.1L214 344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8-15.6 15.5-16.4 41.6-1.7 58.1 0 0 120.4 133.6 137.7 147 17.3 13.4 41.5 9.3 54.1-9.1l206.3-301.7c12.6-18.5 8.7-44.2-8.6-57.5z" />
+                                </svg>
+                <strong>
+                    PROKNJIŽI
+                </strong>
+            </button>
+        </div>
+    </div>
+</div>
+
+<main class="w-100">
+    <div class="grid-wrapper">
 
         <div class="cart">
             <div class="cart__header cart__header--grid o-flex o-flex--center">
