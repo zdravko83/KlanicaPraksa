@@ -1620,7 +1620,7 @@ a {
   .grid-wrapper.grid-wrapper-two-columns {
     grid-template-columns: auto 1fr; }
   .grid-wrapper.grid-wrapper-three-columns{
-    grid-template-columns: 0.6fr 1fr 1fr; }
+    grid-template-columns: 0.5fr 1fr 1fr; }
   .grid-wrapper.grid-wrapper-single-row {
     grid-template-rows: 1fr; }
   .grid-wrapper.grid-wrapper-three-row {
