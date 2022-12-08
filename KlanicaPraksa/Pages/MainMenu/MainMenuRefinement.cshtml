@@ -1,85 +1,11 @@
 ﻿@page "/MainMenuRefinement"
 @model KlanicaPraksa.Pages.MainMenu.MainMenuRefinementModel
 
-<header class="header-main">
-    <div class="header-main__nav-left o-flex o-flex--center">
-        <a class="bars mr" href="javascript:;">
-            <svg width="22" viewBox="0 0 512 512">
-                <g data-name="1">
-                    <path fill="#fff" d="M441.13 166.52h-372a15 15 0 1 1 0-30h372a15 15 0 0 1 0 30ZM441.13 279.72h-372a15 15 0 1 1 0-30h372a15 15 0 0 1 0 30ZM441.13 392.92h-372a15 15 0 1 1 0-30h372a15 15 0 0 1 0 30Z" />
-                </g>
-            </svg>
-        </a>
-        <p class="mb0 clr-white">RASECANJE</p>
-    </div>
-    <a href="javascript:;" class="refresh">
-        <svg height="24" width="24">
-            <path fill="#fff" d="M17.807 7C16.447 5.079 14.394 4 12 4a8 8 0 0 0-8 8H2C2 6.477 6.477 2 12 2c2.804 0 5.275 1.183 7 3.27V2h2v7h-7V7h3.807ZM6.193 17c1.36 1.921 3.413 3 5.807 3a8 8 0 0 0 8-8h2c0 5.523-4.477 10-10 10-2.804 0-5.275-1.183-7-3.27V22H3v-7h7v2H6.193Z" fill-rule="evenodd" />
-        </svg>
-    </a>
-    <nav class="header-main__nav">
-        <ul class="nav__list o-flex o-flex--center">
-            <li class="nav__list-item">
-                <a href="/MainMenuInputNote" class="nav__link">
-                    <img src="~/images/nav/__input.png" alt="">
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="/MainMenuSlaughter" class="nav__link ">
-                    <img src="~/images/nav/__slaughter.png" alt="">
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="/MainMenuQuartering" class="nav__link">
-                    <img src="~/images/nav/__quarteringWhite1.png" alt="">
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="/MainMenuRefinement" class="nav__link is-active">
-                    <img src="~/images/nav/__refinement.png" alt="">
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="/MainMenuFinalProduct" class="nav__link">
-                    <img src="~/images/nav/__finalProduct.png" alt="">
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="/MainMenuDeepFreeze" class="nav__link">
-                    <img src="~/images/nav/__freeze.png" alt="">
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="/MainMenuExpedition" class="nav__link">
-                    <img src="~/images/nav/__expedition1.png" alt="">
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="/MainMenuWorkOrders" class="nav__link">
-                    <img src="~/images/nav/__specifications.png" alt="">
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href=" /MainMenuFinancial" class="nav__link">
-                    <img src="~/images/nav/__euro.png" alt="">
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="/MainMenuBasic" class="nav__link">
-                    <img src="~/images/nav/__edit1.png" alt="">
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="/MainMenuAdmin" class="nav__link">
-                    <img src="~/images/nav/__admin.png" alt="">
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
+
 
 <main class="w-100">
     <div class="cart w-100 cart-main-menu">
+        <!--SVINJA RASECANJE-->
         <ul class="o-flex o-flex--center">
             <li>
                 <a href="#" class="menu-link menu-link--green">
@@ -90,7 +16,7 @@
                     </span>
                 </a>
             </li>
-            <li>
+            <li style="margin-left:2rem">
                 <a href="#" class="menu-link menu-link--green">
                     <img src="~/images/__refinementPig.png" alt="">
                     <span>
@@ -111,7 +37,7 @@
                     <span>IZLAZ</span>
                 </a>
             </li>
-            <li>
+            <li style="margin-left:2rem">
                 <a href="#" class="menu-link menu-link--green">
                     <img src="~/images/___subsequentEnterRefinementPig.png" alt="">
                     <span>
@@ -138,7 +64,7 @@
                     </span>
                 </a>
             </li>
-            <li>
+            <li style="margin-left:2rem">
                 <a href="#" class="menu-link menu-link--green">
                     <img src="~/images/__reviewRefinementPig.png" alt="">
                     <span>PREGLED</span>
@@ -151,6 +77,7 @@
                 </a>
             </li>
         </ul>
+        <!--GRLA RASECANJE-->
         <ul class="o-flex o-flex--center">
             <li>
                 <a href="#" class="menu-link menu-link--dark-grey">
@@ -161,7 +88,7 @@
                     </span>
                 </a>
             </li>
-            <li>
+            <li style="margin-left:2rem">
                 <a href="#" class="menu-link menu-link--dark-grey">
                     <img src="~/images/__refinementCow.png" alt="">
                     <span>
@@ -182,7 +109,7 @@
                     <span>IZLAZ</span>g
                 </a>
             </li>
-            <li>
+            <li style="margin-left:2rem">
                 <a href="#" class="menu-link menu-link--dark-grey">
                     <img src="~/images/___subsequentEnterRefinementCow.png" alt="">
                     <span>
@@ -209,7 +136,7 @@
                     </span>
                 </a>
             </li>
-            <li>
+            <li style="margin-left:2rem">
                 <a href="#" class="menu-link menu-link--dark-grey">
                     <img src="~/images/__reviewRefinementCow.png" alt="">
                     <span>PREGLED</span>
@@ -222,6 +149,7 @@
                 </a>
             </li>
         </ul>
+        <!--JAGANJACA RASECANJE-->
         <ul class="o-flex o-flex--center">
             <li>
                 <a href="#" class="menu-link menu-link--green">
@@ -232,7 +160,7 @@
                     </span>
                 </a>
             </li>
-            <li>
+            <li style="margin-left:2rem">
                 <a href="#" class="menu-link menu-link--green">
                     <img src="~/images/___lambRefinement.png" alt="">
                     <span>
@@ -253,7 +181,7 @@
                     <span>IZLAZ</span>
                 </a>
             </li>
-            <li>
+            <li style="margin-left:2rem">
                 <a href="#" class="menu-link menu-link--green">
                     <img src="~/images/___subsequentEnterRefinementPig.png" alt="">
                     <span>
@@ -280,7 +208,7 @@
                     </span>
                 </a>
             </li>
-            <li>
+            <li style="margin-left:2rem">
                 <a href="#" class="menu-link menu-link--green">
                     <img src="~/images/__reviewLamb.png" alt="">
                     <span>PREGLED</span>
@@ -293,6 +221,7 @@
                 </a>
             </li>
         </ul>
+        <!--MESO LAGER-->
         <ul class="o-flex o-flex--center">
             <li>
                 <a href="#" class="menu-link menu-link--dark-grey">
@@ -312,7 +241,7 @@
                     </span>
                 </a>
             </li>
-            <li>
+            <li style="margin-left:2rem">
                 <a href="#" class="menu-link menu-link--dark-grey">
                     <img src="~/images/___meatRefinementList.png" alt="">
                     <span>
@@ -349,6 +278,7 @@
                 </a>
             </li>
         </ul>
+        <!--IZVEŠTAJ-->
         <ul class="o-flex o-flex--center">
             <li>
                 <a href="#" class="menu-link menu-link--green">
@@ -374,11 +304,11 @@
                     </span>
                 </a>
             </li>
-            <li>
+            <li style="margin-left:2rem">
                 <a href="#" class="menu-link menu-link--green">
                     <img src="~/images/__specificationsRefinement.png" alt="">
                     <span>
-                        RESECANJE
+                        RASECANJE
                         <br />SPECIFIKACIJA
                     </span>
                 </a>
@@ -396,17 +326,17 @@
                 <a href="#" class="menu-link menu-link--green">
                     <img src="~/images/__stock.png" alt="">
                     <span>
-                        MAGACIN
+                        MAGACINI
                         <br />VIDLJIVOST
                     </span>
                 </a>
             </li>
-            <li>
+            <li style="margin-left:2rem">
                 <a href="#" class="menu-link menu-link--green">
                     <img src="~/images/__labelRefinement.png" alt="">
                     <span>ETIKETA</span>
                 </a>
             </li>
-      
+         </ul>
     </div>
 </main>
