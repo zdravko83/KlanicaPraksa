@@ -1605,11 +1605,12 @@ a {
     gap: 10px; }
 
 .grid-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
-  gap: 10px;
-  width: 100%; }
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+    width: 100%;
+}
   .grid-wrapper.grid-wrapper-four-row {
     grid-template-rows: auto auto auto 1fr; }
   .grid-wrapper.grid-wrapper-five-row {
@@ -1618,6 +1619,8 @@ a {
     grid-template-rows: auto auto auto auto auto 1fr; }
   .grid-wrapper.grid-wrapper-two-columns {
     grid-template-columns: auto 1fr; }
+  .grid-wrapper.grid-wrapper-three-columns{
+    grid-template-columns: 0.6fr 1fr 1fr; }
   .grid-wrapper.grid-wrapper-single-row {
     grid-template-rows: 1fr; }
   .grid-wrapper.grid-wrapper-three-row {
