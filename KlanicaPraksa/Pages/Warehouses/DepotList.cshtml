@@ -6,127 +6,117 @@
 
 
 
-
-    <div id="UnitOfMeasurementAddEdit" class="popup">
+<!--Popup-->
+  <div id="UnitOfMeasurementAddEdit" class="popup">
     <div class="popup__overlay"></div>
         <a id="UnitOfMeasurementClose" href="javascript:;" class="close-popup button button--green-circle">
-      <img src="~/images/menu-icon-white-png-5.jpg" alt="">
-    </a>
-    <div class="popup__content">
-
-      <div class="cart">
-        <div class="cart__header">
-          <h2 class="clr-green u-text-center mb-"><strong>OSNOVNI PODACI</strong></h2>
-        </div>
-        <div class="cart__body">
-          <div class="row">
-            <div class="col-xs-12 col-md-6">
+          <img src="~/images/menu-icon-white-png-5.jpg" alt="">
+        </a>
+      <div class="popup__content">
+       <div class="cart">
+         <div class="cart__header">
+           <h2 class="clr-green u-text-center mb-"><strong>OSNOVNI PODACI</strong></h2>
+         </div>
+          <div class="cart__body">
+           <div class="row">
+             <div class="col-xs-12 col-md-6">
               <div class="input-box">
                 <p>ŠIFRA :</p>
-                <input type="text" class="input input--primary">
+                 <input type="text" class="input input--primary">
               </div>
-            </div>
-         
-            <div class="col-xs-12 col-md-6">
+             </div>         
+             <div class="col-xs-12 col-md-6">
               <div class="input-box">
                 <p>IME (DEPOA) :</p>
-                <input type="text" class="input input--primary">
+                 <input type="text" class="input input--primary">
               </div>
-            </div>                      
+             </div>                      
+           </div>
           </div>
-        </div>
+       </div>
+         <div class="u-text-center">
+          <button class="button button--primary">
+           <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
+             <path fill="#fff" d="M448 71.9c-17.3-13.4-41.5-9.3-54.1 9.1L214 344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8-15.6 15.5-16.4 41.6-1.7 58.1 0 0 120.4 133.6 137.7 147 17.3 13.4 41.5 9.3 54.1-9.1l206.3-301.7c12.6-18.5 8.7-44.2-8.6-57.5z" />
+           </svg>
+            <strong>SAČUVAJ</strong>
+          </button>
+       </div>
       </div>
-
-      <div class="u-text-center">
-        <button class="button button--primary">
-          <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
-            <path fill="#fff" d="M448 71.9c-17.3-13.4-41.5-9.3-54.1 9.1L214 344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8-15.6 15.5-16.4 41.6-1.7 58.1 0 0 120.4 133.6 137.7 147 17.3 13.4 41.5 9.3 54.1-9.1l206.3-301.7c12.6-18.5 8.7-44.2-8.6-57.5z" />
-          </svg>
-          <strong>
-            SAČUVAJ
-          </strong>
-        </button>
-      </div>
-
-    </div>
   </div>
-
- 
+ <!--Depoi-->
   <main>
-
     <div class="grid-wrapper">  
       <div class="cart">
-                <div class="cart__header cart__header--grid o-flex o-flex--center">
-                    <a href="#" id="UnitOfMeasurementAdd" class="button button--green-circle">
-            <img src="~/images/_add.png" alt="">
-          </a>        
-          <a href="#" class="button button--green-circle">
-            <img src="~/images/_sync.png" alt="">
-          </a>
-          <a href="#" class="button button--green-circle">
-            <img src="~/images/Excel01.png" alt="">
-          </a>
-
-          <div class="input-box input-box--search mb0 w-100 relative">
+         <div class="cart__header cart__header--grid o-flex o-flex--center">
+           <a href="#" id="UnitOfMeasurementAdd" class="button button--green-circle">
+             <img src="~/images/_add.png" alt="">
+           </a>        
+           <a href="#" class="button button--green-circle">
+             <img src="~/images/_sync.png" alt="">
+           </a>
+           <a href="#" class="button button--green-circle">
+             <img src="~/images/Excel01.png" alt="">
+           </a>
+         <div class="input-box input-box--search mb0 w-100 relative">
             <svg width="20" viewBox="0 0 512 512">
               <path fill="#7d7d7d" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z" />
             </svg>
-            <input type="text" class="input input--secondary" placeholder="PRETRAGA . . .">
-          </div>
-
-          <a href="#" class="button button--green-circle">
-            <img src="~/images/_leftleft.png" alt="" style="margin-right: 3px;">
-          </a>
-          <a href="#" class="button button--green-circle">
-            <img src="~/images/_left.png" alt="" style="margin-right: 3px;">
-          </a>
-          <div class="number-wrapper">
+             <input type="text" class="input input--secondary" placeholder="PRETRAGA . . .">
+         </div>
+           <a href="#" class="button button--green-circle">
+             <img src="~/images/_leftleft.png" alt="" style="margin-right: 3px;">
+           </a>
+           <a href="#" class="button button--green-circle">
+             <img src="~/images/_left.png" alt="" style="margin-right: 3px;">
+           </a>
+         <div class="number-wrapper">
             1 - 50 od 1927
-          </div>
-          <a href="#" class="button button--green-circle">
-            <img src="~/images/_right.png" alt="" style="margin-left: 3px;">
-          </a>
-          <a href="#" class="button button--green-circle">
-            <img src="~/images/_rightright.png" alt="" style="margin-left: 3px;">
-          </a>
-        </div>
-        <div class="cart__body mt-">
-          <div class="table-responsive" style="max-height: 77vh;">
-            <table class="table mb0">
-              <thead>
-                <tr style="width:100%">
-                  <th></th>
-                  <th>ŠIFRA</th>
-                  <th>NAZIV</th>
-                  <th></th>
-                </tr>
-              </thead>
+         </div>
+           <a href="#" class="button button--green-circle">
+             <img src="~/images/_right.png" alt="" style="margin-left: 3px;">
+           </a>
+           <a href="#" class="button button--green-circle">
+             <img src="~/images/_rightright.png" alt="" style="margin-left: 3px;">
+           </a>
+         </div>
+  <!--Izgled Depoa-->
+    <div class="cart__body mt-">
+      <div class="table-responsive" style="max-height: 77vh;">
+        <table class="table mb0">
+          <thead>
+            <tr style="width:100%">
+              <th></th>
+              <th>ŠIFRA</th>
+              <th>NAZIV</th>
+              <th></th>
+            </tr>
+          </thead>
               <tbody>
                 <tr style="width:100%">
                   <td style="width:50px;">1</td>
                   <td style="width:50px;">1</td>
                   <td>DEPOT 1</td>
-                                   <td style="width: 50px;">
-                                       <div class="o-flex o-flex--center">
-                                           <a href="#" class="mr-">
-                                              <svg height="18" width="18" viewBox="0 0 18 18">
-                                               <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd"></path>
-                                          </svg>
-                                          </a>
-
-                                        <a href="#">
-                                         <svg width="25" viewBox="0 0 48 48">
-                                             <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
-                                      <path d="M0 0h48v48H0z" fill="none"></path>
-                             </svg>
-                                </a>
-                        </div>
-                    </td>
+                  <td style="width: 50px;">
+                  <div class="o-flex o-flex--center">
+                    <a href="#" class="mr-">
+                      <svg height="18" width="18" viewBox="0 0 18 18">
+                        <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd"></path>
+                      </svg>
+                     </a>
+                    <a href="#">
+                      <svg width="25" viewBox="0 0 48 48">
+                        <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                        <path d="M0 0h48v48H0z" fill="none"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  </td>
                 </tr>               
               </tbody>
-            </table>
-          </div>
+         </table>
         </div>
+       </div>
       </div>
     </div>
   </main>
