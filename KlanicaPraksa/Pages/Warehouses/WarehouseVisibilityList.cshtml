@@ -35,7 +35,162 @@
                 <img src="~/images/__enter.png" alt="">
             </a>
         </li>
+        <li>
+            <a href="/WarehouseVisibilityList">
+                <img src="~/images/__enter.png" alt="">
+            </a>
+        </li>
     </ul>
 </aside>
 
-Warehouse visibility
+
+<main class="w-100">
+    <div class="grid-wrapper grid-wrapper-single-row" style="grid-template-columns: 1fr 1fr;">
+        <div class="grid-wrapper grid-wrapper-single-row">
+            <div class="cart">
+                <div class="cart__header o-flex o-flex--center o-flex--justify pb-" style="border-bottom: 1px solid #444444;">
+                    <h4 class="mb0">MAGACINI</h4>
+                </div>
+                <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--">
+                    <a href="#" class="button button--green-circle">
+                        <img src="~/images/_sync.png" alt="">
+                    </a>
+                    <div class="input-box input-box--search mb0 w-100 relative">
+                        <svg width="20" viewBox="0 0 512 512">
+                            <path fill="#7d7d7d" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z" />
+                        </svg>
+                        <input type="text" class="input input--secondary" placeholder="PRETRAGA . . .">
+                    </div>
+                </div>
+                <div class="cart__body mt-">
+                    <div class="table-responsive" style="max-height: 77vh;">
+                        <table class="table mb0">
+                            <thead>
+                                <tr>
+                                    <th style="width:50px"></th>
+                                    <th style="width:50px">ŠIFRA</th>
+                                    <th>IME PROIZVODA</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>Refinement prechamber</td>
+                                    <td style="width: 40px;"><a href="#"><img src="~/images/angle-double-right.png" width="20" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>Expedition</td>
+                                    <td style="width: 40px;"><a href="#"><img src="~/images/angle-double-right.png" width="20" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>Deep freeze prechamber</td>
+                                    <td style="width: 40px;"><a href="#"><img src="~/images/angle-double-right.png" width="20" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>Deep freeze</td>
+                                    <td style="width: 40px;"><a href="#"><img src="~/images/angle-double-right.png" width="20" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>Entrail</td>
+                                    <td style="width: 40px;"><a href="#"><img src="~/images/angle-double-right.png" width="20" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td>Final products prechamber</td>
+                                    <td style="width: 40px;"><a href="#"><img src="~/images/angle-double-right.png" width="20" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>Skin</td>
+                                    <td style="width: 40px;"><a href="#"><img src="~/images/angle-double-right.png" width="20" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>10</td>
+                                    <td>Package</td>
+                                    <td style="width: 40px;"><a href="#"><img src="~/images/angle-double-right.png" width="20" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>11</td>
+                                    <td>Final products</td>
+                                    <td style="width: 40px;"><a href="#"><img src="~/images/angle-double-right.png" width="20" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>12</td>
+                                    <td>Final products - packed</td>
+                                    <td style="width: 40px;"><a href="#"><img src="~/images/angle-double-right.png" width="20" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>13</td>
+                                    <td>Spices</td>
+                                    <td style="width: 40px;"><a href="#"><img src="~/images/angle-double-right.png" width="20" alt=""></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!--druga tabela-->
+        <div class="grid-wrapper grid-wrapper-single-row">
+            <div class="cart">
+                <div class="cart__header o-flex o-flex--center o-flex--justify pb-" style="border-bottom: 1px solid #444444;">
+                    <h4 class="mb0">ARTIKLI KOJI SU VIDLJIVI NA KLANJU</h4>
+                </div>
+                <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--">
+                    <div class="input-box input-box--search mb0 w-100 relative">
+                        <svg width="20" viewBox="0 0 512 512">
+                            <path fill="#7d7d7d" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z" />
+                        </svg>
+                        <input type="text" class="input input--secondary" placeholder="PRETRAGA . . .">
+                    </div>
+                </div>
+                <div class="cart__body mt-">
+                    <div class="table-responsive" style="max-height: 77vh;">
+                        <table class="table mb0">
+                            <thead>
+                                <tr>
+                                    <th style="width:50px"></th>
+                                    <th style="width:50px">ŠIFRA</th>
+                                    <th>IME PROIZVODA</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>Warm carcase</td>
+                                    <td style="width: 40px;"><a href="#"><img src="~/images/angle-double-left.png" width="20" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>9</td>
+                                    <td>SPZP</td>
+                                    <td style="width: 40px;"><a href="#"><img src="~/images/angle-double-left.png" width="20" alt=""></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
