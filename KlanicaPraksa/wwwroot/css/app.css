@@ -1351,6 +1351,7 @@ a {
     border-right: 1px solid #a2a2a2;
     color: #000000;
     font-size: 12px;
+    height: 30px;
     vertical-align: middle;
     transition: all .3s ease; }
     .table td:not(:first-child) {
@@ -1625,7 +1626,8 @@ a {
     grid-template-rows: 1fr; }
   .grid-wrapper.grid-wrapper-three-row {
     grid-template-rows: auto auto 1fr; }
-
+  .grid-wrapper.grid-wrapper-two-row{
+    grid-template-rows: auto 1fr;}
 .aside-menu {
   width: 60px;
   display: flex;
