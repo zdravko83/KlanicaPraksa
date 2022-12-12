@@ -7,15 +7,728 @@
     <ul class="aside-menu__list">
         <li>
             <a href="/StockItemByProduct" class="is-active">
-                <img src="~/images/__enter.png" alt="">
+                <img src="~/images/__MesoWhite.png" alt="">
             </a>
         </li>
         <li>
             <a href="/StockItemByWarehouse">
-                <img src="~/images/__enter.png" alt="">
+                <img src="~/images/__stock.png" alt="">
             </a>
         </li>
     </ul>
 </aside>
 
-STOCK ITEM BY PRODUCT
+
+
+<main>
+
+    <div class="grid-wrapper grid-wrapper-single-row grid-wrapper-two-columns">
+        <div class="cart">
+                <div class="cart__header o-flex o-flex--center o-flex--justify pb-" style="border-bottom: 1px solid #444444;">
+                    <h4 class="mb0">ARTIKLI</h4>
+                </div>
+                <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--">
+                    <div class="input-box input-box--search mb0 w-100 relative">
+                        <svg width="20" viewBox="0 0 512 512">
+                            <path fill="#7d7d7d" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z" />
+                        </svg>
+                        <input type="text" class="input input--secondary" placeholder="PRETRAGA . . .">
+                    </div>
+                    <a href="#" class="button button--green-circle">
+                        <svg width="30" viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path fill="#fff" d="M7 7V3a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-4v3.993c0 .556-.449 1.007-1.007 1.007H3.007A1.006 1.006 0 0 1 2 20.993l.003-12.986C2.003 7.451 2.452 7 3.01 7H7zm2 0h6.993C16.549 7 17 7.449 17 8.007V15h3V4H9v3zm-.497 11 5.656-5.657-1.414-1.414-4.242 4.243L6.38 13.05l-1.414 1.414L8.503 18z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="button button--green-circle">
+                        <svg width="34" viewBox="0 0 512 512">
+                            <path fill="#fff" d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48Zm75.31 260.69a16 16 0 1 1-22.62 22.62L256 278.63l-52.69 52.68a16 16 0 0 1-22.62-22.62L233.37 256l-52.68-52.69a16 16 0 0 1 22.62-22.62L256 233.37l52.69-52.68a16 16 0 0 1 22.62 22.62L278.63 256Z" />
+                        </svg>
+                    </a>
+                    <a id="ProductList" class="button button--green-circle">
+                        <img src="images/Print.png" alt="">
+                    </a>
+                </div>
+                <!--ARTIKLI-->
+                <div class="cart__body">
+                    <div class="table-responsive">
+                        <table class="table mb0">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th>NAZIV</th>
+                                    <th>KOM</th>
+                                    <th>KG</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check1" type="checkbox" name="">
+                                            <label for="check1">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>4000(Svinjska polutka)</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">253,243.32</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check2" type="checkbox" name="">
+                                            <label for="check2">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>400219(SPZP III kategorija)</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">72,644.64</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check3" type="checkbox" name="" checked>
+                                            <label for="check3">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>7520(Jetra svinjska)</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">9,743.09</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check4" type="checkbox" name="" checked>
+                                            <label for="check4">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>7526(Pluca svinjska)</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">9,743.09</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check5" type="checkbox" name="" checked>
+                                            <label for="check5">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>5174(Kosti svinjske ne jestive)</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">9,229.20</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check6" type="checkbox" name="">
+                                            <label for="check6">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>4069(Neobradjena slanina)</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">8,100.30</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check7" type="checkbox" name="">
+                                            <label for="check7">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>4329(Obradjena slanina)</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">6,715.40</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check8" type="checkbox" name="">
+                                            <label for="check8">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>4011(Prasce meso)</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">4,584.94</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check9" type="checkbox" name="">
+                                            <label for="check9">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>4004(Francuska obrada)</td>
+                                    <td class="u-text-right">1</td>
+                                <td class="u-text-right">4,302.25</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check10" type="checkbox" name="">
+                                            <label for="check10">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>4472(Mesni obresci)</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">3,181.70</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check11" type="checkbox" name="">
+                                            <label for="check11">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>4003(Polutka od krmaca)</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">2,956.74</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check12" type="checkbox" name="">
+                                            <label for="check12">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>7685(Cvrsno mesno tkivo)</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">2,950.32</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check13" type="checkbox" name="">
+                                            <label for="check13">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>4001(Svinjska polutka)</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">2,443.15</td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check14" type="checkbox" name="">
+                                            <label for="check14">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>4201(But BK svinjski r)</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">2,184.91</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check15" type="checkbox" name="">
+                                            <label for="check15">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>4361(Ledja i slanina bez)</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">1923.42</td>
+                                </tr>
+                                <tr>
+                                    <td>16</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check16" type="checkbox" name="">
+                                            <label for="check16">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>7540(Srce svinjsko)</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">1,734.12</td>
+                                </tr>
+                                <tr>
+                                    <td>17</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check17" type="checkbox" name="">
+                                            <label for="check17">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>7512(Grkljan svinjski)</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">1,713.38</td>
+                                </tr>
+                                <tr>
+                                    <td>18</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check18" type="checkbox" name="">
+                                            <label for="check18">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>4014(But SK bez koze svinjski)</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">1,700.20</td>
+                                </tr>
+                                <tr>
+                                    <td>19</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check19" type="checkbox" name="">
+                                            <label for="check19">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>7579(Maramica svinjska)</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">1,604.80</td>
+                                </tr>
+                                <tr>
+                                    <td>20</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check20" type="checkbox" name="">
+                                            <label for="check20">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>7547(Glava sa kostima svinjska)</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">1,567.42</td>
+                                </tr>
+                                <tr>
+                                    <td>21</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check21" type="checkbox" name="">
+                                            <label for="check21">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>4060(Vrat SK svinjski ras)</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">1,540.71</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check22" type="checkbox" name="">
+                                            <label for="check22">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>4475(Mesni obresci 50/50)</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">1,526.60</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        
+        <!--GRUPNI PRIKAZ ARTIKALA-->
+        <div class="grid-wrapper grid-wrapper-two-row" style="grid-template-rows: 1fr 1fr ;">
+
+            <div class="cart">
+                <div class="cart__header o-flex o-flex--center o-flex--justify pb-" style="border-bottom: 1px solid #444444;">
+                    <h4 class="mb0">GRUPNI PRIKAZ ARTIKALA</h4>
+                </div>
+                <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--">
+                    <a href="#" class="button button--green-circle">
+                        <svg width="30" viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path fill="#fff" d="M7 7V3a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-4v3.993c0 .556-.449 1.007-1.007 1.007H3.007A1.006 1.006 0 0 1 2 20.993l.003-12.986C2.003 7.451 2.452 7 3.01 7H7zm2 0h6.993C16.549 7 17 7.449 17 8.007V15h3V4H9v3zm-.497 11 5.656-5.657-1.414-1.414-4.242 4.243L6.38 13.05l-1.414 1.414L8.503 18z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="button button--green-circle">
+                        <svg width="34" viewBox="0 0 512 512">
+                            <path fill="#fff" d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48Zm75.31 260.69a16 16 0 1 1-22.62 22.62L256 278.63l-52.69 52.68a16 16 0 0 1-22.62-22.62L233.37 256l-52.68-52.69a16 16 0 0 1 22.62-22.62L256 233.37l52.69-52.68a16 16 0 0 1 22.62 22.62L278.63 256Z" />
+                        </svg>
+                    </a>
+                    <div class="input-box input-box--search mb0 w-100 relative">
+                        <svg width="20" viewBox="0 0 512 512">
+                            <path fill="#7d7d7d" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z" />
+                        </svg>
+                        <input type="text" class="input input--secondary" placeholder="Pretraga . . .">
+                    </div>
+                    <a id="ProductList" class="button button--green-circle">
+                        <img src="images/Icons_now/_excel.png" alt="">
+                    </a>
+                </div>
+
+                <div class="cart__body">
+                    <div class="table-responsive">
+                        <table class="table mb0">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th>ARTIKAL</th>
+                                    <th>MAGACIN</th>
+                                    <th>KOM</th>
+                                    <th>KG</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check23" type="checkbox" name="">
+                                            <label for="check23">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>7520(Jetra svinjska)</td>
+                                    <td>Magacin iznutrica</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">18,914.87</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check24" type="checkbox" name="">
+                                            <label for="check24">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>7526(Pluca svinjska)</td>
+                                    <td>SPZP</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">9,743.09</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check25" type="checkbox" name="">
+                                            <label for="check25">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>5174(Kosti svinjske ne jestive)</td>
+                                    <td>SPZP</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">8,363.90</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check26" type="checkbox" name="">
+                                            <label for="check26">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>5174(Kosti svinjske ne jestive)</td>
+                                    <td>Ekspedicije svežeg mesa</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">865.30</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check27" type="checkbox" name="">
+                                            <label for="check27">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>7520(Jetra svinjska)</td>
+                                    <td>Ekspedicije svežeg mesa</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">64.66</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--POJEDINACNI PRIKAZ ARTIKALA-->
+            <div class="cart">
+                <div class="cart__header cart__header--grid o-flex o-flex--center o-flex--justify pb-">
+                    <h4 class="mb0">POJEDINAČNI PRIKAZ ARTIKALA</h4>
+                    <div class="o-flex o-flex--center">
+                        <a href="#" class="button button--green-circle" style="margin-right:3px">
+                            <img src="~/images/_leftleft.png" alt="">
+                        </a>
+                        <a href="#" class="button button--green-circle"  style="margin-right: 3px;">
+                            <img src="~/images/_left.png" alt="">
+                        </a>
+                        <div class="number-wrapper">
+                            1 - 50 od 113
+                        </div>
+                        <a href="#" class="button button--green-circle" style="margin-left: 3px;">
+                            <img src="~/images/_right.png" alt="">
+                        </a>
+                        <a href="#" class="button button--green-circle" style="margin-left: 3px;">
+                            <img src="~/images/_rightright.png" alt="">
+                        </a>
+                        <a id="ProductList" class="button button--green-circle" style="margin-left: 3px;">
+                            <img src="images/Icons_now/_excel.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="cart__body">
+                    <div class="table-responsive">
+                        <table class="table mb0">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th>LOT</th>
+                                    <th>ARTIKAL</th>
+                                    <th>BARKOD</th>
+                                    <th>MAGACIN</th>
+                                    <th>KG</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check28" type="checkbox" name="">
+                                            <label for="check28">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>KLS/01800</td>
+                                    <td>7526(Pluca svinjska) - Ohladjeno</td>
+                                    <td>01860000000752631030183601000180000213151</td>
+                                    <td>SPZP</td>
+                                    <td class="u-text-right">18.36</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check29" type="checkbox" name="">
+                                            <label for="check29">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>KLS/01799</td>
+                                    <td>7526(Pluca svinjska) - Ohladjeno</td>
+                                    <td>01860000000752631031150001000179900213140</td>
+                                    <td>SPZP</td>
+                                    <td class="u-text-right">115.00</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check30" type="checkbox" name="">
+                                            <label for="check30">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>KLS/01797</td>
+                                    <td>7526(Pluca svinjska) - Ohladjeno</td>
+                                    <td>01860000000752631030968001000179700213019</td>
+                                    <td>SPZP</td>
+                                    <td class="u-text-right">96.80</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check31" type="checkbox" name="">
+                                            <label for="check31">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>KLS/01796</td>
+                                    <td>7526(Pluca svinjska) - Ohladjeno</td>
+                                    <td>01860000000752631031090001000179600212666</td>
+                                    <td>SPZP</td>
+                                    <td class="u-text-right">109.00</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check32" type="checkbox" name="">
+                                            <label for="check32">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>KLS/01795</td>
+                                    <td>7526(Pluca svinjska) - Ohladjeno</td>
+                                    <td>01860000000752631030525001000179500212597</td>
+                                    <td>SPZP</td>
+                                    <td class="u-text-right">52.50</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check33" type="checkbox" name="">
+                                            <label for="check33">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>KLS/01794</td>
+                                    <td>7526(Pluca svinjska) - Ohladjeno</td>
+                                    <td>01860000000752631030280001000179400212488</td>
+                                    <td>SPZP</td>
+                                    <td class="u-text-right">28.00</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check34" type="checkbox" name="">
+                                            <label for="check34">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>KLS/01793</td>
+                                    <td>7526(Pluca svinjska) - Ohladjeno</td>
+                                    <td>01860000000752631031080001000179300212150</td>
+                                    <td>SPZP</td>
+                                    <td class="u-text-right">108.00</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check35" type="checkbox" name="">
+                                            <label for="check35">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>KLS/01792</td>
+                                    <td>7526(Pluca svinjska) - Ohladjeno</td>
+                                    <td>01860000000752631031020001000179200212133</td>
+                                    <td>SPZP</td>
+                                    <td class="u-text-right">102.00</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check36" type="checkbox" name="">
+                                            <label for="check36">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>KLS/01791</td>
+                                    <td>7526(Pluca svinjska) - Ohladjeno</td>
+                                    <td>01860000000752631030980001000179100212080</td>
+                                    <td>SPZP</td>
+                                    <td class="u-text-right">98.00</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check37" type="checkbox" name="">
+                                            <label for="check37">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>KLS/01790</td>
+                                    <td>7526(Pluca svinjska) - Ohladjeno</td>
+                                    <td>01860000000752631031040001000179000211756</td>
+                                    <td>SPZP</td>
+                                    <td class="u-text-right">104.00</td>
+                                </tr> 
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<!--
+
+<footer class="footer-main">
+
+</footer>
+-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/app.js"></script>
+
+<script>
+    $(document).ready(function () {
+        /*-------------------------------------------------*/
+        /* =  Script
+        /*-------------------------------------------------*/
+        $('.tree-box a').click(function () {
+            $(this).parent().siblings('ul').toggle();
+            $(this).toggleClass('is-active')
+        });
+    });
+</script>
