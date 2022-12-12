@@ -3,4 +3,657 @@
 @{
 }
 
-STOCK ITEM ACTIVE
+<main class="w-100">
+    <div class="grid-wrapper grid-wrapper-two-columns">
+
+      <div class="grid-wrapper grid-wrapper-two-row">
+        <div class="grid-wrapper">
+            <div class="cart cart--accordion">
+                <div class="cart__header">
+                    <a href="#" onclick="myFunction()" class="search-trigger o-flex o-flex--center text-decoration-none clr-dark"><img class="mr-" src="/images/arrow-down.png" alt="">PRETRAGA</a>
+                </div>
+
+                <!-- When you click on .search-trigger, .cart__body will be display block -->
+
+                <div id="Pretraga" class="cart__body" style="display: none; border:none">
+                    <form action="" class="o-flex o-flex--center">
+                        <div class="row w-100">
+                            <div class="col-xs-12 col-md-4">
+                                <div class="input-box">
+                                    <p>Šifra:</p>
+                                    <input type="text" class="input input--primary">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <div class="input-box">
+                                    <p> posl.part.:</p>
+                                    <input type="text" class="input input--primary">
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-md-4">
+                                <div class="input-box">
+                                    <p>Tip grla:</p>
+                                    <input type="text" class="input input--primary">
+                                </div>
+                            </div>
+
+
+                                <div class="col-xs-12 col-md-4">
+                                <div class="input-box">
+                                        <p>Datum od:</p>
+                                        <input type="date" class="input input--primary">
+                                    </div>
+                                </div>
+
+
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="input-box">
+                                        <p>Datum do:</p>
+                                        <input type="date" class="input input--primary">
+                                    </div>
+                                </div>
+                            
+                            <div class="col-xs-12 col-md-4">
+                                <div class="input-box">
+                                    <p>Podtip grla:</p>
+                                    <input type="text" class="input input--primary">
+                                </div>
+                            </div>
+
+
+                            <button class="button button--green-circle ml mr">
+                                <svg width="30" viewBox="0 0 512 512">
+                                    <path fill="#fff" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+          
+         <div class="grid-wrapper">
+             <div class="cart">
+                <div class="cart__header o-flex o-flex--center o-flex--justify pb-">
+                    <h4 class="mb0">PRIJEMI GRLA</h4>
+                </div>
+                <div class="cart__header cart__header--grid o-flex o-flex--center">
+                    <a href="#" class="button button--green-circle">
+                        <img src="~/images/_sync.png" alt="">
+                    </a>
+
+                    <div class="input-box input-box--search mb0 w-100 relative">
+                        <svg width="20" viewBox="0 0 512 512">
+                            <path fill="#7d7d7d" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z" />
+                        </svg>
+                        <input type="text" class="input input--secondary" placeholder="PRETRAGA . . .">
+                    </div>
+
+                    <a href="#" class="button button--green-circle">
+                        <img src="~/images/_leftleft.png" alt="" style="margin-right: 3px;">
+                    </a>
+                    <a href="#" class="button button--green-circle">
+                        <img src="~/images/_left.png" alt="" style="margin-right: 3px;">
+                    </a>
+                    <div class="number-wrapper">
+                        1 - 5 od 5
+                    </div>
+                    <a href="#" class="button button--green-circle">
+                        <img src="~/images/_right.png" alt="" style="margin-left: 3px;">
+                    </a>
+                    <a href="#" class="button button--green-circle">
+                        <img src="~/images/_rightright.png" alt="" style="margin-left: 3px;">
+                    </a>
+                </div>
+                <div class="cart__body mt-">
+                    <div class="table-responsive" style="max-height: 77vh;">
+                        <table class="table mb0">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>ŠIFRA</th>
+                                    <th>DATUM PRIJEMA</th>
+                                    <th>TIP GRLA</th>
+                                    <th>PODTIP GRLA</th>
+                                    <th>DOBAVLJAČ</th>
+                                    <th>TEŽINA NA PRIJEMU</th>
+                                    <th>KOLIČINA</th>
+                                    <th>UGINULO</th>
+                                    <th>KALO</th>
+                                    <th>NA/</th>
+                                   
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>PRIG/02045</td>
+                                    <td>26.09.2022</td>
+                                    <td>Svinje</td>
+                                    <td>Tovljenik</td>
+                                    <td>Euro RP doo</td>
+                                    <td class="u-text-right">10,478.00</td>
+                                    <td class="u-text-right">100</td>
+                                    <td class="u-text-right">0</td>
+                                    <td class="u-text-right">1.95</td>
+                                    <td></td>                                   
+                                <tr>
+                                    <td>2</td>
+                                    <td>PRIG/01991</td>
+                                    <td>25.08.2022</td>
+                                    <td>Svinje</td>
+                                    <td>Tovljenik</td>
+                                    <td>Bieoesen doo FARMA</td>
+                                    <td class="u-text-right">10,172.00</td>
+                                    <td class="u-text-right">101</td>
+                                    <td class="u-text-right">0</td>
+                                    <td class="u-text-right">0.00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>PRIG/01841</td>
+                                    <td>08.06.2022</td>
+                                    <td>Svinje</td>
+                                    <td>Bekon</td>
+                                    <td>Bioesen doo FARMA</td>
+                                    <td class="u-text-right">1,328.04</td>
+                                    <td class="u-text-right">21</td>
+                                    <td class="u-text-right">0</td>
+                                    <td class="u-text-right">0.00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>PRIG/01374</td>
+                                    <td>15.09.2021</td>
+                                    <td>Svinje</td>
+                                    <td>Tovljenik</td>
+                                    <td>RIT d.o.o.</td>
+                                    <td class="u-text-right">9,846.00</td>
+                                    <td class="u-text-right">100</td>
+                                    <td class="u-text-right">0</td>
+                                    <td class="u-text-right">1.14</td>
+                                    <td></td>
+                                </tr>
+                              
+                                <tr>
+                                    <td>5</td>
+                                    <td>PRIG/01374</td>
+                                    <td>14.09.2021</td>
+                                    <td>Svinje</td>
+                                    <td>Tovljenik</td>
+                                    <td>RIT d.o.o.</td>
+                                    <td class="u-text-right">10,792.00</td>
+                                    <td class="u-text-right">100</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">0.26</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+       <div class="grid-wrapper grid-wrapper-three-row">
+            
+               
+
+                    <!-- When you click on .search-trigger,KALO will be display block -->
+
+                    <div class="cart">
+                        <div class="cart__header pb-" style="border:none">
+                            <a href="#" onclick="myFunctionKalo()" class="accordion-trigger o-flex o-flex--center text-decoration-none clr-dark h4"><img class="mr-" src="/images/arrow-down.png" alt="">KALO</a>
+                        </div>
+                        <div class="cart__body" id="KALO" style="display:none">
+                    <div class="cart__header cart__header--grid o-flex o-flex--center o-flex--justify pt--">
+                        <div class="o-flex o-flex--center">
+                            <a href="#" class="button button--green-circle mr-">
+                                <svg width="30" viewBox="0 0 24 24">
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                    <path fill="#fff" d="M7 7V3a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-4v3.993c0 .556-.449 1.007-1.007 1.007H3.007A1.006 1.006 0 0 1 2 20.993l.003-12.986C2.003 7.451 2.452 7 3.01 7H7zm2 0h6.993C16.549 7 17 7.449 17 8.007V15h3V4H9v3zm-.497 11 5.656-5.657-1.414-1.414-4.242 4.243L6.38 13.05l-1.414 1.414L8.503 18z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="button button--green-circle">
+                                <svg width="34" viewBox="0 0 512 512">
+                                    <path fill="#fff" d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48Zm75.31 260.69a16 16 0 1 1-22.62 22.62L256 278.63l-52.69 52.68a16 16 0 0 1-22.62-22.62L233.37 256l-52.68-52.69a16 16 0 0 1 22.62-22.62L256 233.37l52.69-52.68a16 16 0 0 1 22.62 22.62L278.63 256Z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <button class="button button--secondary button--small">
+                            <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
+                            <path fill="#fff" d="M437.5 386.6 306.9 256l130.6-130.6c14.1-14.1 14.1-36.8 0-50.9-14.1-14.1-36.8-14.1-50.9 0L256 205.1 125.4 74.5c-14.1-14.1-36.8-14.1-50.9 0-14.1 14.1-14.1 36.8 0 50.9L205.1 256 74.5 386.6c-14.1 14.1-14.1 36.8 0 50.9 14.1 14.1 36.8 14.1 50.9 0L256 306.9l130.6 130.6c14.1 14.1 36.8 14.1 50.9 0 14-14.1 14-36.9 0-50.9z" />
+              </svg>
+                            <strong>
+                                OTPIŠI
+                            </strong>
+                        </button>
+                    </div>
+                        <div class="cart__header cart__header--grid o-flex o-flex--center o-flex--justify pt-- pb--" style="border:none;">
+                            <div class="o-flex o-flex--center">
+                                <a href="#" class="button button--green-circle mr-">
+                                    <svg width="30" viewBox="0 0 24 24">
+                                        <path d="M0 0h24v24H0z" fill="none" />
+                                        <path fill="#fff" d="M7 7V3a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-4v3.993c0 .556-.449 1.007-1.007 1.007H3.007A1.006 1.006 0 0 1 2 20.993l.003-12.986C2.003 7.451 2.452 7 3.01 7H7zm2 0h6.993C16.549 7 17 7.449 17 8.007V15h3V4H9v3zm-.497 11 5.656-5.657-1.414-1.414-4.242 4.243L6.38 13.05l-1.414 1.414L8.503 18z" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="button button--green-circle">
+                                    <svg width="34" viewBox="0 0 512 512">
+                                        <path fill="#fff" d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48Zm75.31 260.69a16 16 0 1 1-22.62 22.62L256 278.63l-52.69 52.68a16 16 0 0 1-22.62-22.62L233.37 256l-52.68-52.69a16 16 0 0 1 22.62-22.62L256 233.37l52.69-52.68a16 16 0 0 1 22.62 22.62L278.63 256Z" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="input-box o-flex o-flex--center mb0">
+                                <span class="mr-">PROCENAT KALA:</span>
+                                <input type="text" class="input input--primary">
+                            </div>
+
+                            <button class="button button--primary button--small">
+                                <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
+                                <path fill="#fff" d="M448 71.9c-17.3-13.4-41.5-9.3-54.1 9.1L214 344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8-15.6 15.5-16.4 41.6-1.7 58.1 0 0 120.4 133.6 137.7 147 17.3 13.4 41.5 9.3 54.1-9.1l206.3-301.7c12.6-18.5 8.7-44.2-8.6-57.5z" />
+              </svg>
+                                <strong>
+                                    SAČUVAJ
+                                </strong>
+                            </button>
+                        </div>
+                        <div class="cart__header cart__header--grid o-flex o-flex--center o-flex--justify pt--">
+                            <div class="o-flex o-flex--center">
+                                <a href="#" class="button button--green-circle mr-">
+                                    <svg width="30" viewBox="0 0 24 24">
+                                        <path d="M0 0h24v24H0z" fill="none" />
+                                        <path fill="#fff" d="M7 7V3a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-4v3.993c0 .556-.449 1.007-1.007 1.007H3.007A1.006 1.006 0 0 1 2 20.993l.003-12.986C2.003 7.451 2.452 7 3.01 7H7zm2 0h6.993C16.549 7 17 7.449 17 8.007V15h3V4H9v3zm-.497 11 5.656-5.657-1.414-1.414-4.242 4.243L6.38 13.05l-1.414 1.414L8.503 18z" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="button button--green-circle">
+                                    <svg width="34" viewBox="0 0 512 512">
+                                        <path fill="#fff" d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48Zm75.31 260.69a16 16 0 1 1-22.62 22.62L256 278.63l-52.69 52.68a16 16 0 0 1-22.62-22.62L233.37 256l-52.68-52.69a16 16 0 0 1 22.62-22.62L256 233.37l52.69-52.68a16 16 0 0 1 22.62 22.62L278.63 256Z" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="input-box o-flex o-flex--center mb0">
+                                <span class="mr-">IZNOS KALA U KG:</span>
+                                <input type="text" class="input input--primary">
+                            </div>
+
+                            <button class="button button--primary button--small">
+                                <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
+                                <path fill="#fff" d="M448 71.9c-17.3-13.4-41.5-9.3-54.1 9.1L214 344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8-15.6 15.5-16.4 41.6-1.7 58.1 0 0 120.4 133.6 137.7 147 17.3 13.4 41.5 9.3 54.1-9.1l206.3-301.7c12.6-18.5 8.7-44.2-8.6-57.5z" />
+              </svg>
+                                <strong>
+                                    SAČUVAJ
+                                </strong>
+                            </button>
+                        </div>
+                </div>
+                    </div>
+            
+               
+
+                    <!-- When you click on .search-trigger, OTPIS will be display block  -->
+
+                        <div class="cart">
+                            <div class="cart__header pb-" style="border:none">
+                                <a href="#" onclick="myFunctionOtpis()" class="accordion-trigger o-flex o-flex--center text-decoration-none clr-dark h4"><img class="mr-" src="/images/arrow-down.png" alt="">OTPIS</a>
+                            </div>
+                          <div class="cart__body" id="OTPIS" style="display:none">
+                            <div class="cart__header cart__header--grid o-flex o-flex--center o-flex--justify pt--">
+                                <div class="o-flex o-flex--center">
+                                    <a href="#" class="button button--green-circle mr-">
+                                        <svg width="30" viewBox="0 0 24 24">
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                            <path fill="#fff" d="M7 7V3a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-4v3.993c0 .556-.449 1.007-1.007 1.007H3.007A1.006 1.006 0 0 1 2 20.993l.003-12.986C2.003 7.451 2.452 7 3.01 7H7zm2 0h6.993C16.549 7 17 7.449 17 8.007V15h3V4H9v3zm-.497 11 5.656-5.657-1.414-1.414-4.242 4.243L6.38 13.05l-1.414 1.414L8.503 18z" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="button button--green-circle">
+                                        <svg width="34" viewBox="0 0 512 512">
+                                            <path fill="#fff" d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48Zm75.31 260.69a16 16 0 1 1-22.62 22.62L256 278.63l-52.69 52.68a16 16 0 0 1-22.62-22.62L233.37 256l-52.68-52.69a16 16 0 0 1 22.62-22.62L256 233.37l52.69-52.68a16 16 0 0 1 22.62 22.62L278.63 256Z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <button class="button button--secondary button--small">
+                                    <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
+                                    <path fill="#fff" d="M437.5 386.6 306.9 256l130.6-130.6c14.1-14.1 14.1-36.8 0-50.9-14.1-14.1-36.8-14.1-50.9 0L256 205.1 125.4 74.5c-14.1-14.1-36.8-14.1-50.9 0-14.1 14.1-14.1 36.8 0 50.9L205.1 256 74.5 386.6c-14.1 14.1-14.1 36.8 0 50.9 14.1 14.1 36.8 14.1 50.9 0L256 306.9l130.6 130.6c14.1 14.1 36.8 14.1 50.9 0 14-14.1 14-36.9 0-50.9z" />
+              </svg>
+                                    <strong>
+                                        OTPIŠI
+                                    </strong>
+                                </button>
+                            </div>
+                          </div>
+                        </div>
+
+
+         
+                <div class="cart">
+                    <div class="cart__header o-flex o-flex--center o-flex--justify pb-" style="border-bottom: 1px solid #444444;">
+                        <h4 class="mb0">POJEDINAČNI PRIKAZ ARTIKALA</h4>
+                    </div>
+                    <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--">
+                        <div class="input-box input-box--search mb0 w-100 relative">
+                            <svg width="20" viewBox="0 0 512 512">
+                                <path fill="#7d7d7d" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z" />
+                            </svg>
+                            <input type="text" class="input input--secondary" placeholder="Pretraga . . .">
+                        </div>
+                       
+                        <a href="#" class="button button--green-circle">
+                            <img src="~/images/_leftleft.png" alt="" style="margin-right: 3px;">
+                        </a>
+                        <a href="#" class="button button--green-circle">
+                            <img src="~/images/_left.png" alt="" style="margin-right: 3px;">
+                        </a>
+                        <div class="number-wrapper">
+                            1 - 25 od 100
+                        </div>
+                        <a href="#" class="button button--green-circle">
+                            <img src="~/images/_right.png" alt="" style="margin-left: 3px;">
+                        </a>
+                        <a href="#" class="button button--green-circle">
+                            <img src="~/images/_rightright.png" alt="" style="margin-left: 3px;">
+                        </a>
+                    </div>
+
+                    <div class="cart__body">
+                        <div class="table-responsive">
+                            <table class="table mb0">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                        <th>LOT</th>
+                                        <th>ARTIKAL</th>
+                                        <th>BARKOD</th>
+                                        <th>MAGACIN</th>
+                                        <th>KG</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td style="width: 30px;">
+                                            <div class="check-box">
+                                                <input id="check1" type="checkbox" name="">
+                                                <label for="check1">
+                                                    <span class="check-icon"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>PRIG/0245</td>
+                                        <td>100001 (Tovljenici) - Ohlađeno</td>
+                                        <td>RS_20220927020450100</td>
+                                        <td></td>
+                                        <td>104,78</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td style="width: 30px;">
+                                            <div class="check-box">
+                                                <input id="check2" type="checkbox" name="">
+                                                <label for="check2">
+                                                    <span class="check-icon"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>PRIG/0245</td>
+                                        <td>100001 (Tovljenici) - Ohlađeno</td>
+                                        <td>RS_20220927020450037</td>
+                                        <td></td>
+                                        <td>104,78</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td style="width: 30px;">
+                                            <div class="check-box">
+                                                <input id="check3" type="checkbox" name="">
+                                                <label for="check3">
+                                                    <span class="check-icon"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>PRIG/0245</td>
+                                        <td>100001 (Tovljenici) - Ohlađeno</td>
+                                        <td>RS_20220927020450027</td>
+                                        <td></td>
+                                            <td>104,78</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td style="width: 30px;">
+                                            <div class="check-box">
+                                                <input id="check4" type="checkbox" name="">
+                                                <label for="check4">
+                                                    <span class="check-icon"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>PRIG/0245</td>
+                                        <td>100001 (Tovljenici) - Ohlađeno</td>
+                                        <td>RS_20220927020450028</td>
+                                        <td></td>
+                                        <td>104,78</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td style="width: 30px;">
+                                            <div class="check-box">
+                                                <input id="check5" type="checkbox" name="">
+                                                <label for="check5">
+                                                    <span class="check-icon"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>PRIG/0245</td>
+                                        <td>100001 (Tovljenici) - Ohlađeno</td>
+                                        <td>RS_20220927020450029</td>
+                                        <td></td>
+                                        <td>104,78</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td style="width: 30px;">
+                                            <div class="check-box">
+                                                <input id="check6" type="checkbox" name="">
+                                                <label for="check6">
+                                                    <span class="check-icon"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>PRIG/0245</td>
+                                        <td>100001 (Tovljenici) - Ohlađeno</td>
+                                        <td>RS_20220927020450030</td>
+                                        <td></td>
+                                        <td>104,78</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td style="width: 30px;">
+                                            <div class="check-box">
+                                                <input id="check7" type="checkbox" name="">
+                                                <label for="check7">
+                                                    <span class="check-icon"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>PRIG/0245</td>
+                                        <td>100001 (Tovljenici) - Ohlađeno</td>
+                                        <td>RS_20220927020450031</td>
+                                        <td></td>
+                                        <td>104,78</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td style="width: 30px;">
+                                            <div class="check-box">
+                                                <input id="check8" type="checkbox" name="">
+                                                <label for="check8">
+                                                    <span class="check-icon"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>PRIG/0245</td>
+                                        <td>100001 (Tovljenici) - Ohlađeno</td>
+                                        <td>RS_20220927020450032</td>
+                                        <td></td>
+                                        <td>104,78</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td style="width: 30px;">
+                                            <div class="check-box">
+                                                <input id="check9" type="checkbox" name="">
+                                                <label for="check9">
+                                                    <span class="check-icon"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>PRIG/0245</td>
+                                        <td>100001 (Tovljenici) - Ohlađeno</td>
+                                        <td>RS_20220927020450033</td>
+                                        <td></td>
+                                        <td>104,78</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td style="width: 30px;">
+                                            <div class="check-box">
+                                                <input id="check10" type="checkbox" name="">
+                                                <label for="check10">
+                                                    <span class="check-icon"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>PRIG/0245/td>
+                                        <td>100001 (Tovljenici) - Ohlađeno</td>
+                                        <td>RS_20220927020450034</td>
+                                        <td></td>
+                                        <td>104,78</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td style="width: 30px;">
+                                            <div class="check-box">
+                                                <input id="check11" type="checkbox" name="">
+                                                <label for="check11">
+                                                    <span class="check-icon"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>PRIG/0245</td>
+                                        <td>100001 (Tovljenici) - Ohlađeno</td>
+                                        <td>RS_20220927020450035</td>
+                                        <td></td>
+                                        <td>104,78</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td style="width: 30px;">
+                                            <div class="check-box">
+                                                <input id="check12" type="checkbox" name="">
+                                                <label for="check12">
+                                                    <span class="check-icon"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>PRIG/0245</td>
+                                        <td>100001 (Tovljenici) - Ohlađeno</td>
+                                        <td>RS_20220927020450036</td>
+                                        <td></td>
+                                        <td>104,78</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td style="width: 30px;">
+                                            <div class="check-box">
+                                                <input id="check13" type="checkbox" name="">
+                                                <label for="check13">
+                                                    <span class="check-icon"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>PRIG/0245</td>
+                                        <td>100001 (Tovljenici) - Ohlađeno</td>
+                                        <td>RS_20220927020450038</td>
+                                        <td></td>
+                                        <td>104,78</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td style="width: 30px;">
+                                            <div class="check-box">
+                                                <input id="check14" type="checkbox" name="">
+                                                <label for="check14">
+                                                    <span class="check-icon"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>PRIG/0245</td>
+                                        <td>100001 (Tovljenici) - Ohlađeno</td>
+                                        <td>RS_20220927020450099</td>
+                                        <td></td>
+                                        <td>104,78</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td style="width: 30px;">
+                                            <div class="check-box">
+                                                <input id="check15" type="checkbox" name="">
+                                                <label for="check15">
+                                                    <span class="check-icon"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>PRIG/0245</td>
+                                        <td>100001 (Tovljenici) - Ohlađeno</td>
+                                        <td>RS_20220927020450039</td>
+                                        <td></td>
+                                        <td>104,78</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+</main>
+
+<script>
+
+    // prikazivanje menija za pretragu
+    function myFunction() {
+        var x = document.getElementById("Pretraga");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    // prikazivanje menija za KALO
+    function myFunctionKalo() {
+        var x = document.getElementById("KALO");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    // prikazivanje menija za OTPIS
+    function myFunctionOtpis() {
+        var x = document.getElementById("OTPIS");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
