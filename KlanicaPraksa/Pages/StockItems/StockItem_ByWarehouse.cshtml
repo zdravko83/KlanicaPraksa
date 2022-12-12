@@ -6,16 +6,670 @@
 <aside class="aside-menu cart" style="display: flex;">
     <ul class="aside-menu__list">
         <li>
-            <a href="/StockItemByProduct" class="is-active">
-                <img src="~/images/__enter.png" alt="">
+            <a href="/StockItemByProduct">
+                <img src="~/images/__MesoWhite.png" alt="">
             </a>
         </li>
         <li>
-            <a href="/StockItemByWarehouse">
-                <img src="~/images/__enter.png" alt="">
+            <a href="/StockItemByWarehouse" class="is-active">
+                <img src="~/images/__stock.png" alt="">
             </a>
         </li>
     </ul>
 </aside>
 
-STOCK ITEM BY WAREHOUSE
+<main>
+
+    <div class="grid-wrapper grid-wrapper-single-row grid-wrapper-two-columns">
+        <!--style="grid-template-columns: 0.3fr 1fr ;"-->
+        <div class="grid-wrapper grid-wrapper-two-row" style="grid-template-rows: 1fr 1fr ;">
+
+            <div class="cart">
+                <div class="cart__header o-flex o-flex--center o-flex--justify pb-" style="border-bottom: 1px solid #444444;">
+                    <h4 class="mb0">1. MAGACINI</h4>
+                    <div class="o-flex o-flex--center">
+                        <a href="#" class="button button--green-circle mr--">
+                            <svg width="30" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path fill="#fff" d="M7 7V3a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-4v3.993c0 .556-.449 1.007-1.007 1.007H3.007A1.006 1.006 0 0 1 2 20.993l.003-12.986C2.003 7.451 2.452 7 3.01 7H7zm2 0h6.993C16.549 7 17 7.449 17 8.007V15h3V4H9v3zm-.497 11 5.656-5.657-1.414-1.414-4.242 4.243L6.38 13.05l-1.414 1.414L8.503 18z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="button button--green-circle mr--">
+                            <svg width="34" viewBox="0 0 512 512">
+                                <path fill="#fff" d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48Zm75.31 260.69a16 16 0 1 1-22.62 22.62L256 278.63l-52.69 52.68a16 16 0 0 1-22.62-22.62L233.37 256l-52.68-52.69a16 16 0 0 1 22.62-22.62L256 233.37l52.69-52.68a16 16 0 0 1 22.62 22.62L278.63 256Z" />
+                            </svg>
+                        </a>
+                        <a id="ProductList" class="button button--green-circle">
+                            <img src="images/Icons_now/_sync.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="cart__body">
+                    <div class="table-responsive">
+                        <table class="table mb0">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th>ŠIFRA</th>
+                                    <th>NAZIV</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check1" type="checkbox" name="" checked>
+                                            <label for="check1">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>Tople polutke sa klanja</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check2" type="checkbox" name="">
+                                            <label for="check2">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>2</td>
+                                    <td>Pretkomora za pangleraj</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check3" type="checkbox" name="">
+                                            <label for="check3">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>Ekspedicija svežeg mesa</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check4" type="checkbox" name="">
+                                            <label for="check4">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>4</td>
+                                    <td>Pretkomora za minusnu komoru</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check5" type="checkbox" name="">
+                                            <label for="check5">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>5</td>
+                                    <td>Minusna komora</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check6" type="checkbox" name="">
+                                            <label for="check6">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>6</td>
+                                    <td>Magacin iznutrica</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check7" type="checkbox" name="">
+                                            <label for="check7">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>7</td>
+                                    <td>Magacin crevare</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check8" type="checkbox" name="">
+                                            <label for="check8">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>8</td>
+                                    <td>Magacin kože</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check9" type="checkbox" name="">
+                                            <label for="check9">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>9</td>
+                                    <td>SPZP</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check10" type="checkbox" name="">
+                                            <label for="check10">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>10</td>
+                                    <td>Centralni magazin</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--KOMORE-->
+            <div class="cart">
+                <div class="cart__header o-flex o-flex--center o-flex--justify pb-">
+                    <h4 class="mb0">2. KOMORE</h4>
+                    <div class="o-flex o-flex--center">
+                        <a href="#" class="button button--green-circle mr--">
+                            <svg width="30" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path fill="#fff" d="M7 7V3a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-4v3.993c0 .556-.449 1.007-1.007 1.007H3.007A1.006 1.006 0 0 1 2 20.993l.003-12.986C2.003 7.451 2.452 7 3.01 7H7zm2 0h6.993C16.549 7 17 7.449 17 8.007V15h3V4H9v3zm-.497 11 5.656-5.657-1.414-1.414-4.242 4.243L6.38 13.05l-1.414 1.414L8.503 18z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="button button--green-circle">
+                            <svg width="34" viewBox="0 0 512 512">
+                                <path fill="#fff" d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48Zm75.31 260.69a16 16 0 1 1-22.62 22.62L256 278.63l-52.69 52.68a16 16 0 0 1-22.62-22.62L233.37 256l-52.68-52.69a16 16 0 0 1 22.62-22.62L256 233.37l52.69-52.68a16 16 0 0 1 22.62 22.62L278.63 256Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="cart__body">
+                    <div class="table-responsive">
+                        <table class="table mb0">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th>ŠIFRA</th>
+                                    <th>NAZIV</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check11" type="checkbox" name="" checked>
+                                            <label for="check11">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>KOMORA 1</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check12" type="checkbox" name="">
+                                            <label for="check12">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>2</td>
+                                    <td>KOMORA 2</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check13" type="checkbox" name="">
+                                            <label for="check13">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>KOMORA 3</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check14" type="checkbox" name="">
+                                            <label for="check14">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>4</td>
+                                    <td>KOMORA 4</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check15" type="checkbox" name="">
+                                            <label for="check15">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>5</td>
+                                    <td>KOMORA 5</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check16" type="checkbox" name="">
+                                            <label for="check16">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>6</td>
+                                    <td>KOMORA 6</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check17" type="checkbox" name="">
+                                            <label for="check17">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>7</td>
+                                    <td>KOMORA 7</td>
+                                </tr> 
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--GRUPNI PRIKAZ ARTIKALA-->
+        <div class="grid-wrapper grid-wrapper-two-row" style="grid-template-rows: 1fr 1fr ;">
+
+            <div class="cart">
+                <div class="cart__header o-flex o-flex--center o-flex--justify pb-" style="border-bottom: 1px solid #444444;">
+                    <h4 class="mb0">3. GRUPNI PRIKAZ ARTIKALA</h4>
+                </div>
+                <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--">
+                    <a href="#" class="button button--green-circle">
+                        <svg width="30" viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path fill="#fff" d="M7 7V3a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-4v3.993c0 .556-.449 1.007-1.007 1.007H3.007A1.006 1.006 0 0 1 2 20.993l.003-12.986C2.003 7.451 2.452 7 3.01 7H7zm2 0h6.993C16.549 7 17 7.449 17 8.007V15h3V4H9v3zm-.497 11 5.656-5.657-1.414-1.414-4.242 4.243L6.38 13.05l-1.414 1.414L8.503 18z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="button button--green-circle">
+                        <svg width="34" viewBox="0 0 512 512">
+                            <path fill="#fff" d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48Zm75.31 260.69a16 16 0 1 1-22.62 22.62L256 278.63l-52.69 52.68a16 16 0 0 1-22.62-22.62L233.37 256l-52.68-52.69a16 16 0 0 1 22.62-22.62L256 233.37l52.69-52.68a16 16 0 0 1 22.62 22.62L278.63 256Z" />
+                        </svg>
+                    </a>
+                    <div class="input-box input-box--search mb0 w-100 relative">
+                        <svg width="20" viewBox="0 0 512 512">
+                            <path fill="#7d7d7d" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z" />
+                        </svg>
+                        <input type="text" class="input input--secondary" placeholder="Pretraga . . .">
+                    </div>
+                    <a id="ProductList" class="button button--green-circle">
+                        <img src="images/Icons_now/_excel.png" alt="">
+                    </a>
+                </div>
+
+                <div class="cart__body">
+                    <div class="table-responsive">
+                        <table class="table mb0">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th>ARTIKAL</th>
+                                    <th>MAGACIN</th>
+                                    <th>KOM</th>
+                                    <th>KG</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check18" type="checkbox" name="">
+                                            <label for="check18">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>1000(Bik polutka)</td>
+                                    <td>Tople polutke sa klanja KOMORA 1</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">353.60</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check19" type="checkbox" name="">
+                                            <label for="check19">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>2600(Bubrezni loj juneci)</td>
+                                    <td>Tople polutke sa klanja KOMORA 1</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">6.18</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check20" type="checkbox" name="">
+                                            <label for="check20">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>4000(Svinjska polutka)</td>
+                                    <td>Tople polutke sa klanja KOMORA 1</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">215,504.44</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check21" type="checkbox" name="">
+                                            <label for="check21">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>4011(Prasece meso)</td>
+                                    <td>Tople polutke sa klanja KOMORA 1</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">2,698.82</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check22" type="checkbox" name="">
+                                            <label for="check22">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>6070(Rep juneci)</td>
+                                    <td>Tople polutke sa klanja KOMORA 1</td>
+                                    <td class="u-text-right">1</td>
+                                    <td class="u-text-right">3.62</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--POJEDINACNI PRIKAZ ARTIKALA-->
+            <div class="cart">
+                <div class="cart__header cart__header--grid o-flex o-flex--center o-flex--justify pb-">
+                    <h4 class="mb0">4. POJEDINAČNI PRIKAZ ARTIKALA</h4>
+                    <div class="o-flex o-flex--center">
+                        <a href="#" class="button button--green-circle" style="margin-right:3px">
+                            <img src="~/images/_leftleft.png" alt="">
+                        </a>
+                        <a href="#" class="button button--green-circle" style="margin-right: 3px;">
+                            <img src="~/images/_left.png" alt="">
+                        </a>
+                        <div class="number-wrapper">
+                            1 - 50 od 113
+                        </div>
+                        <a href="#" class="button button--green-circle" style="margin-left: 3px;">
+                            <img src="~/images/_right.png" alt="">
+                        </a>
+                        <a href="#" class="button button--green-circle" style="margin-left: 3px;">
+                            <img src="~/images/_rightright.png" alt="">
+                        </a>
+                        <a id="ProductList" class="button button--green-circle" style="margin-left: 3px;">
+                            <img src="images/Icons_now/_excel.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="cart__body">
+                    <div class="table-responsive">
+                        <table class="table mb0">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th>LOT</th>
+                                    <th>ARTIKAL</th>
+                                    <th>BARKOD</th>
+                                    <th>MAGACIN</th>
+                                    <th>KG</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check23" type="checkbox" name="">
+                                            <label for="check23">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>KLS/01796</td>
+                                    <td>4000(Svinjska polutka) - Ohladjeno</td>
+                                    <td>01860610958600531030445201000179600212661</td>
+                                    <td>Tople polutke za klanje KOMORA 1</td>
+                                    <td class="u-text-right">44.52</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check24" type="checkbox" name="">
+                                            <label for="check24">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>KLS/01796</td>
+                                    <td>4000(Svinjska polutka) - Ohladjeno</td>
+                                    <td>01860610958600531030445201000179600212660</td>
+                                    <td>Tople polutke za klanje KOMORA 1</td>
+                                    <td class="u-text-right">44.52</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check25" type="checkbox" name="">
+                                            <label for="check25">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>KLS/01796</td>
+                                    <td>4000(Svinjska polutka) - Ohladjeno</td>
+                                    <td>01860610958600531030445201000179600212659</td>
+                                    <td>Tople polutke za klanje KOMORA 1</td>
+                                    <td class="u-text-right">44.52</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check26" type="checkbox" name="">
+                                            <label for="check26">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>KLS/01796</td>
+                                    <td>4000(Svinjska polutka) - Ohladjeno</td>
+                                    <td>01860610958600531030445201000179600212658</td>
+                                    <td>Tople polutke za klanje KOMORA 1</td>
+                                    <td class="u-text-right">44.52</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check27" type="checkbox" name="">
+                                            <label for="check27">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>KLS/01796</td>
+                                    <td>4000(Svinjska polutka) - Ohladjeno</td>
+                                    <td>01860610958600531030445201000179600212657</td>
+                                    <td>Tople polutke za klanje KOMORA 1</td>
+                                    <td class="u-text-right">44.52</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check28" type="checkbox" name="">
+                                            <label for="check28">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>KLS/01796</td>
+                                    <td>4000(Svinjska polutka) - Ohladjeno</td>
+                                    <td>01860610958600531030445201000179600212656</td>
+                                    <td>Tople polutke za klanje KOMORA 1</td>
+                                    <td class="u-text-right">44.52</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check29" type="checkbox" name="">
+                                            <label for="check29">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>KLS/01796</td>
+                                    <td>4000(Svinjska polutka) - Ohladjeno</td>
+                                    <td>01860610958600531030445201000179600212655</td>
+                                    <td>Tople polutke za klanje KOMORA 1</td>
+                                    <td class="u-text-right">44.52</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check30" type="checkbox" name="">
+                                            <label for="check30">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>KLS/01796</td>
+                                    <td>4000(Svinjska polutka) - Ohladjeno</td>
+                                    <td>01860610958600531030445201000179600212654</td>
+                                    <td>Tople polutke za klanje KOMORA 1</td>
+                                    <td class="u-text-right">44.52</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check31" type="checkbox" name="">
+                                            <label for="check31">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>KLS/01796</td>
+                                    <td>4000(Svinjska polutka) - Ohladjeno</td>
+                                    <td>01860610958600531030445201000179600212653</td>
+                                    <td>Tople polutke za klanje KOMORA 1</td>
+                                    <td class="u-text-right">44.52</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td style="width: 30px;">
+                                        <div class="check-box">
+                                            <input id="check32" type="checkbox" name="">
+                                            <label for="check32">
+                                                <span class="check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>KLS/01796</td>
+                                    <td>4000(Svinjska polutka) - Ohladjeno</td>
+                                    <td>01860610958600531030445201000179600212650</td>
+                                    <td>Tople polutke za klanje KOMORA 1</td>
+                                    <td class="u-text-right">44.52</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<!--
+
+<footer class="footer-main">
+
+</footer>
+-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/app.js"></script>
+
+<script>
+    $(document).ready(function () {
+        /*-------------------------------------------------*/
+        /* =  Script
+        /*-------------------------------------------------*/
+        $('.tree-box a').click(function () {
+            $(this).parent().siblings('ul').toggle();
+            $(this).toggleClass('is-active')
+        });
+    });
+</script>
