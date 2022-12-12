@@ -17,5 +17,94 @@
         </li>
     </ul>
 </aside>
+<main class="w-100">
+    <div class="grid-wrapper grid-wrapper-two-row">
 
-STOCK ITEM CARD BY DATE
+        <div class="grid-wrapper">
+            <div class="cart cart--accordion">
+                <div class="cart__header">
+                    <a href="#" onclick="myFunction()" class="search-trigger o-flex o-flex--center text-decoration-none clr-dark"><img class="mr-" src="/images/arrow-down.png" alt="">PRETRAGA</a>
+                </div>
+
+                <!-- When you click on .search-trigger, .cart__body will be display block -->
+
+                <div id="Pretraga" class="cart__body" style="display: none; border:none">
+                    <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--">
+                       
+                        <div  class="input-box o-flex o-flex--center mb0 w-50">
+                            <span>ARTIKAL:</span>
+                            <input type="text" class="input input--primary">
+                        </div>
+
+                        
+                        <div style="margin-left:auto" class="input-box input-box--date relative mb0">
+                            <span class="mr-">LAGER NA DAN:</span>
+                            <svg width="28" viewBox="0 0 139 139" xml:space="preserve">
+                            <path fill="444444" d="M113.8 22.905h-13.514v-5.406c0-3.215-2.631-5.845-5.846-5.845s-5.844 2.63-5.844 5.845v5.406h-38.19v-5.406c0-3.215-2.63-5.845-5.845-5.845s-5.845 2.63-5.845 5.845v5.406H25.202c-5.533 0-10.035 4.501-10.035 10.034v74.122c0 5.533 4.501 10.034 10.035 10.034h79.632c10.478 0 19-8.522 19-19V32.939c0-5.533-4.501-10.034-10.034-10.034zm-88.598 8h13.521c.077 3.149 2.671 5.702 5.838 5.702 3.166 0 5.759-2.553 5.837-5.702h38.205c.078 3.149 2.67 5.702 5.837 5.702s5.761-2.553 5.839-5.702H113.8c1.104 0 2.034.932 2.034 2.034v15.624H23.167V32.939c0-1.103.932-2.034 2.035-2.034zm-2.035 76.156V56.438h92.667V91.5H99.487l-.12 17.595H25.202c-1.103 0-2.035-.932-2.035-2.034zm84.203 1.727.064-9.288h8.299c-.585 4.558-3.963 8.244-8.363 9.288z"></path>
+                            <path fill="444444" d="M46.491 75.32c.04-3.665 1.347-6.345 3.445-8.132 2.099-1.743 4.951-2.592 8.039-2.592 7.999 0 10.652 5.363 10.652 7.998 0 6.524-3.644 6.524-3.644 6.658v.089c0 .358 4.514.358 4.514 7.284 0 3.798-2.534 9.785-11.563 9.785-12.396 0-12.434-9.831-12.236-12.153h7.523c-.04 1.654.317 2.903 1.069 3.708.752 1.027 1.901 1.386 3.287 1.386 2.257 0 3.683-.938 3.683-3.485 0-2.727-1.861-3.218-3.683-3.218-1.149 0-1.703.135-2.297.225v-6.078c.594.045 1.228.179 2.297.179 1.664 0 3.762-.401 3.762-2.813 0-1.967-1.98-2.727-3.603-2.727-2.139 0-3.881 1.295-3.802 3.887h-7.443zM81.264 78.135h-6.455v-6.434c3.999.09 7.96-1.607 8.196-6.747H89.5v31.099h-8.236V78.135z"></path>
+    </svg>
+                            <input type="date" class="input input--primary" style="min-width: 250px;">
+                        </div>
+
+                        <a href="#" class="button button--green-circle">
+                            <svg width="30" viewBox="0 0 512 512" xml:space="preserve">
+                            <path fill="#fff" d="M448 71.9c-17.3-13.4-41.5-9.3-54.1 9.1L214 344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8-15.6 15.5-16.4 41.6-1.7 58.1 0 0 120.4 133.6 137.7 147 17.3 13.4 41.5 9.3 54.1-9.1l206.3-301.7c12.6-18.5 8.7-44.2-8.6-57.5z"></path>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                   
+                </div>
+            </div>
+        </div>
+
+        <article class="grid-wrapper grid-wrapper">
+
+            <div id="ORGANIZACIONE JEDINICE" class="cart border-top-radius-none border-left-radius-none" style="display:block">
+                <div class="cart__header">
+                    <h3 class="mb--">KARTICA ARTIKALA</h3>
+                </div>
+                <div class="cart__header cart__header--grid o-flex o-flex--center">
+                    <a id="OrganizacioneJedinice" class="button button--green-circle">
+                        <img src="~/images/Excel01.png" alt="">
+                    </a>
+                </div>
+                <div class="cart__body mt-">
+                    <div class="table-responsive" style="max-height: 77vh;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ARTIKAL</th>
+                                    
+                                    <th style="width:50px">
+                                        UKUPNO
+                                        <br />(KOM)
+                                    </th>
+                                    <th style="width:50px">
+                                        UKUPNO
+                                        <br />(KG)
+                                    </th>
+                                   
+                                </tr>
+                            </thead>
+                        </table> 
+                    </div> 
+                </div>
+            </div>
+           </article>     
+    </div>
+  
+</main>
+   
+<script>
+    function myFunction() {
+        var x = document.getElementById("Pretraga");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    </script>
+ 
