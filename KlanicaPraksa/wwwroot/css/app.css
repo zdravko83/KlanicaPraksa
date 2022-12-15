@@ -1358,6 +1358,8 @@ a {
       border-top: 1px solid #a2a2a2; }
     .table td.active {
       background-color: #26b6b3 !important; }
+    .table td.red {
+      background-color: #fb8faf; }
   .table.table--no-row-numb tr:last-child td {
     border-bottom: 1px solid #a2a2a2 !important; }
   .table tfoot td {
