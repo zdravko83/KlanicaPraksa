@@ -1,0 +1,37 @@
+﻿@page "/InventoryLot"
+@model KlanicaPraksa.Pages.Warehouses.Inventory_LotModel
+@{
+}
+
+<aside class="aside-menu cart" style="display: flex;">
+    <ul class="aside-menu__list">
+        <li>
+            <a href="/InventoryFast" class="is-active">
+                <img src="~/images/icons_now/__exitPig.png" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="/InventoryLot" class="is-active">
+                <img src="~/images/icons_now/__exitPig.png" alt="">
+            </a>
+        </li>
+    </ul>
+</aside>
+
+<main>
+    <div class="grid-wrapper grid-wrapper-five-row">
+        <div class="cart border-bottom-radius-none">
+            <div class="cart__header cart__header--tabs o-flex o-flex--center">
+                <ul class="tab-list o-flex o-flex--center mb0">
+                    <li><a href="/InventoryLot" class="is-active">PRIJEM - LOT</a></li>
+                    <li><a href="/InventoryList">PRIJEM - AKTIVNI</a></li>
+                    <li><a href="/InventoryList">PRIJEM - ARHIVA</a></li>
+                    <li><a href="/InventoryList">PRIJEM - STORNIRANI</a></li>
+                </ul>
+            </div>
+        </div>
+
+        INVENTORY LOT
+
+    </div>
+</main>

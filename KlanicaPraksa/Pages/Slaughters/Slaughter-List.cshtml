@@ -1,0 +1,37 @@
+﻿@page "/SlaughterList"
+@model KlanicaPraksa.Pages.Slaughters.Slaughter_ListModel
+@{
+}
+
+<aside class="aside-menu cart" style="display: flex;">
+    <ul class="aside-menu__list">
+        <li>
+            <a href="/SlaughterFast" class="is-active">
+                <img src="~/images/icons_now/__exitPig.png" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="/SlaughterLot" class="is-active">
+                <img src="~/images/icons_now/__exitPig.png" alt="">
+            </a>
+        </li>
+    </ul>
+</aside>
+
+<main>
+    <div class="grid-wrapper grid-wrapper-five-row">
+        <div class="cart border-bottom-radius-none">
+            <div class="cart__header cart__header--tabs o-flex o-flex--center">
+                <ul class="tab-list o-flex o-flex--center mb0">
+                    <li><a href="/SlaughterLot">PRIJEM - LOT</a></li>
+                    <li><a href="/SlaughterList" class="is-active">PRIJEM - AKTIVNI</a></li>
+                    <li><a href="/SlaughterList">PRIJEM - ARHIVA</a></li>
+                    <li><a href="/SlaughterList">PRIJEM - STORNIRANI</a></li>
+                </ul>
+            </div>
+        </div>
+
+        SLAUGHTER LOT
+
+    </div>
+</main>
