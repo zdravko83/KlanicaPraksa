@@ -1327,7 +1327,7 @@ a {
     background-color: #26b6b3; }
   .table tr:hover td:not(:first-child), .table tr.active td:not(:first-child) {
     background-color: #bfe8e7; }
-  .table tr.red-row td {
+  .table tr.red-row tdh {
     background-color: #fb8faf; }
     .table tr.red-row td.active-column {
       background-color: #bfe8e7; }
