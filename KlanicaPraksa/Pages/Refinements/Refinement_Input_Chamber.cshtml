@@ -20,6 +20,11 @@
                 <img src="~/images/icons_now/__exitPig.png" alt="">
             </a>
         </li>
+        <li>
+            <a href="/RefinementInputLibela" class="is-active">
+                <img src="~/images/icons_now/__exitPig.png" alt="">
+            </a>
+        </li>
     </ul>
 </aside>
 
@@ -47,6 +52,7 @@
                 <div class="cart cart--accordion border-bottom-radius-none border-top-radius-none">
                     <div class="cart__header o-flex o-flex--center o-flex--justify">
                         <a href="#" onclick="myFunctionLot()" class="search-trigger o-flex o-flex--center text-decoration-none clr-dark h4"><img class="mr-" src="~/images/arrow-down.png" alt="">LOT:<span class="clr-green font-16 ml-">RAS/01076</span></a>
+
                     </div>
                     <div id="Lot" class="cart__body">
                         <div class="o-flex o-flex--center">
@@ -228,10 +234,8 @@
                 </div>
                 <!--Komore-->
                 <div class="cart cart--accordion border-bottom-radius-none border-top-radius-none">
-                    <div class="cart__header o-flex o-flex--center o-flex--justify mb--">
-                        <div class="cart__header o-flex o-flex--center o-flex--justify pb-">
-                            <a href="#" onclick="myFunctionKomore()" class="search-trigger-flex o-flex--center text-decoration-none clr-dark h4"><img class="mr-" src="~/images/arrow-down.png" alt="">KOMORE: <span class="clr-green font-16 ml-">KOMORA 1</span></a>
-                        </div>
+                    <div class="cart__header o-flex o-flex--center o-flex--justify pb-">
+                        <a href="#" onclick="myFunctionKomore()" class="search-trigger-flex o-flex--center text-decoration-none clr-dark h4"><img class="mr-" src="~/images/arrow-down.png" alt="">KOMORE: <span class="clr-green font-16 ml-">KOMORA 1</span></a>
                     </div>
                     <div id="Komore" class="cart__body">
                         <div class="o-flex o-flex--center">
@@ -336,26 +340,24 @@
                     <div class="cart__header o-flex o-flex--center o-flex--justify pb-" style="border-bottom: 1px solid #444444;">
                         <h4 class="mb0">ARTIKAL SA LAGERA</h4>
                     </div>
-                       <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--">
-                         <div class="input-box o-flex o-flex--center mb-- w-100">
-                        <span class="mr" style="min-width: 100px;">LOT:</span>
-                                <select name="" id="" class="input input--primary">
-                                   <option value="">Da</option>
-                                   <option value="">Ne</option>
-                                </select>
-                         </div>
+                    <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--">
+                        <div class="input-box o-flex o-flex--center mb-- w-100">
+                            <span class="mr" style="min-width: 100px;">LOT:</span>
+                            <select name="" id="" class="input input--primary">
+                                <option value="">Da</option>
+                                <option value="">Ne</option>
+                            </select>
                         </div>
-                      <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--">
-                           <div class="o-flex o-flex--center">
-                        <span class="mr-">Tip merenja:</span>
-                        <div class="input-box mb0">
+                    </div>
+                    <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--">
+                        <div class="input-box o-flex o-flex--center mb-- w-100">
+                            <span class="mr" style="min-width: 100px;">Tip merenja</span>
                             <select name="" id="" class="input input--primary">
                                 <option value=""></option>
                                 <option value="">Automatski odabir jedne stavke</option>
                             </select>
                         </div>
-                         </div>
-                        </div>
+                    </div>
                     <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--">
                         <a href="#" class="button button--green-circle">
                             <img src="~/images/_leftleft.png" alt="" style="margin-right: 3px;">
@@ -392,7 +394,7 @@
                                 <path fill="#fff" d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48Zm75.31 260.69a16 16 0 1 1-22.62 22.62L256 278.63l-52.69 52.68a16 16 0 0 1-22.62-22.62L233.37 256l-52.68-52.69a16 16 0 0 1 22.62-22.62L256 233.37l52.69-52.68a16 16 0 0 1 22.62 22.62L278.63 256Z" />
                             </svg>
                         </a>
-                        <div class="input-box mb0 o-flex o-flex--center">
+                        <div class="input-box mb0 o-flex o-flex--center w-100">
                             <span class="mr-">Br. stavki:</span>
                             <input type="text" class="input input--secondary">
                         </div>

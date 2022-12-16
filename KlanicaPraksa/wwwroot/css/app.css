@@ -1009,6 +1009,20 @@ a {
   .nav__link img {
     max-height: 80%; }
 
+.textarea {  
+    height: 100px;
+    resize: none;
+    border-radius: 15px;
+    background-color: #ffffff;
+    border: 1px solid #444444;
+    padding: 10px 15px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #060000;
+    font-weight: 700;
+}
 /**
 * Reset input styles.
 */
