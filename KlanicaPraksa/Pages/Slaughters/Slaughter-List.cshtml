@@ -20,7 +20,7 @@
 
 
 <!--POPUP ZA ULAZNE STAVKE-->
-<div id="DodajLotEdit" class="popup popup--big">
+<div id="DodajLotAddEdit" class="popup popup--big">
     <div class="popup__overlay"></div>
     <a id="DodajLotClose" class="close-popup button button--green-circle">
         <img src="~/images/menu-icon-white-png-5.jpg" alt="">
@@ -89,17 +89,24 @@
                         </div>
                     </div>
                 </div>
+                 <div class="o-flex o-flex--center o-flex--justify-center o-flex--baseline">                    
+                    <button class="button button--primary mr-">
+                        <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
+                            <path fill="#fff" d="M448 71.9c-17.3-13.4-41.5-9.3-54.1 9.1L214 344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8-15.6 15.5-16.4 41.6-1.7 58.1 0 0 120.4 133.6 137.7 147 17.3 13.4 41.5 9.3 54.1-9.1l206.3-301.7c12.6-18.5 8.7-44.2-8.6-57.5z" />
+                        </svg>
+                        <strong>
+                            SAČUVAJ
+                        </strong>
+                    </button>                                        
+                    <button class="button button--primary">
+                        <img src="~/images/menu-icon-white-png-5.jpg" alt=""  width="26" class="mr-">
+                        <strong>
+                            ODUSTANI
+                        </strong>
+                    </button>                    
+                </div>
             </div>
-        </div>
-        <div class="u-text-center">
-            <button class="button button--primary">
-                <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
-                 <path fill="#fff" d="M448 71.9c-17.3-13.4-41.5-9.3-54.1 9.1L214 344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8-15.6 15.5-16.4 41.6-1.7 58.1 0 0 120.4 133.6 137.7 147 17.3 13.4 41.5 9.3 54.1-9.1l206.3-301.7c12.6-18.5 8.7-44.2-8.6-57.5z" />
-                </svg>
-                <strong>
-                    SAČUVAJ
-                </strong>
-            </button>
+        </div>       
            <div class="grid-wrapper grid-wrapper-single-row">
           
                 <div class="cart border-top-radius-none border-bottom-radius-none">
@@ -146,8 +153,12 @@
                         <a href="#" class="button button--green-circle">
                             <img src="~/images/_rightright.png" alt="" style="margin-left: 3px;">
                         </a>
+                        <div class="input-box o-flex o-flex--center mb0">
+                            <span class="mr-">TEŽINE:</span>
+                            <input type="text" class="input input--primary" value="684.90" style="min-width: 120px;">
+                        </div>  
                         <a href="#" class="button button--green-circle">
-                            <img src="~/images/_delete.png" alt="" style="margin-left: 3px;">
+                            <img src="~/images/_delete.png" alt="">
                         </a>
                     </div>
                     <div class="cart__body">
@@ -158,7 +169,7 @@
                                         <th></th>
                                         <th></th>
                                         <th>ŠIFRA<br />ARTIKLA</th>
-                                        <th>NAZIV ARTIKALA</th>
+                                        <th>NAZIV ARTIKLA</th>
                                         <th>BARKOD</th>
                                         <th>UŠNA MARKICA</th>
                                         <th>DOBAVLJAČ</th>
@@ -970,7 +981,6 @@
             </div> 
         </div>
     </div>
-</div>
 
 
 
@@ -1018,22 +1028,29 @@
                                 <p>BROJ UNOSA :</p>
                                 <input type="text" class="input input--primary">
                             </div>
-                        </div>                       
+                        </div>  
                     </div>
-                </div>
+                </div>     
+                <div class="o-flex o-flex--center o-flex--justify-center o-flex--baseline">                    
+                    <button class="button button--primary mr-">
+                        <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
+                            <path fill="#fff" d="M448 71.9c-17.3-13.4-41.5-9.3-54.1 9.1L214 344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8-15.6 15.5-16.4 41.6-1.7 58.1 0 0 120.4 133.6 137.7 147 17.3 13.4 41.5 9.3 54.1-9.1l206.3-301.7c12.6-18.5 8.7-44.2-8.6-57.5z" />
+                        </svg>
+                        <strong>
+                            SAČUVAJ
+                        </strong>
+                    </button>                                        
+                    <button class="button button--primary">
+                        <img src="~/images/menu-icon-white-png-5.jpg" alt=""  width="26" class="mr-">
+                        <strong>
+                            ODUSTANI
+                        </strong>
+                    </button>                    
+                </div>               
             </div>
         </div>
-        <div class="u-text-center">
-            <button class="button button--primary">
-                <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
-                 <path fill="#fff" d="M448 71.9c-17.3-13.4-41.5-9.3-54.1 9.1L214 344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8-15.6 15.5-16.4 41.6-1.7 58.1 0 0 120.4 133.6 137.7 147 17.3 13.4 41.5 9.3 54.1-9.1l206.3-301.7c12.6-18.5 8.7-44.2-8.6-57.5z" />
-                </svg>
-                <strong>
-                    SAČUVAJ
-                </strong>
-            </button>
-           <div class="grid-wrapper grid-wrapper-single-row">
-          
+        <div class="u-text-center">                     
+           <div class="grid-wrapper grid-wrapper-single-row">          
                 <div class="cart border-top-radius-none border-bottom-radius-none">
                     <div class="cart__header o-flex o-flex--center o-flex--justify pb-" style="border-bottom: 1px solid #444444;">
                         <h4 class="mb0">DODATE STAVKE</h4>
@@ -1078,8 +1095,12 @@
                         <a href="#" class="button button--green-circle">
                             <img src="~/images/_rightright.png" alt="" style="margin-left: 3px;">
                         </a>
+                        <div class="input-box o-flex o-flex--center mb0">
+                            <span class="mr-">TEŽINE:</span>
+                            <input type="text" class="input input--primary" value="684.90" style="min-width: 120px;">
+                        </div>
                         <a href="#" class="button button--green-circle">
-                            <img src="~/images/_delete.png" alt="" style="margin-left: 3px;">
+                            <img src="~/images/_delete.png" alt="">
                         </a>
                     </div>
                     <div class="cart__body">
@@ -1090,7 +1111,7 @@
                                         <th></th>
                                         <th></th>
                                         <th>ŠIFRA<br />ARTIKLA</th>
-                                        <th>NAZIV ARTIKALA</th>
+                                        <th>NAZIV ARTIKLA</th>
                                         <th>BARKOD</th>                                                                                                                                                     
                                         <th>MAGACIN</th>
                                         <th>KOMORA</th>
@@ -1104,14 +1125,14 @@
                                         <td>1</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check1" type="checkbox" name="">
-                                                <label for="check1">
+                                                <input id="checkp1" type="checkbox" name="">
+                                                <label for="checkp1">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
                                         <td>4011</td>
-                                         <td>Prasece meso</td>
+                                        <td>Prasece meso</td>
                                         <td>RS</td>
                                         <td>Tople polutke sa klanja</td>
                                         <td>KOMORA 5</td>
@@ -1137,8 +1158,8 @@
                                         <td>2</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check2" type="checkbox" name="">
-                                                <label for="check2">
+                                                <input id="checkp2" type="checkbox" name="">
+                                                <label for="checkp2">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
@@ -1169,14 +1190,14 @@
                                         <td>3</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check3" type="checkbox" name="">
-                                                <label for="check3">
+                                                <input id="checkp3" type="checkbox" name="">
+                                                <label for="checkp3">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
                                        <td>4011</td>
-                                         <td>Prasece meso</td>
+                                        <td>Prasece meso</td>
                                         <td>RS</td>
                                         <td>Tople polutke sa klanja</td>
                                         <td>KOMORA 5</td>
@@ -1202,14 +1223,14 @@
                                         <td>4</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check4" type="checkbox" name="">
-                                                <label for="check4">
+                                                <input id="checkp4" type="checkbox" name="">
+                                                <label for="checkp4">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
                                        <td>4011</td>
-                                         <td>Prasece meso</td>
+                                        <td>Prasece meso</td>
                                         <td>RS</td>
                                         <td>Tople polutke sa klanja</td>
                                         <td>KOMORA 5</td>
@@ -1235,14 +1256,14 @@
                                         <td>5</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check5" type="checkbox" name="">
-                                                <label for="check5">
+                                                <input id="checkp5" type="checkbox" name="">
+                                                <label for="checkp5">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
                                         <td>4011</td>
-                                         <td>Prasece meso</td>
+                                        <td>Prasece meso</td>
                                         <td>RS</td>
                                         <td>Tople polutke sa klanja</td>
                                         <td>KOMORA 5</td>
@@ -1268,14 +1289,14 @@
                                         <td>6</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check6" type="checkbox" name="">
-                                                <label for="check6">
+                                                <input id="checkp6" type="checkbox" name="">
+                                                <label for="checkp6">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
                                        <td>4011</td>
-                                         <td>Prasece meso</td>
+                                        <td>Prasece meso</td>
                                         <td>RS</td>
                                         <td>Tople polutke sa klanja</td>
                                         <td>KOMORA 5</td>
@@ -1301,14 +1322,14 @@
                                         <td>7</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check7" type="checkbox" name="">
-                                                <label for="check7">
+                                                <input id="checkp7" type="checkbox" name="">
+                                                <label for="checkp7">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
                                         <td>4011</td>
-                                         <td>Prasece meso</td>
+                                        <td>Prasece meso</td>
                                         <td>RS</td>
                                         <td>Tople polutke sa klanja</td>
                                         <td>KOMORA 5</td>
@@ -1334,14 +1355,14 @@
                                         <td>8</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check8" type="checkbox" name="">
-                                                <label for="check8">
+                                                <input id="checkp8" type="checkbox" name="">
+                                                <label for="checkp8">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
                                         <td>4011</td>
-                                         <td>Prasece meso</td>
+                                        <td>Prasece meso</td>
                                         <td>RS</td>
                                         <td>Tople polutke sa klanja</td>
                                         <td>KOMORA 5</td>
@@ -1367,8 +1388,8 @@
                                         <td>9</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check9" type="checkbox" name="">
-                                                <label for="check9">
+                                                <input id="checkp9" type="checkbox" name="">
+                                                <label for="checkp9">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
@@ -1400,14 +1421,14 @@
                                         <td>10</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check10" type="checkbox" name="">
-                                                <label for="check10">
+                                                <input id="checkp10" type="checkbox" name="">
+                                                <label for="checkp10">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
-                                     <td>4011</td>
-                                         <td>Prasece meso</td>
+                                        <td>4011</td>
+                                        <td>Prasece meso</td>
                                         <td>RS</td>
                                         <td>Tople polutke sa klanja</td>
                                         <td>KOMORA 5</td>
@@ -1433,14 +1454,14 @@
                                         <td>11</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check11" type="checkbox" name="">
-                                                <label for="check11">
+                                                <input id="checkp11" type="checkbox" name="">
+                                                <label for="checkp11">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
-                                       <td>4011</td>
-                                         <td>Prasece meso</td>
+                                        <td>4011</td>
+                                        <td>Prasece meso</td>
                                         <td>RS</td>
                                         <td>Tople polutke sa klanja</td>
                                         <td>KOMORA 5</td>
@@ -1466,14 +1487,14 @@
                                         <td>12</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check12" type="checkbox" name="">
-                                                <label for="check12">
+                                                <input id="checkp12" type="checkbox" name="">
+                                                <label for="checkp12">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
-                                      <td>4011</td>
-                                         <td>Prasece meso</td>
+                                        <td>4011</td>
+                                        <td>Prasece meso</td>
                                         <td>RS</td>
                                         <td>Tople polutke sa klanja</td>
                                         <td>KOMORA 5</td>
@@ -1499,14 +1520,14 @@
                                         <td>13</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check13" type="checkbox" name="">
-                                                <label for="check13">
+                                                <input id="checkp13" type="checkbox" name="">
+                                                <label for="checkp13">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
-                                     <td>4011</td>
-                                         <td>Prasece meso</td>
+                                        <td>4011</td>
+                                        <td>Prasece meso</td>
                                         <td>RS</td>
                                         <td>Tople polutke sa klanja</td>
                                         <td>KOMORA 5</td>
@@ -1532,14 +1553,14 @@
                                         <td>14</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check14" type="checkbox" name="">
-                                                <label for="check14">
+                                                <input id="checkp14" type="checkbox" name="">
+                                                <label for="checkp14">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
-                                    <td>4011</td>
-                                         <td>Prasece meso</td>
+                                        <td>4011</td>
+                                        <td>Prasece meso</td>
                                         <td>RS</td>
                                         <td>Tople polutke sa klanja</td>
                                         <td>KOMORA 5</td>
@@ -1565,14 +1586,14 @@
                                         <td>15</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check15" type="checkbox" name="">
-                                                <label for="check15">
+                                                <input id="checkp15" type="checkbox" name="">
+                                                <label for="checkp15">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
-                                   <td>4011</td>
-                                         <td>Prasece meso</td>
+                                        <td>4011</td>
+                                        <td>Prasece meso</td>
                                         <td>RS</td>
                                         <td>Tople polutke sa klanja</td>
                                         <td>KOMORA 5</td>
@@ -1598,14 +1619,14 @@
                                         <td>16</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check16" type="checkbox" name="">
-                                                <label for="check16">
+                                                <input id="checkp16" type="checkbox" name="">
+                                                <label for="checkp16">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
-                                   <td>4011</td>
-                                         <td>Prasece meso</td>
+                                        <td>4011</td>
+                                        <td>Prasece meso</td>
                                         <td>RS</td>
                                         <td>Tople polutke sa klanja</td>
                                         <td>KOMORA 5</td>
@@ -1631,14 +1652,14 @@
                                         <td>17</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check17" type="checkbox" name="">
-                                                <label for="check17">
+                                                <input id="checkp17" type="checkbox" name="">
+                                                <label for="checkp17">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
-                                    <td>4011</td>
-                                         <td>Prasece meso</td>
+                                        <td>4011</td>
+                                        <td>Prasece meso</td>
                                         <td>RS</td>
                                         <td>Tople polutke sa klanja</td>
                                         <td>KOMORA 5</td>
@@ -1664,14 +1685,14 @@
                                         <td>18</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check18" type="checkbox" name="">
-                                                <label for="check18">
+                                                <input id="checkp18" type="checkbox" name="">
+                                                <label for="checkp18">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
-                               <td>4011</td>
-                                         <td>Prasece meso</td>
+                                        <td>4011</td>
+                                        <td>Prasece meso</td>
                                         <td>RS</td>
                                         <td>Tople polutke sa klanja</td>
                                         <td>KOMORA 5</td>
@@ -1697,14 +1718,14 @@
                                         <td>19</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check19" type="checkbox" name="">
-                                                <label for="check19">
+                                                <input id="checkp19" type="checkbox" name="">
+                                                <label for="checkp19">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
-                                  <td>4011</td>
-                                         <td>Prasece meso</td>
+                                        <td>4011</td>
+                                        <td>Prasece meso</td>
                                         <td>RS</td>
                                         <td>Tople polutke sa klanja</td>
                                         <td>KOMORA 5</td>
@@ -1730,14 +1751,14 @@
                                         <td>20</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check20" type="checkbox" name="">
-                                                <label for="check20">
+                                                <input id="checkp20" type="checkbox" name="">
+                                                <label for="checkp20">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
                                         <td>4011</td>
-                                         <td>Prasece meso</td>
+                                        <td>Prasece meso</td>
                                         <td>RS</td>
                                         <td>Tople polutke sa klanja</td>
                                         <td>KOMORA 5</td>
@@ -1763,14 +1784,14 @@
                                         <td>21</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check21" type="checkbox" name="">
-                                                <label for="check21">
+                                                <input id="checkp21" type="checkbox" name="">
+                                                <label for="checkp21">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
                                         <td>4011</td>
-                                         <td>Prasece meso</td>
+                                        <td>Prasece meso</td>
                                         <td>RS</td>
                                         <td>Tople polutke sa klanja</td>
                                         <td>KOMORA 5</td>
@@ -1796,14 +1817,14 @@
                                         <td>22</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check22" type="checkbox" name="">
-                                                <label for="check22">
+                                                <input id="checkp22" type="checkbox" name="">
+                                                <label for="checkp22">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
                                         <td>4011</td>
-                                         <td>Prasece meso</td>
+                                        <td>Prasece meso</td>
                                         <td>RS</td>
                                         <td>Tople polutke sa klanja</td>
                                         <td>KOMORA 5</td>
@@ -1850,7 +1871,7 @@
                 </div>
                 <div class="cart__body">
                     <div class="row">
-                        <div class="col-xs-12 col-md-6">
+                        <div class="col-xs-12 col-md-12">
                             <div class="input-box">
                                 <p>ARTIKAL :</p>
                                 <input type="text" class="input input--primary">
@@ -1858,67 +1879,49 @@
                         </div>
                         <div class="col-xs-12 col-md-6">
                             <div class="input-box">
-                                <p>BARKOD :</p>
+                                <p>MAGACIN :</p>
                                 <input type="text" class="input input--primary">
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-6">
                             <div class="input-box input-box--date relative">
-                                <p>UŠNA MARKICA : </p>
+                                <p>KOMORA : </p>
                                 <input type="text" class="input input--primary">                                                       
                             </div>
                         </div>
                          <div class="col-xs-12 col-md-6">
                             <div class="input-box">
-                                <p>DOBAVLJAČ :</p>
+                                <p>TEŽINA(KG) :</p>
                                 <input type="text" class="input input--primary">
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-6">
                             <div class="input-box">
-                                <p>DRŽAVA :</p>
+                                <p>BROJ UNOSA :</p>
                                 <input type="text" class="input input--primary">
                             </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <div class="input-box">
-                                <p>DEPO :</p>
-                                <input type="text" class="input input--primary">
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <div class="input-box">
-                                <p>TEŽINA :</p>
-                                <input type="text" class="input input--primary">
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <div class="input-box">
-                                <p>KOLIČINA :</p>
-                                <input type="text" class="input input--primary">
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <div class="input-box">
-                                <p>LINIJA PROIZVODNJE :</p>
-                                <input type="text" class="input input--primary">
-                            </div>
-                        </div>
+                        </div>                       
                     </div>
                 </div>
+                 <div class="o-flex o-flex--center o-flex--justify-center o-flex--baseline">                    
+                    <button class="button button--primary mr-">
+                        <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
+                            <path fill="#fff" d="M448 71.9c-17.3-13.4-41.5-9.3-54.1 9.1L214 344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8-15.6 15.5-16.4 41.6-1.7 58.1 0 0 120.4 133.6 137.7 147 17.3 13.4 41.5 9.3 54.1-9.1l206.3-301.7c12.6-18.5 8.7-44.2-8.6-57.5z" />
+                        </svg>
+                        <strong>
+                            SAČUVAJ
+                        </strong>
+                    </button>                                        
+                    <button class="button button--primary">
+                        <img src="~/images/menu-icon-white-png-5.jpg" alt=""  width="26" class="mr-">
+                        <strong>
+                            ODUSTANI
+                        </strong>
+                    </button>                    
+                </div>
             </div>
-        </div>
-        <div class="u-text-center">
-            <button class="button button--primary">
-                <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
-                 <path fill="#fff" d="M448 71.9c-17.3-13.4-41.5-9.3-54.1 9.1L214 344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8-15.6 15.5-16.4 41.6-1.7 58.1 0 0 120.4 133.6 137.7 147 17.3 13.4 41.5 9.3 54.1-9.1l206.3-301.7c12.6-18.5 8.7-44.2-8.6-57.5z" />
-                </svg>
-                <strong>
-                    SAČUVAJ
-                </strong>
-            </button>
-           <div class="grid-wrapper grid-wrapper-single-row">
-          
+        </div>       
+           <div class="grid-wrapper grid-wrapper-single-row">         
                 <div class="cart border-top-radius-none border-bottom-radius-none">
                     <div class="cart__header o-flex o-flex--center o-flex--justify pb-" style="border-bottom: 1px solid #444444;">
                         <h4 class="mb0">DODATE STAVKE</h4>
@@ -1963,8 +1966,12 @@
                         <a href="#" class="button button--green-circle">
                             <img src="~/images/_rightright.png" alt="" style="margin-left: 3px;">
                         </a>
+                        <div class="input-box o-flex o-flex--center mb0">
+                            <span class="mr-">TEŽINE:</span>
+                            <input type="text" class="input input--primary" value="684.90" style="min-width: 120px;">
+                        </div>
                         <a href="#" class="button button--green-circle">
-                            <img src="~/images/_delete.png" alt="" style="margin-left: 3px;">
+                            <img src="~/images/_delete.png" alt="">
                         </a>
                     </div>
                     <div class="cart__body">
@@ -1975,39 +1982,33 @@
                                         <th></th>
                                         <th></th>
                                         <th>ŠIFRA<br />ARTIKLA</th>
-                                        <th>NAZIV ARTIKALA</th>
+                                        <th>NAZIV ARTIKLA</th>
                                         <th>BARKOD</th>
-                                        <th>UŠNA MARKICA</th>
-                                        <th>DOBAVLJAČ</th>
-                                        <th>DRŽAVA</th>
-                                        <th>DEPO</th>
-                                        <th>TEŽINA</th>
-                                        <th>KOLIČINA</th>
-                                        <th>LINIJA</th>
+                                        <th>MAGACIN</th>
+                                        <th>KOMORA</th>
+                                        <th>KG</th>
+                                        <th>KOM</th>                                        
                                         <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="u-text-right">1</td>
+                                        <td>1</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check1" type="checkbox" name="">
-                                                <label for="check1">
+                                                <input id="checkg1" type="checkbox" name="">
+                                                <label for="checkg1">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
-                                        <td>100005</td>
-                                         <td>Prasad</td>
-                                        <td>RS</td>
-                                        <td>RS2</td>
-                                        <td>Bioesen doo FARMA Srbija</td>
-                                        <td>Srbija</td>
-                                        <td>Depo 1</td>
-                                        <td class="u-text-right">22.83</td>
-                                        <td class="u-text-right">1</td>
-                                        <td>Linija klanja svinja</td>
+                                        <td>7600</td>
+                                         <td>Slezina svinjska</td>
+                                        <td>01860000000007600310300150010000179800213038</td>                                       
+                                        <td>SPZP</td>
+                                        <td></td>
+                                        <td class="u-text-right">1.50</td>                                        
+                                        <td class="u-text-right">1</td>                                        
                                         <td style="width: 50px;">
                                             <div class="o-flex o-flex--center">
                                                 <a href="#" class=" mr-">
@@ -2028,21 +2029,18 @@
                                         <td>2</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check2" type="checkbox" name="">
-                                                <label for="check2">
+                                                <input id="checkg2" type="checkbox" name="">
+                                                <label for="checkg2">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
-                                        <td>100005</td>
-                                        <td>Prasad</td>
-                                        <td>RS</td>
-                                        <td>RS2</td>
-                                        <td>Bioesen doo FARMA Srbija</td>
-                                        <td>Srbija</td>
-                                        <td>Depo 1</td>
-                                       <td class="u-text-right">22.83</td>
-                                        <td class="u-text-right">1</td>
-                                        <td>Linija klanja svinja</td>
+                                        <td>7600</td>
+                                        <td>Slezina svinjska</td>
+                                        <td>01860000000007600310300150010000179800213038</td>                                       
+                                        <td>SPZP</td>
+                                        <td></td>
+                                        <td class="u-text-right">1.50</td>                                        
+                                        <td class="u-text-right">1</td>                                  
                                         <td style="width: 50px;">
                                             <div class="o-flex o-flex--center">
                                                 <a href="#" class=" mr-">
@@ -2063,22 +2061,19 @@
                                         <td>3</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check3" type="checkbox" name="">
-                                                <label for="check3">
+                                                <input id="checkg3" type="checkbox" name="">
+                                                <label for="checkg3">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
-                                        <td>100005</td>
-                                        <td>Prasad</td>
-                                        <td>RS</td>
-                                        <td>RS2</td>
-                                        <td>Bioesen doo FARMA Srbija</td>
-                                        <td>Srbija</td>
-                                        <td>Depo 1</td>
-                                       <td class="u-text-right">22.83</td>
-                                        <td class="u-text-right">1</td>
-                                        <td>Linija klanja svinja</td>
+                                        <td>7600</td>
+                                        <td>Slezina svinjska</td>
+                                        <td>01860000000007600310300150010000179800213038</td>                                       
+                                        <td>SPZP</td>
+                                        <td></td>
+                                        <td class="u-text-right">1.50</td>                                        
+                                        <td class="u-text-right">1</td>                                                                                   
                                         <td style="width: 50px;">
                                             <div class="o-flex o-flex--center">
                                                 <a href="#" class=" mr-">
@@ -2099,22 +2094,19 @@
                                         <td>4</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check4" type="checkbox" name="">
-                                                <label for="check4">
+                                                <input id="checkg4" type="checkbox" name="">
+                                                <label for="checkg4">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
-                                        <td>100005</td>
-                                        <td>Prasad</td>
-                                        <td>RS</td>
-                                        <td>RS2</td>
-                                        <td>Bioesen doo FARMA Srbija</td>
-                                        <td>Srbija</td>
-                                        <td>Depo 1</td>
-                                       <td class="u-text-right">22.83</td>
-                                        <td class="u-text-right">1</td>
-                                        <td>Linija klanja svinja</td>
+                                        <td>7600</td>
+                                        <td>Slezina svinjska</td>
+                                        <td>01860000000007600310300150010000179800213038</td>                                       
+                                        <td>SPZP</td>
+                                        <td></td>
+                                        <td class="u-text-right">1.50</td>                                        
+                                        <td class="u-text-right">1</td>                                 
                                         <td style="width: 50px;">
                                             <div class="o-flex o-flex--center">
                                                 <a href="#" class=" mr-">
@@ -2135,22 +2127,19 @@
                                         <td>5</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check5" type="checkbox" name="">
-                                                <label for="check5">
+                                                <input id="checkg5" type="checkbox" name="">
+                                                <label for="checkg5">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
-                                        <td>100005</td>
-                                        <td>Prasad</td>
-                                        <td>RS</td>
-                                        <td>RS2</td>
-                                        <td>Bioesen doo FARMA Srbija</td>
-                                        <td>Srbija</td>
-                                        <td>Depo 1</td>
-                                       <td class="u-text-right">22.83</td>
-                                        <td class="u-text-right">1</td>
-                                        <td>Linija klanja svinja</td>
+                                        <td>7600</td>
+                                        <td>Slezina svinjska</td>
+                                        <td>01860000000007600310300150010000179800213038</td>                                       
+                                        <td>SPZP</td>
+                                        <td></td>
+                                        <td class="u-text-right">1.50</td>                                        
+                                        <td class="u-text-right">1</td>                                                                       
                                         <td style="width: 50px;">
                                             <div class="o-flex o-flex--center">
                                                 <a href="#" class=" mr-">
@@ -2171,22 +2160,19 @@
                                         <td>6</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check6" type="checkbox" name="">
-                                                <label for="check6">
+                                                <input id="checkg6" type="checkbox" name="">
+                                                <label for="checkg6">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
-                                       <td>100005</td>
-                                       <td>Prasad</td>
-                                        <td>RS</td>
-                                        <td>RS2</td>
-                                        <td>Bioesen doo FARMA Srbija</td>
-                                        <td>Srbija</td>
-                                        <td>Depo 1</td>
-                                       <td class="u-text-right">22.83</td>
-                                        <td class="u-text-right">1</td>
-                                        <td>Linija klanja svinja</td>
+                                        <td>7600</td>
+                                        <td>Slezina svinjska</td>
+                                        <td>01860000000007600310300150010000179800213038</td>                                       
+                                        <td>SPZP</td>
+                                        <td></td>
+                                        <td class="u-text-right">1.50</td>                                        
+                                        <td class="u-text-right">1</td>                               
                                         <td style="width: 50px;">
                                             <div class="o-flex o-flex--center">
                                                 <a href="#" class=" mr-">
@@ -2207,22 +2193,19 @@
                                         <td>7</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check7" type="checkbox" name="">
-                                                <label for="check7">
+                                                <input id="checkg7" type="checkbox" name="">
+                                                <label for="checkg7">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
-                                        <td>100005</td>
-                                        <td>Prasad</td>
-                                        <td>RS</td>
-                                        <td>RS2</td>
-                                        <td>Bioesen doo FARMA Srbija</td>
-                                        <td>Srbija</td>
-                                        <td>Depo 1</td>
-                                       <td class="u-text-right">22.83</td>
-                                        <td class="u-text-right">1</td>
-                                        <td>Linija klanja svinja</td>
+                                        <td>7600</td>
+                                        <td>Slezina svinjska</td>
+                                        <td>01860000000007600310300150010000179800213038</td>                                       
+                                        <td>SPZP</td>
+                                        <td></td>
+                                        <td class="u-text-right">1.50</td>                                        
+                                        <td class="u-text-right">1</td>                                    
                                         <td style="width: 50px;">
                                             <div class="o-flex o-flex--center">
                                                 <a href="#" class=" mr-">
@@ -2243,22 +2226,19 @@
                                         <td>8</td>
                                         <td style="width: 30px;">
                                             <div class="check-box">
-                                                <input id="check8" type="checkbox" name="">
-                                                <label for="check8">
+                                                <input id="checkg8" type="checkbox" name="">
+                                                <label for="checkg8">
                                                     <span class="check-icon"></span>
                                                 </label>
                                             </div>
                                         </td>
-                                        <td>100005</td>
-                                        <td>Prasad</td>
-                                        <td>RS</td>
-                                        <td>RS2</td>
-                                        <td>Bioesen doo FARMA Srbija</td>
-                                        <td>Srbija</td>
-                                        <td>Depo 1</td>
-                                       <td class="u-text-right">22.83</td>
-                                        <td class="u-text-right">1</td>
-                                        <td>Linija klanja svinja</td>
+                                        <td>7600</td>
+                                        <td>Slezina svinjska</td>
+                                        <td>01860000000007600310300150010000179800213038</td>                                       
+                                        <td>SPZP</td>
+                                        <td></td>
+                                        <td class="u-text-right">1.50</td>                                        
+                                        <td class="u-text-right">1</td>                                      
                                         <td style="width: 50px;">
                                             <div class="o-flex o-flex--center">
                                                 <a href="#" class=" mr-">
@@ -2274,511 +2254,7 @@
                                                 </a>
                                             </div>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td>9</td>
-                                        <td style="width: 30px;">
-                                            <div class="check-box">
-                                                <input id="check9" type="checkbox" name="">
-                                                <label for="check9">
-                                                    <span class="check-icon"></span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                       <td>100005</td>
-                                       <td>Prasad</td>
-                                        <td>RS</td>
-                                        <td>RS2</td>
-                                        <td>Bioesen doo FARMA Srbija</td>
-                                        <td>Srbija</td>
-                                        <td>Depo 1</td>
-                                       <td class="u-text-right">22.83</td>
-                                        <td class="u-text-right">1</td>
-                                        <td>Linija klanja svinja</td>
-                                        <td style="width: 50px;">
-                                            <div class="o-flex o-flex--center">
-                                                <a href="#" class=" mr-">
-                                                    <svg height="18" width="18" viewBox="0 0 18 18">
-                                                        <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
-                                                    </svg>
-                                                </a>
-                                                <a href="#">
-                                                    <svg width="25" viewBox="0 0 48 48">
-                                                        <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
-                                                        <path d="M0 0h48v48H0z" fill="none"></path>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>10</td>
-                                        <td style="width: 30px;">
-                                            <div class="check-box">
-                                                <input id="check10" type="checkbox" name="">
-                                                <label for="check10">
-                                                    <span class="check-icon"></span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                       <td>100005</td>
-                                       <td>Prasad</td>
-                                        <td>RS</td>
-                                        <td>RS2</td>
-                                        <td>Bioesen doo FARMA Srbija</td>
-                                        <td>Srbija</td>
-                                        <td>Depo 1</td>
-                                       <td class="u-text-right">22.83</td>
-                                        <td class="u-text-right">1</td>
-                                        <td>Linija klanja svinja</td>
-                                        <td style="width: 50px;">
-                                            <div class="o-flex o-flex--center">
-                                                <a href="#" class=" mr-">
-                                                    <svg height="18" width="18" viewBox="0 0 18 18">
-                                                        <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
-                                                    </svg>
-                                                </a>
-                                                <a href="#">
-                                                    <svg width="25" viewBox="0 0 48 48">
-                                                        <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
-                                                        <path d="M0 0h48v48H0z" fill="none"></path>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>11</td>
-                                        <td style="width: 30px;">
-                                            <div class="check-box">
-                                                <input id="check11" type="checkbox" name="">
-                                                <label for="check11">
-                                                    <span class="check-icon"></span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>100005</td>
-                                        <td>Prasad</td>
-                                        <td>RS</td>
-                                        <td>RS2</td>
-                                        <td>Bioesen doo FARMA Srbija</td>
-                                        <td>Srbija</td>
-                                        <td>Depo 1</td>
-                                       <td class="u-text-right">22.83</td>
-                                        <td class="u-text-right">1</td>
-                                        <td>Linija klanja svinja</td>
-                                        <td style="width: 50px;">
-                                            <div class="o-flex o-flex--center">
-                                                <a href="#" class=" mr-">
-                                                    <svg height="18" width="18" viewBox="0 0 18 18">
-                                                        <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
-                                                    </svg>
-                                                </a>
-                                                <a href="#">
-                                                    <svg width="25" viewBox="0 0 48 48">
-                                                        <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
-                                                        <path d="M0 0h48v48H0z" fill="none"></path>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>12</td>
-                                        <td style="width: 30px;">
-                                            <div class="check-box">
-                                                <input id="check12" type="checkbox" name="">
-                                                <label for="check12">
-                                                    <span class="check-icon"></span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>100005</td>
-                                        <td>Prasad</td>
-                                        <td>RS</td>
-                                        <td>RS2</td>
-                                        <td>Bioesen doo FARMA Srbija</td>
-                                        <td>Srbija</td>
-                                        <td>Depo 1</td>
-                                       <td class="u-text-right">22.83</td>
-                                        <td class="u-text-right">1</td>
-                                        <td>Linija klanja svinja</td>
-                                        <td style="width: 50px;">
-                                            <div class="o-flex o-flex--center">
-                                                <a href="#" class=" mr-">
-                                                    <svg height="18" width="18" viewBox="0 0 18 18">
-                                                        <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
-                                                    </svg>
-                                                </a>
-                                                <a href="#">
-                                                    <svg width="25" viewBox="0 0 48 48">
-                                                        <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
-                                                        <path d="M0 0h48v48H0z" fill="none"></path>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>13</td>
-                                        <td style="width: 30px;">
-                                            <div class="check-box">
-                                                <input id="check13" type="checkbox" name="">
-                                                <label for="check13">
-                                                    <span class="check-icon"></span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>100005</td>
-                                        <td>Prasad</td>
-                                        <td>RS</td>
-                                        <td>RS2</td>
-                                        <td>Bioesen doo FARMA Srbija</td>
-                                        <td>Srbija</td>
-                                        <td>Depo 1</td>
-                                       <td class="u-text-right">22.83</td>
-                                        <td class="u-text-right">1</td>
-                                        <td>Linija klanja svinja</td>
-                                        <td style="width: 50px;">
-                                            <div class="o-flex o-flex--center">
-                                                <a href="#" class=" mr-">
-                                                    <svg height="18" width="18" viewBox="0 0 18 18">
-                                                        <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
-                                                    </svg>
-                                                </a>
-                                                <a href="#">
-                                                    <svg width="25" viewBox="0 0 48 48">
-                                                        <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
-                                                        <path d="M0 0h48v48H0z" fill="none"></path>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>14</td>
-                                        <td style="width: 30px;">
-                                            <div class="check-box">
-                                                <input id="check14" type="checkbox" name="">
-                                                <label for="check14">
-                                                    <span class="check-icon"></span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>100005</td>
-                                        <td>Prasad</td>
-                                        <td>RS</td>
-                                        <td>RS2</td>
-                                        <td>Bioesen doo FARMA Srbija</td>
-                                        <td>Srbija</td>
-                                        <td>Depo 1</td>
-                                       <td class="u-text-right">22.83</td>
-                                        <td class="u-text-right">1</td>
-                                        <td>Linija klanja svinja</td>
-                                        <td style="width: 50px;">
-                                            <div class="o-flex o-flex--center">
-                                                <a href="#" class=" mr-">
-                                                    <svg height="18" width="18" viewBox="0 0 18 18">
-                                                        <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
-                                                    </svg>
-                                                </a>
-                                                <a href="#">
-                                                    <svg width="25" viewBox="0 0 48 48">
-                                                        <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
-                                                        <path d="M0 0h48v48H0z" fill="none"></path>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>15</td>
-                                        <td style="width: 30px;">
-                                            <div class="check-box">
-                                                <input id="check15" type="checkbox" name="">
-                                                <label for="check15">
-                                                    <span class="check-icon"></span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                       <td>100005</td>
-                                       <td>Prasad</td>
-                                        <td>RS</td>
-                                        <td>RS2</td>
-                                        <td>Bioesen doo FARMA Srbija</td>
-                                        <td>Srbija</td>
-                                        <td>Depo 1</td>
-                                       <td class="u-text-right">22.83</td>
-                                        <td class="u-text-right">1</td>
-                                        <td>Linija klanja svinja</td>
-                                        <td style="width: 50px;">
-                                            <div class="o-flex o-flex--center">
-                                                <a href="#" class=" mr-">
-                                                    <svg height="18" width="18" viewBox="0 0 18 18">
-                                                        <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
-                                                    </svg>
-                                                </a>
-                                                <a href="#">
-                                                    <svg width="25" viewBox="0 0 48 48">
-                                                        <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
-                                                        <path d="M0 0h48v48H0z" fill="none"></path>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>16</td>
-                                        <td style="width: 30px;">
-                                            <div class="check-box">
-                                                <input id="check16" type="checkbox" name="">
-                                                <label for="check16">
-                                                    <span class="check-icon"></span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>100005</td>
-                                        <td>Prasad</td>
-                                        <td>RS</td>
-                                        <td>RS2</td>
-                                        <td>Bioesen doo FARMA Srbija</td>
-                                        <td>Srbija</td>
-                                        <td>Depo 1</td>
-                                       <td class="u-text-right">22.83</td>
-                                        <td class="u-text-right">1</td>
-                                        <td>Linija klanja svinja</td>
-                                        <td style="width: 50px;">
-                                            <div class="o-flex o-flex--center">
-                                                <a href="#" class=" mr-">
-                                                    <svg height="18" width="18" viewBox="0 0 18 18">
-                                                        <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
-                                                    </svg>
-                                                </a>
-                                                <a href="#">
-                                                    <svg width="25" viewBox="0 0 48 48">
-                                                        <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
-                                                        <path d="M0 0h48v48H0z" fill="none"></path>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>17</td>
-                                        <td style="width: 30px;">
-                                            <div class="check-box">
-                                                <input id="check17" type="checkbox" name="">
-                                                <label for="check17">
-                                                    <span class="check-icon"></span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>100005</td>
-                                        <td>Prasad</td>
-                                        <td>RS</td>
-                                        <td>RS2</td>
-                                        <td>Bioesen doo FARMA Srbija</td>
-                                        <td>Srbija</td>
-                                        <td>Depo 1</td>
-                                       <td class="u-text-right">22.83</td>
-                                        <td class="u-text-right">1</td>
-                                        <td>Linija klanja svinja</td>
-                                        <td style="width: 50px;">
-                                            <div class="o-flex o-flex--center">
-                                                <a href="#" class=" mr-">
-                                                    <svg height="18" width="18" viewBox="0 0 18 18">
-                                                        <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
-                                                    </svg>
-                                                </a>
-                                                <a href="#">
-                                                    <svg width="25" viewBox="0 0 48 48">
-                                                        <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
-                                                        <path d="M0 0h48v48H0z" fill="none"></path>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>18</td>
-                                        <td style="width: 30px;">
-                                            <div class="check-box">
-                                                <input id="check18" type="checkbox" name="">
-                                                <label for="check18">
-                                                    <span class="check-icon"></span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>100005</td>
-                                        <td>Prasad</td>
-                                        <td>RS</td>
-                                        <td>RS2</td>
-                                        <td>Bioesen doo FARMA Srbija</td>
-                                        <td>Srbija</td>
-                                        <td>Depo 1</td>
-                                       <td class="u-text-right">22.83</td>
-                                        <td class="u-text-right">1</td>
-                                        <td>Linija klanja svinja</td>
-                                        <td style="width: 50px;">
-                                            <div class="o-flex o-flex--center">
-                                                <a href="#" class=" mr-">
-                                                    <svg height="18" width="18" viewBox="0 0 18 18">
-                                                        <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
-                                                    </svg>
-                                                </a>
-                                                <a href="#">
-                                                    <svg width="25" viewBox="0 0 48 48">
-                                                        <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
-                                                        <path d="M0 0h48v48H0z" fill="none"></path>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>19</td>
-                                        <td style="width: 30px;">
-                                            <div class="check-box">
-                                                <input id="check19" type="checkbox" name="">
-                                                <label for="check19">
-                                                    <span class="check-icon"></span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>100005</td>
-                                        <td>Prasad</td>
-                                        <td>RS</td>
-                                        <td>RS2</td>
-                                        <td>Bioesen doo FARMA Srbija</td>
-                                        <td>Srbija</td>
-                                        <td>Depo 1</td>
-                                       <td class="u-text-right">22.83</td>
-                                        <td class="u-text-right">1</td>
-                                        <td>Linija klanja svinja</td>
-                                        <td style="width: 50px;">
-                                            <div class="o-flex o-flex--center">
-                                                <a href="#" class=" mr-">
-                                                    <svg height="18" width="18" viewBox="0 0 18 18">
-                                                        <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
-                                                    </svg>
-                                                </a>
-                                                <a href="#">
-                                                    <svg width="25" viewBox="0 0 48 48">
-                                                        <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
-                                                        <path d="M0 0h48v48H0z" fill="none"></path>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>20</td>
-                                        <td style="width: 30px;">
-                                            <div class="check-box">
-                                                <input id="check20" type="checkbox" name="">
-                                                <label for="check20">
-                                                    <span class="check-icon"></span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                      <td>100005</td>
-                                      <td>Prasad</td>
-                                        <td>RS</td>
-                                        <td>RS2</td>
-                                        <td>Bioesen doo FARMA Srbija</td>
-                                        <td>Srbija</td>
-                                        <td>Depo 1</td>
-                                       <td class="u-text-right">22.83</td>
-                                        <td class="u-text-right">1</td>
-                                        <td>Linija klanja svinja</td>
-                                        <td style="width: 50px;">
-                                            <div class="o-flex o-flex--center">
-                                                <a href="#" class=" mr-">
-                                                    <svg height="18" width="18" viewBox="0 0 18 18">
-                                                        <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
-                                                    </svg>
-                                                </a>
-                                                <a href="#">
-                                                    <svg width="25" viewBox="0 0 48 48">
-                                                        <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
-                                                        <path d="M0 0h48v48H0z" fill="none"></path>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>21</td>
-                                        <td style="width: 30px;">
-                                            <div class="check-box">
-                                                <input id="check21" type="checkbox" name="">
-                                                <label for="check21">
-                                                    <span class="check-icon"></span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                      <td>100005</td>
-                                      <td>Prasad</td>
-                                        <td>RS</td>
-                                        <td>RS2</td>
-                                        <td>Bioesen doo FARMA Srbija</td>
-                                        <td>Srbija</td>
-                                        <td>Depo 1</td>
-                                       <td class="u-text-right">22.83</td>
-                                        <td class="u-text-right">1</td>
-                                        <td>Linija klanja svinja</td>
-                                        <td style="width: 50px;">
-                                            <div class="o-flex o-flex--center">
-                                                <a href="#" class=" mr-">
-                                                    <svg height="18" width="18" viewBox="0 0 18 18">
-                                                        <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
-                                                    </svg>
-                                                </a>
-                                                <a href="#">
-                                                    <svg width="25" viewBox="0 0 48 48">
-                                                        <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
-                                                        <path d="M0 0h48v48H0z" fill="none"></path>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>22</td>
-                                        <td style="width: 30px;">
-                                            <div class="check-box">
-                                                <input id="check22" type="checkbox" name="">
-                                                <label for="check22">
-                                                    <span class="check-icon"></span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>100005</td>
-                                        <td>Prasad</td>
-                                        <td>RS</td>
-                                        <td>RS2</td>
-                                        <td>Bioesen doo FARMA Srbija</td>
-                                        <td>Srbija</td>
-                                        <td>Depo 1</td>
-                                       <td class="u-text-right">22.83</td>
-                                         <td class="u-text-right">1</td>
-                                        <td>Linija klanja svinja</td>
-                                        <td style="width: 50px;">
-                                            <div class="o-flex o-flex--center">
-                                                <a href="#" class=" mr-">
-                                                    <svg height="18" width="18" viewBox="0 0 18 18">
-                                                        <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
-                                                    </svg>
-                                                </a>
-                                                <a href="#">
-                                                    <svg width="25" viewBox="0 0 48 48">
-                                                        <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
-                                                        <path d="M0 0h48v48H0z" fill="none"></path>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>                                   
+                                    </tr>                                                                   
                                 </tbody>
                             </table>
                         </div>
@@ -2787,7 +2263,6 @@
             </div> 
         </div>
     </div>
-</div>
 
 <main>
     <!--Navbar-->
@@ -2815,13 +2290,13 @@
                     <div class="row w-100">
                         <div class="col-xs-12 col-md-6">
                             <div class="input-box">
-                                <p>ŠIFRA:</p>
+                                <p>LOT:</p>
                                 <input type="text" class="input input--primary">
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-6">
                             <div class="input-box">
-                                <p>ŠIFRA :</p>
+                                <p>OPIS :</p>
                                 <input type="text" class="input input--primary">
                             </div>
                         </div>
@@ -3236,7 +2711,7 @@
                                 <td>L280922</td>   
                                 <td></td>
                                 <td></td>
-                                <td>Ne</td>
+                                <td class="red">Ne</td>
                             </tr>
                             <tr>
                                 <td>2</td>
@@ -3249,7 +2724,7 @@
                                 <td>L280922</td>
                                 <td></td>
                                 <td></td>
-                                <td>Ne</td>
+                                <td class="red">Ne</td>
                             </tr>
                              <tr>
                                 <td>3</td>                               
@@ -3262,7 +2737,7 @@
                                 <td>L280922</td>
                                 <td></td>
                                 <td></td>
-                                <td>Ne</td>
+                                <td class="red">Ne</td>
                             </tr>
                              <tr>
                                 <td>4</td>                                
@@ -3275,7 +2750,7 @@
                                 <td>L280922</td>
                                 <td></td>
                                 <td></td>
-                                <td>Ne</td>
+                                <td class="red">Ne</td>
                             </tr>
                              <tr>
                                 <td>5</td>                                
@@ -3288,7 +2763,7 @@
                                 <td>L280922</td>
                                 <td></td>
                                 <td></td>
-                                <td>Ne</td>
+                                <td class="red">Ne</td>
                             </tr>
                              <tr>
                                 <td>6</td>                                
@@ -3301,7 +2776,7 @@
                                 <td>L280922</td>
                                 <td></td>
                                 <td></td>
-                                <td>Ne</td>
+                                <td class="red">Ne</td>
                             </tr>
                              <tr>
                                 <td>7</td>                              
@@ -3314,7 +2789,7 @@
                                 <td>L280922</td>
                                 <td></td>
                                 <td></td>
-                                <td>Ne</td> 
+                                <td class="red">Ne</td>
                             </tr>
                              <tr>
                                 <td>8</td>                               
@@ -3327,7 +2802,7 @@
                                 <td>L280922</td>
                                 <td></td>
                                 <td></td>
-                                <td>Ne</td>
+                                <td class="red">Ne</td>
                             </tr>
                              <tr>
                                 <td>9</td>                                
@@ -3340,7 +2815,7 @@
                                 <td>L280922</td>
                                 <td></td>
                                 <td></td>
-                                <td>Ne</td>
+                                <td class="red">Ne</td>
                             </tr>
                              <tr>
                                 <td>10</td>                               
@@ -3353,7 +2828,7 @@
                                 <td>L280922</td>
                                 <td></td>
                                 <td></td>
-                                <td>Ne</td>
+                                <td class="red">Ne</td>
                             </tr>
                             <tr>
                                 <td>11</td>                                
@@ -3366,7 +2841,7 @@
                                 <td>L280922</td>
                                 <td></td>
                                 <td></td>
-                                <td>Ne</td>
+                                <td class="red">Ne</td>
                             </tr>
                              <tr>
                                 <td>12</td>                                
@@ -3379,7 +2854,7 @@
                                 <td>L280922</td>
                                 <td></td>
                                 <td></td>
-                                <td>Ne</td>
+                                <td class="red">Ne</td>
                             </tr>
                             <tr>
                                 <td>13</td>
@@ -3392,7 +2867,7 @@
                                 <td>L280922</td>
                                 <td></td>
                                 <td></td>
-                                <td>Ne</td>
+                                <td class="red">Ne</td>
                             </tr>
                             <tr>
                                 <td>14</td>
@@ -3405,7 +2880,7 @@
                                 <td>L280922</td>
                                 <td></td>
                                 <td></td>
-                                <td>Ne</td>
+                                <td class="red">Ne</td>
                             </tr>
                             <tr>
                                 <td>15</td>
@@ -3418,22 +2893,24 @@
                                 <td>L280922</td>
                                 <td></td>
                                 <td></td>
-                                <td>Ne</td>
+                                <td class="red">Ne</td>
                             </tr>
                         </tbody>
                     </table>                   
                   </div>                  
                 </div>
             </div>
-             <!--GRUPNO-->
-            <div id="GRUPNO" class="cart border-top-radius-none border-left-radius-none" style="display:none">                
-              <div class="cart__header" style="border-bottom: 1px solid #444444;">
-                <h4 class="mb--">IZLAZNE STAVKE - GRUPNO MERENE:</h4>
-              </div>
+    <!--GRUPNO-->
+    <div id="GRUPNO" style="display:none">
+        <article class="grid-wrapper grid-wrapper-single-row grid-wrapper-two-columns" style="grid-template-columns: 1fr auto;">
+            <div  class="cart border-top-radius-none border-left-radius-none" >                
+                <div class="cart__header" style="border-bottom: 1px solid #444444;">
+                    <h4 class="mb--">IZLAZNE STAVKE - GRUPNO MERENE:</h4>
+                </div>        
             <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--">
                     <a id="GrupAdd" href="#" class="button button--green-circle">
                         <img src="~/images/nav/__edit1.png" alt="" style="margin-right: 3px;">
-                </a>                                           
+                    </a>                                           
                 <div class="input-box input-box--search mb0 w-100 relative">
                     <svg width="20" viewBox="0 0 512 512">
                         <path fill="#7d7d7d" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z" />
@@ -3442,19 +2919,19 @@
                 </div>
                 <div class="input-box o-flex o-flex--center mb0">
                     <span class="mr-">GRUPNO:</span>
-                    <select name="" id="" class="input input--primary">
-                        <option value="">Da</option>
-                        <option value="">Ne</option>
-                    </select>
+                        <select name="" id="" class="input input--primary">
+                            <option value="">Da</option>
+                            <option value="">Ne</option>
+                        </select>
                 </div>
-                <a href="#" class="button button--green-circle">
-                    <img src="~/images/_leftleft.png" alt="" style="margin-right: 3px;">
-                </a>
-                <a href="#" class="button button--green-circle">
-                    <img src="~/images/_left.png" alt="" style="margin-right: 3px;">
-                </a>
+                    <a href="#" class="button button--green-circle">
+                        <img src="~/images/_leftleft.png" alt="" style="margin-right: 3px;">
+                    </a>
+                    <a href="#" class="button button--green-circle">
+                        <img src="~/images/_left.png" alt="" style="margin-right: 3px;">
+                    </a>
                 <div class="number-wrapper">
-                    1 - 25 od 30
+                1 - 25 od 30
                 </div>
                 <div class="input-box mb0">
                     <select name="" id="" class="input input--primary">
@@ -3463,130 +2940,160 @@
                         <option value="">25</option>
                     </select>
                 </div>
-                <a href="#" class="button button--green-circle">
-                    <img src="~/images/_right.png" alt="" style="margin-left: 3px;">
-                </a>
-                <a href="#" class="button button--green-circle">
-                    <img src="~/images/_rightright.png" alt="" style="margin-left: 3px;">
-                </a>
+                    <a href="#" class="button button--green-circle">
+                        <img src="~/images/_right.png" alt="" style="margin-left: 3px;">
+                    </a>
+                    <a href="#" class="button button--green-circle">
+                        <img src="~/images/_rightright.png" alt="" style="margin-left: 3px;">
+                    </a>
 
                 <div class="input-box o-flex o-flex--center mb0">
                     <span class="mr-">TEŽINE:</span>
                     <input type="text" class="input input--primary" value="491.00" style="min-width: 120px;">
                 </div>
             </div>
-            <div class="cart__body">
-                <div class="table-responsive">
-                    <table class="table mb0">
-                        <thead>
-                            <tr>
-                                <th></th>                                                                                          
-                                <th>R.BR.</th>
-                                <th>ARTIKAL</th>
-                                <th>BARKOD</th>
-                                <th>MAGACIN</th>
-                                <th>KOMORA</th>
-                                <th>KG</th>
-                                <th>LOT</th>                              
-                                <th>UPOTREBLJEN</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>                               
-                                <td>38</td>
-                                <td>7600 (Slezina svinjska) - Ohlađeno</td>               
-                                <td>018606109586081310301420010001798000000030</td>
-                                <td>SPZP</td>
-                                <td></td>
-                                <td>1.50</td>                                
-                                <td>L280922</td>                                  
-                                <td>Ne</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>38</td>
-                                <td>7600 (Slezina svinjska) - Ohlađeno</td>               
-                                <td>018606109586081310301420010001798000000030</td>
-                                <td>SPZP</td>
-                                <td></td>
-                                <td>1.50</td>                                
-                                <td>L280922</td>                                  
-                                <td class="green-row">Da</td>
-                            </tr>
-                             <tr>
-                                <td>3</td>                               
-                                <td>38</td>
-                                <td>7600 (Slezina svinjska) - Ohlađeno</td>               
-                                <td>018606109586081310301420010001798000000030</td>
-                                <td>SPZP</td>
-                                <td></td>
-                                <td>1.50</td>                                
-                                <td>L280922</td>                                  
-                                <td>Da</td>
-                            </tr>
-                             <tr>
-                                <td>4</td>                                
-                                <td>38</td>
-                                <td>7600 (Slezina svinjska) - Ohlađeno</td>               
-                                <td>018606109586081310301420010001798000000030</td>
-                                <td>SPZP</td>
-                                <td></td>
-                                <td>1.50</td>                                
-                                <td>L280922</td>                                  
-                                <td>Da</td>
-                            </tr>
-                             <tr>
-                                <td>5</td>                                
-                                <td>38</td>
-                                <td>7600 (Slezina svinjska) - Ohlađeno</td>               
-                                <td>018606109586081310301420010001798000000030</td>
-                                <td>SPZP</td>
-                                <td></td>
-                                <td>1.50</td>                                
-                                <td>L280922</td>                                  
-                                <td>Ne</td>
-                            </tr>
-                             <tr>
-                                <td>6</td>                                
-                                <td>38</td>
-                                <td>7600 (Slezina svinjska) - Ohlađeno</td>               
-                                <td>018606109586081310301420010001798000000030</td>
-                                <td>SPZP</td>
-                                <td></td>
-                                <td>1.50</td>                                
-                                <td>L280922</td>                                  
-                                <td>Da</td>
-                            </tr>
-                             <tr>
-                                <td>7</td>                              
-                                <td>38</td>
-                                <td>7600 (Slezina svinjska) - Ohlađeno</td>               
-                                <td>018606109586081310301420010001798000000030</td>
-                                <td>SPZP</td>
-                                <td></td>
-                                <td>1.50</td>                                
-                                <td>L280922</td>                                  
-                                <td>Da</td>
-                            </tr>
-                             <tr>
-                                <td>8</td>                               
-                                <td>38</td>
-                                <td>7600 (Slezina svinjska) - Ohlađeno</td>               
-                                <td>018606109586081310301420010001798000000030</td>
-                                <td>SPZP</td>
-                                <td></td>
-                                <td>1.50</td>                                
-                                <td>L280922</td>                                  
-                                <td>Ne</td>
-                            </tr>                           
-                        </tbody>
-                    </table>                   
-                  </div>                  
-                </div>
-            </div>
+        <div class="cart__body">
+            <div class="table-responsive">
+                <table class="table mb0">
+                    <thead>
+                        <tr>
+                            <th></th>                                                                                          
+                            <th>R.BR.</th>
+                            <th>ARTIKAL</th>
+                            <th>BARKOD</th>
+                            <th>MAGACIN</th>
+                            <th>KOMORA</th>
+                            <th>KG</th>
+                            <th>LOT</th>                              
+                            <th>UPOTREBLJEN</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>                               
+                            <td>38</td>
+                            <td>7600 (Slezina svinjska) - Ohlađeno</td>               
+                            <td>018606109586081310301420010001798000000030</td>
+                            <td>SPZP</td>
+                            <td></td>
+                            <td>1.50</td>                                
+                            <td>L280922</td>                                  
+                            <td class="red">Ne</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>38</td>
+                            <td>7600 (Slezina svinjska) - Ohlađeno</td>               
+                            <td>018606109586081310301420010001798000000030</td>
+                            <td>SPZP</td>
+                            <td></td>
+                            <td>1.50</td>                                
+                            <td>L280922</td>                                  
+                            <td class="active">Da</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>                               
+                            <td>38</td>
+                            <td>7600 (Slezina svinjska) - Ohlađeno</td>               
+                            <td>018606109586081310301420010001798000000030</td>
+                            <td>SPZP</td>
+                            <td></td>
+                            <td>1.50</td>                                
+                            <td>L280922</td>                                  
+                            <td class="active">Da</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>                                
+                            <td>38</td>
+                            <td>7600 (Slezina svinjska) - Ohlađeno</td>               
+                            <td>018606109586081310301420010001798000000030</td>
+                            <td>SPZP</td>
+                            <td></td>
+                            <td>1.50</td>                                
+                            <td>L280922</td>
+                            <td class="active">Da</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>                                
+                            <td>38</td>
+                            <td>7600 (Slezina svinjska) - Ohlađeno</td>               
+                            <td>018606109586081310301420010001798000000030</td>
+                            <td>SPZP</td>
+                            <td></td>
+                            <td>1.50</td>                                
+                            <td>L280922</td>                                  
+                            <td class="red">Ne</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>                                
+                            <td>38</td>
+                            <td>7600 (Slezina svinjska) - Ohlađeno</td>               
+                            <td>018606109586081310301420010001798000000030</td>
+                            <td>SPZP</td>
+                            <td></td>
+                            <td>1.50</td>                                
+                            <td>L280922</td>                                  
+                            <td class="active">Da</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>                              
+                            <td>38</td>
+                            <td>7600 (Slezina svinjska) - Ohlađeno</td>               
+                            <td>018606109586081310301420010001798000000030</td>
+                            <td>SPZP</td>
+                            <td></td>
+                            <td>1.50</td>                                
+                            <td>L280922</td>                                  
+                            <td class="active">Da</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>                               
+                            <td>38</td>
+                            <td>7600 (Slezina svinjska) - Ohlađeno</td>               
+                            <td>018606109586081310301420010001798000000030</td>
+                            <td>SPZP</td>
+                            <td></td>
+                            <td>1.50</td>                                
+                            <td>L280922</td>                                  
+                            <td class="red">Ne</td>
+                        </tr>                           
+                    </tbody>
+                </table>                   
+            </div>                  
+        </div>        
+    </div>
+
+    <div class="cart border-top-radius-none border-left-radius-none">
+        <div class="cart__header">
+            <h3 class="mb--">IZLAZ</h3>
+        </div>
+    <div class="cart__body">
+        <div class="table-responsive">
+            <table class="table mb0">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>LOT</th>
+                        <th>DATUM</th>                   
+                        <th>KG</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>EXP/18462</td>
+                        <td>28.09.2022</td>
+                        <td>2.70</td>                   
+                    </tr>                  
+                </tbody>
+            </table>
         </div>
     </div>
+    </div>        
+        </article>
+    </div>
+</div>
+</div>
 </main>
 
 

@@ -17,10 +17,9 @@
         </li>
     </ul>
 </aside>
-<!--  Popup poslovni partneri    -->
-<div id="Popismesa" class="popup">
+<div id="PopisMesaAddEdit" class="popup">
     <div class="popup__overlay"></div>
-    <a id="PopismesaClose" class="close-popup button button--green-circle">
+    <a id="PopisMesaClose" class="close-popup button button--green-circle">
         <img src="/images/menu-icon-white-png-5.jpg" alt="">
     </a>
     <div class="popup__content">
@@ -39,13 +38,7 @@
                     </div>
                     <div class="col-xs-12 col-md-6">
                         <div class="input-box">
-                            <p>MATIČNI BROJ :</p>
-                            <input type="text" class="input input--primary">
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <div class="input-box">
-                            <p>NAZIV KOMPANIJE :</p>
+                            <p>NAZIV :</p>
                             <input type="text" class="input input--primary">
                         </div>
                     </div>
@@ -75,71 +68,33 @@
                     </div>
                     <div class="col-xs-12 col-md-6">
                         <div class="input-box">
-                            <p>PORESKI BROJ(PIB/JMBG) :</p>
+                            <p>TELEFON :</p>
                             <input type="text" class="input input--primary">
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6">
                         <div class="input-box">
-                            <p>REGISTARSKI BROJ(PIO) :</p>
+                            <p>MOBILNI :</p>
                             <input type="text" class="input input--primary">
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6">
                         <div class="input-box">
-                            <p>PDV broj :</p>
+                            <p>KONTAK OSOBA :</p>
                             <input type="text" class="input input--primary">
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6">
                         <div class="input-box">
-                            <p>ŠIFRA DELATNOSTI</p>
+                            <p>GPS X :</p>
                             <input type="text" class="input input--primary">
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-6">
-                        <div class="input-box">
-                            <p>VALUTA :</p>
-                            <input type="text" class="input input--primary">
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <div class="input-box">
-                            <p>JBJKS :</p>
-                            <input type="text" class="input input--primary">
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <div class="input-box">
-                            <p>OBAVEZNIK PDV-a :</p>
 
-                            <select name="" id="" class="input input--primary">
-                                <option value=""></option>
-                                <option value="">Da</option>
-                                <option value="">Ne</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <div class="input-box">
-                            <p>MALOPRODAJA :</p>
 
-                            <select name="" id="" class="input input--primary">
-                                <option value=""></option>
-                                <option value="">Da</option>
-                                <option value="">Ne</option>
-                            </select>
-                        </div>
-                    </div>
                     <div class="col-xs-12 col-md-6">
                         <div class="input-box">
-                            <p>SAJT :</p>
-                            <input type="text" class="input input--primary">
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <div class="input-box">
-                            <p>KONTAKT OSOBA :</p>
+                            <p>GPS Y :</p>
                             <input type="text" class="input input--primary">
                         </div>
                     </div>
@@ -170,13 +125,13 @@
                 </div>
             </div>
         </div>
-    
+   
      <div class="cart">
         <div class="cart__header o-flex o-flex--center o-flex--justify pb-">
             <h4 class="mb0">POPIS</h4>
         </div>
         <div class="cart__header cart__header--grid o-flex o-flex--center">
-            <a id="PopisMesa" class="button button--green-circle">
+                <a id="PopisMesaAdd" class="button button--green-circle">
                 <img src="~/images/_add.png" alt="">
             </a>
             <a href="#" class="button button--green-circle">
@@ -290,11 +245,11 @@
                     <li><a href="#" onclick="Stavkep()">STAVKE </a></li>
                 </ul>
             </div>
-        </div>
-        <article class="grid-wrapper grid-wrapper-two-row">
+        
+        <article class="grid-wrapper grid-wrapper-single-row">
 
 
-            <div id="STAVKE POPISA" class="cart border-top-radius-none border-none" style="display:block">
+            <div id="STAVKE POPISA" class="cart o-flex o-flex--center" style="display:none">
                 <div class="cart__header">
                     <h3 class="mb--">STAVKE POPISA</h3>
                 </div>
@@ -366,12 +321,11 @@
                         </table>
                     </div>
                 </div>
-                </div>
-             
-            
+            </div>
+                        
         </article>
-    
-   </div>
+     </div>
+    </div>
 </main>
 <script>
     function Stavkep() {
@@ -383,14 +337,14 @@
         }
     }
     // Aktiviranje i deaktiviranje pop-upova
-
     $(document).ready(function () {
-        $("#PopisMesa").click(function () {
-            $("#Popismesa").addClass("is-active");
-        });
+            $("#PopisMesaAdd").click(function () {
+                $("#PopisMesaAddEdit").addClass("is-active");
+            });
 
-        $("#PopismesaClose").click(function () {
-            $("#Popismesa").removeClass("is-active");
+            $("#PopismesaClose").click(function () {
+                $("#PopisMesaAddEdit").removeClass("is-active");
+            });
         });
-    });
+    
 </script>
