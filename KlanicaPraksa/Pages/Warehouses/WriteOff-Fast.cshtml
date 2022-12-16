@@ -18,7 +18,7 @@
     </ul>    
 </aside>
 
-<!--  Popup 123 123  -->
+<!--  Popup Otpisi  -->
 <div id="otpisi" class="popup popup--big">
     <div class="popup__overlay"></div>
     <a id="otpisiClose" class="close-popup button button--green-circle">
@@ -35,164 +35,447 @@
                     <div class="cart__body" style="display: block; border:none">
                         <form action="" class="o-flex o-flex--center">
                             <div class="row w-100">
-                                <div class="col-xs-12 col-md-6">
+                                <div class="col-xs-12 col-md-4">
                                     <div class="input-box">
-                                        <span>Datum od:</span>
-                                        <input type="date" class="input input--primary">
+                                        <span class="mr-">Datum Popisa:</span>
+                                         <input type="date" class="input input--primary">
                                     </div>
                                 </div>
-                                <div class="col-xs-12 col-md-6">
+                                <div class="col-xs-12 col-md-4">
                                     <div class="input-box">
-                                        <span>Datum do:</span>
-                                        <input type="date" class="input input--primary">
+                                        <span class="mr-">Tip Otpisa:</span>
+                                        <select name="" id="" class="input input--primary">
+                                            <option value=""></option>
+                                            <option value="">Izmereno KG</option>
+                                            <option value="">Izmereno KOM</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <button class="button button--green-circle ml mr">
-                                    <svg width="30" viewBox="0 0 512 512">
-                                        <path fill="#fff" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z" />
-                                    </svg>
-                                </button>
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="input-box">
+                                        <span class="mr-">Napomena:</span>
+                                        <input type="text" class="input input--primary">
+                                    </div>
+                                </div>
                             </div>
                         </form>
                     </div>
                 </div>
            
             </div>
-            <div class="grid-wrapper">
-                <div class="cart">
-                    <div class="cart__header">
-                        <h2 class="clr-green u-text-center mb0"><strong>PODACI O POSLOVNOM PARTNERU</strong></h2>
+            <div class="grid-wrapper grid-wrapper-two-columns">
+                <div class="grid-wrapper-single-row">
+                    <div class="cart">
+                        <div class="cart__header o-flex o-flex--center o-flex--justify pb--" style="border-bottom: 1px solid #444444;">
+                            <h3 class="mb0 h4">ARTIKALI: <span> Mesni obresci 80/20 svinjski</span></h3>
+
+                        </div>
+                        <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--" style="border-bottom: 1px solid #444444;">
+                            <div class="input-box input-box--search mb0 w-100 relative">
+                                <svg width="20" viewBox="0 0 512 512">
+                                    <path fill="#7d7d7d" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z" />
+                                </svg>
+                                <input type="text" class="input input--secondary" placeholder="Pretraga. . .">
+                            </div>
+
+                            <a href="#" class="button button--green-circle">
+                                <img src="/images/_leftleft.png" alt="" style="margin-right: 3px;">
+                            </a>
+                            <a href="#" class="button button--green-circle">
+                                <img src="/images/_left.png" alt="" style="margin-right: 3px;">
+                            </a>
+                            <div class="number-wrapper w-100 o-flex--justify-center">
+                                1 - 5 od 5
+                            </div>
+                            <div class="input-box mb0">
+                                <select name="" id="" class="input input--primary">
+                                    <option value="">20</option>
+                                    <option value="">22</option>
+                                    <option value="">25</option>
+                                </select>
+                            </div>
+                            <a href="#" class="button button--green-circle">
+                                <img src="/images/_right.png" alt="" style="margin-left: 3px;">
+                            </a>
+                            <a href="#" class="button button--green-circle">
+                                <img src="/images/_rightright.png" alt="" style="margin-left: 3px;">
+                            </a>
+
+                        </div>
+                        
+                        <div class="cart__body">
+                            <div class="table-responsive">
+                                <table class="table mb0">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>ARTIKAL</th>
+                                            <th>KOM</th>
+                                            <th>KG</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>RS/20210915013710039</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>RS/20210915013710029</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>RS/20210915013710030</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>RS/20210915013710031</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+
+                                            <td>RS/20210915013710032</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+
+                                            <td>RS/20210915013710033</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+
+                                            <td>RS/20210915013710034</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+
+                                            <td>RS/20210915013710035</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+
+                                            <td>RS/20210915013710036</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+
+                                            <td>RS/20210915013710037</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+
+                                            <td>RS/20210915013710038</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+
+                                            <td>RS/20210915013710040</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+
+                                            <td>RS/20210915013710002</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+
+                                            <td>RS/20210915013710041</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+
+                                            <td>RS/20210915013710042</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16</td>
+
+                                            <td>RS/20210915013710043</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17</td>
+
+                                            <td>RS/20210915013710044</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>18</td>
+
+                                            <td>RS/20210915013710045</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>19</td>
+
+                                            <td>RS/20210915013710046</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>20</td>
+
+                                            <td>RS/20210915013710047</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>21</td>
+
+                                            <td>RS/20210915013710048</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>22</td>
+
+                                            <td>RS/20210915013710049</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23</td>
+                                            <td>RS/20210915013710001</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23</td>
+                                            <td>RS/20210915013710001</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23</td>
+                                            <td>RS/20210915013710001</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23</td>
+                                            <td>RS/20210915013710001</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23</td>
+                                            <td>RS/20210915013710001</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23</td>
+                                            <td>RS/20210915013710001</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23</td>
+                                            <td>RS/20210915013710001</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23</td>
+                                            <td>RS/20210915013710001</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23</td>
+                                            <td>RS/20210915013710001</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23</td>     
+                                            <td>RS/20210915013710001</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23</td>     
+                                            <td>RS/20210915013710001</td>
+                                            <td>Tovljenici</td>
+                                            <td>RIT d.o.o.</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cart__body">
-                        <div class="row">
-                            <div class="col-xs-12 col-md-6">
-                                <div class="input-box">
-                                    <p>ŠIFRA :</p>
-                                    <input type="text" class="input input--primary">
-                                </div>
+                </div>
+                <div class="grid-wrapper grid-wrapper-two-row">
+                    <div class="cart border-top-radius-none border-bottom-radius-none">
+                        <div class="cart__header" style="border-bottom: 1px solid #444444;">
+                            <h4 class="mb--">STAVKE LAGERA ZA KOREKCIJU</h4>
+                        </div>
+                        <div class="cart__header cart__header--grid o-flex o-flex--center pt--">
+                            <div class="input-box o-flex o-flex--center mb0">
+                                <span class="mr-">Ukupna težina:</span>
+                                <input type="text" class="input input--primary" value="0.00">
                             </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="input-box">
-                                    <p>MATIČNI BROJ :</p>
-                                    <input type="text" class="input input--primary">
-                                </div>
+                            <div class="input-box o-flex o-flex--center mb0">
+                                <span class="mr-">Razlika:</span>
+                                <input type="text" class="input input--primary" value="0.00">
                             </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="input-box">
-                                    <p>NAZIV KOMPANIJE :</p>
-                                    <input type="text" class="input input--primary">
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="input-box">
-                                    <p>DRŽAVA :</p>
-                                    <input type="text" class="input input--primary">
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="input-box">
-                                    <p>OPŠTINA :</p>
-                                    <input type="text" class="input input--primary">
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="input-box">
-                                    <p>GRAD :</p>
-                                    <input type="text" class="input input--primary">
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="input-box">
-                                    <p>ADRESA :</p>
-                                    <input type="text" class="input input--primary">
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="input-box">
-                                    <p>PORESKI BROJ(PIB/JMBG) :</p>
-                                    <input type="text" class="input input--primary">
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="input-box">
-                                    <p>REGISTARSKI BROJ(PIO) :</p>
-                                    <input type="text" class="input input--primary">
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="input-box">
-                                    <p>PDV broj :</p>
-                                    <input type="text" class="input input--primary">
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="input-box">
-                                    <p>ŠIFRA DELATNOSTI</p>
-                                    <input type="text" class="input input--primary">
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="input-box">
-                                    <p>VALUTA :</p>
-                                    <input type="text" class="input input--primary">
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="input-box">
-                                    <p>JBJKS :</p>
-                                    <input type="text" class="input input--primary">
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="input-box">
-                                    <p>OBAVEZNIK PDV-a :</p>
-
-                                    <select name="" id="" class="input input--primary">
-                                        <option value=""></option>
-                                        <option value="">Da</option>
-                                        <option value="">Ne</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="input-box">
-                                    <p>MALOPRODAJA :</p>
-
-                                    <select name="" id="" class="input input--primary">
-                                        <option value=""></option>
-                                        <option value="">Da</option>
-                                        <option value="">Ne</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="input-box">
-                                    <p>SAJT :</p>
-                                    <input type="text" class="input input--primary">
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="input-box">
-                                    <p>KONTAKT OSOBA :</p>
-                                    <input type="text" class="input input--primary">
-                                </div>
-                            </div>
+                            <button class="button button--primary">
+                                <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
+                                <path fill="#fff" d="M448 71.9c-17.3-13.4-41.5-9.3-54.1 9.1L214 344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8-15.6 15.5-16.4 41.6-1.7 58.1 0 0 120.4 133.6 137.7 147 17.3 13.4 41.5 9.3 54.1-9.1l206.3-301.7c12.6-18.5 8.7-44.2-8.6-57.5z" />
+                </svg>
+                                <strong>
+                                    SAČUVAJ
+                                </strong>
+                            </button>
 
                         </div>
                     </div>
-                    <div class="u-text-center">
-                        <button class="button button--primary">
-                            <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
-                            <path fill="#fff" d="M448 71.9c-17.3-13.4-41.5-9.3-54.1 9.1L214 344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8-15.6 15.5-16.4 41.6-1.7 58.1 0 0 120.4 133.6 137.7 147 17.3 13.4 41.5 9.3 54.1-9.1l206.3-301.7c12.6-18.5 8.7-44.2-8.6-57.5z" />
-          </svg>
-                            <strong>
-                                SAČUVAJ
-                            </strong>
-                        </button>
+                    <div class="cart border-top-radius-none">
+                        <div class="cart__header" style="border-bottom: 1px solid #444444;">
+                            <h4 class="mb--">STAVKE OTPISA</h4>
+                        </div>
+                        <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--">
+                            <a href="#" class="button button--green-circle">
+                                <svg width="30" viewBox="0 0 24 24">
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                    <path fill="#fff" d="M7 7V3a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-4v3.993c0 .556-.449 1.007-1.007 1.007H3.007A1.006 1.006 0 0 1 2 20.993l.003-12.986C2.003 7.451 2.452 7 3.01 7H7zm2 0h6.993C16.549 7 17 7.449 17 8.007V15h3V4H9v3zm-.497 11 5.656-5.657-1.414-1.414-4.242 4.243L6.38 13.05l-1.414 1.414L8.503 18z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="button button--green-circle">
+                                <svg width="34" viewBox="0 0 512 512">
+                                    <path fill="#fff" d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48Zm75.31 260.69a16 16 0 1 1-22.62 22.62L256 278.63l-52.69 52.68a16 16 0 0 1-22.62-22.62L233.37 256l-52.68-52.69a16 16 0 0 1 22.62-22.62L256 233.37l52.69-52.68a16 16 0 0 1 22.62 22.62L278.63 256Z" />
+                                </svg>
+                            </a>
+
+                            <div class="input-box input-box--search mb0 w-100 relative">
+                                <svg width="20" viewBox="0 0 512 512">
+                                    <path fill="#7d7d7d" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z" />
+                                </svg>
+                                <input type="text" class="input input--secondary" placeholder="Pretraga. . .">
+                            </div>
+
+                            <a href="#" class="button button--green-circle">
+                                <img src="/images/_delete.png" alt="">
+                            </a>
+                        </div>
+                        <div class="cart__body">
+                            <div class="table-responsive">
+                                <table class="table mb0">
+                                    <thead>
+                                        <tr>
+                                            <th style="width:30px;"></th>
+                                            <th></th>
+                                            <th style="width:90px;">SIFRA ARTIKLA</th>
+                                            <th>ARTIKAL</th>
+                                            <th style="width:80px;">NOVA VREDNOST</th>
+                                            <th style="width:80px;">RAZLIKA VREDNOSTI</th>
+                                            <th style="width:30px;"></th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td style="width: 30px;">
+                                                <div class="check-box">
+                                                    <input id="check24" type="checkbox" name="">
+                                                    <label for="check24">
+                                                        <span class="check-icon"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>7526</td>
+                                            <td>pluca svinjska</td>
+                                            <td>800.00</td>
+                                            <td>-8077</td>
+                                            <td style="width: 50px;">
+                                                <div class="o-flex o-flex--center">
+                                                 
+                                                    <a href="#">
+                                                        <svg width="25" viewBox="0 0 48 48">
+                                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td style="width: 30px;">
+                                                <div class="check-box">
+                                                    <input id="check25" type="checkbox" name="">
+                                                    <label for="check25">
+                                                        <span class="check-icon"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>7526</td>
+                                            <td>pluca svinjska</td>
+                                            <td>300.00</td>
+                                            <td>-9077</td>
+                                            <td style="width: 50px;">
+                                                <div class="o-flex o-flex--center">
+
+                                                    <a href="#">
+                                                        <svg width="25" viewBox="0 0 48 48">
+                                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                      
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
+            <div class="u-text-center">
+                <button class="button button--primary button--small mr-">
+                    <img src="~/images/_submit.png" alt="" width="26" class="mr">
+                    <strong>
+                        PROKNJIŽI
+                    </strong>
+                </button>
+            </div>
         </div>
            
     </div>
