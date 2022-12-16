@@ -18,6 +18,70 @@
     </ul>
 </aside>
 
+<!--POPUP-->
+<div id="LotDodajAddEdit" class="popup popup--big">
+    <div class="popup__overlay"></div>
+    <a id="LotDodajClose" class="close-popup button button--green-circle">
+        <img src="~/images/menu-icon-white-png-5.jpg" alt="">
+    </a>
+    <div class="popup__content">
+        <div class="grid-wrapper grid-wrapper-two-row">
+            <div class="cart">
+                <div class="cart__header">
+                    <h2 class="clr-green u-text-center mb0"><strong>OSNOVNI PODACI O LOT-U</strong></h2>
+                </div>
+                <div class="cart__body">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <div class="input-box">
+                                <p>ŠIFRA :</p>
+                                <input type="text" class="input input--primary">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <div class="input-box input-box--date relative">
+                                <p>DATUM ZA LOT : </p>
+                                <svg width="28" viewBox="0 0 139 139" xml:space="preserve">
+                                <path fill="444444" d="M113.8 22.905h-13.514v-5.406c0-3.215-2.631-5.845-5.846-5.845s-5.844 2.63-5.844 5.845v5.406h-38.19v-5.406c0-3.215-2.63-5.845-5.845-5.845s-5.845 2.63-5.845 5.845v5.406H25.202c-5.533 0-10.035 4.501-10.035 10.034v74.122c0 5.533 4.501 10.034 10.035 10.034h79.632c10.478 0 19-8.522 19-19V32.939c0-5.533-4.501-10.034-10.034-10.034zm-88.598 8h13.521c.077 3.149 2.671 5.702 5.838 5.702 3.166 0 5.759-2.553 5.837-5.702h38.205c.078 3.149 2.67 5.702 5.837 5.702s5.761-2.553 5.839-5.702H113.8c1.104 0 2.034.932 2.034 2.034v15.624H23.167V32.939c0-1.103.932-2.034 2.035-2.034zm-2.035 76.156V56.438h92.667V91.5H99.487l-.12 17.595H25.202c-1.103 0-2.035-.932-2.035-2.034zm84.203 1.727.064-9.288h8.299c-.585 4.558-3.963 8.244-8.363 9.288z" />
+                                <path fill="444444" d="M46.491 75.32c.04-3.665 1.347-6.345 3.445-8.132 2.099-1.743 4.951-2.592 8.039-2.592 7.999 0 10.652 5.363 10.652 7.998 0 6.524-3.644 6.524-3.644 6.658v.089c0 .358 4.514.358 4.514 7.284 0 3.798-2.534 9.785-11.563 9.785-12.396 0-12.434-9.831-12.236-12.153h7.523c-.04 1.654.317 2.903 1.069 3.708.752 1.027 1.901 1.386 3.287 1.386 2.257 0 3.683-.938 3.683-3.485 0-2.727-1.861-3.218-3.683-3.218-1.149 0-1.703.135-2.297.225v-6.078c.594.045 1.228.179 2.297.179 1.664 0 3.762-.401 3.762-2.813 0-1.967-1.98-2.727-3.603-2.727-2.139 0-3.881 1.295-3.802 3.887h-7.443zM81.264 78.135h-6.455v-6.434c3.999.09 7.96-1.607 8.196-6.747H89.5v31.099h-8.236V78.135z" />
+                                </svg>
+                                <input type="date" class="input input--primary">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <div class="input-box">
+                                <p>GRUPA PROCESA :</p>
+                                <input type="text" class="input input--primary" placeholder="2 (Proizvodnja svinjskog mesa)">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <div class="input-box">
+                                <p>PROCES :</p>
+                                <input type="text" class="input input--primary" placeholder="10 (Klanje svinja)">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-12">
+                            <div class="input-box">
+                                <p>NAPOMENA :</p>
+                                <input type="text" class="input input--primary">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="u-text-center">
+            <button class="button button--primary button--small mr-">
+                <img src="~/images/_submit.png" alt="" width="26" class="mr">
+                <strong>
+                    PROKNJIŽI
+                </strong>
+            </button>
+        </div>
+    </div>
+</div>
+
+
 <main>
     <div class="grid-wrapper grid-wrapper-three-row">
         <div class="cart border-bottom-radius-none">
@@ -30,6 +94,8 @@
                 </ul>
             </div>
         </div>
+
+
 
         <div class="grid-wrapper">
             <div class="cart cart--accordion">
@@ -88,42 +154,39 @@
             </div>
         </div>
         <div class="cart">
-            <div class="cart__header o-flex o-flex--center o-flex--justify pb-">
-                <h4 class="mb0">LOTOVI</h4>
-            </div>
-            <div class="cart__header cart__header--grid o-flex o-flex--center">
-                <a id="PoslovniPartneri" class="button button--green-circle">
-                    <img src="~/images/_add.png" alt="">
-                </a>
-                <a href="#" class="button button--green-circle">
-                    <img src="~/images/_sync.png" alt="">
-                </a>
-                <div class="cart__header o-flex o-flex--center o-flex--justify pb-">
-                    <div class="o-flex o-flex--center cart__header--grid">
-                        <a href="#" class="button button--green-circle">
-                            <img src="/images/_leftleft.png" alt="" style="margin-right: 3px;">
-                        </a>
-                        <a href="#" class="button button--green-circle">
-                            <img src="/images/_left.png" alt="" style="margin-right: 3px;">
-                        </a>
-                        <div class="number-wrapper w-100 o-flex--justify-center">
-                            1 - 1 od 1
-                        </div>
-                        <a href="#" class="button button--green-circle">
-                            <img src="/images/_right.png" alt="" style="margin-left: 3px;">
-                        </a>
-                        <a href="#" class="button button--green-circle">
-                            <img src="/images/_rightright.png" alt="" style="margin-left: 3px;">
-                        </a>
-                    </div>
-                   
+            <div class="cart__header cart__header--grid o-flex o-flex--center o-flex--justify">
+                <div class="cart__header cart__header--grid o-flex o-flex-center o-flex--start">
+                    <a id="LotDodajAdd" href="#" class="button button--green-circle">
+                        <img src="/images/_add.png" alt="">
+                    </a>
+                    <a href="#" class="button button--green-circle">
+                        <img src="/images/_submit.png" alt="">
+                    </a>
+                    <a href="#" class="button button--green-circle">
+                        <img src="/images/_sync.png" alt="">
+                    </a>
                 </div>
-
-               
+                <div class="cart__header cart__header--grid o-flex o-flex--center o-flex--right">
+                    <a href="#" class="button button--green-circle">
+                        <img src="/images/_leftleft.png" alt="" style="margin-right: 3px;">
+                    </a>
+                    <a href="#" class="button button--green-circle">
+                        <img src="/images/_left.png" alt="" style="margin-right: 3px;">
+                    </a>
+                    <div class="number-wrapper">
+                        1 - 1 od 1
+                    </div>
+                    <a href="#" class="button button--green-circle">
+                        <img src="/images/_right.png" alt="" style="margin-left: 3px;">
+                    </a>
+                    <a href="#" class="button button--green-circle">
+                        <img src="/images/_rightright.png" alt="" style="margin-left: 3px;">
+                    </a>
+                </div>
             </div>
-            <div class="cart__body mt-">
-                <div class="table-responsive" style="max-height: 77vh;">
-                    <table class="table mb0">
+            <div class="cart__body">
+                <div class="table-responsive">
+                    <table class="table mt- mb0">
                         <thead>
                             <tr>
                                 <th></th>
@@ -133,11 +196,9 @@
                                 <th>GRUPA PROCESA</th>
                                 <th>PROCES</th>
                                 <th>NAPOMENA</th>
-                                <th>PROCESIRSAN</th>
+                                <th>PROCESIRAN</th>
                                 <th>ZAVRŠEN</th>
                                 <th></th>
-                               
-
                             </tr>
                         </thead>
                         <tbody>
@@ -152,24 +213,19 @@
                                     </div>
                                 </td>
                                 <td>POPM/00012</td>
-                                <td>15.12.2022</td>
-                                <td>POPIS</td>
-                                <td>POPIS MESA</td>
+                                <td>15.12.2022.</td>
+                                <td>Popis</td>
+                                <td>Popis mesa</td>
                                 <td>159</td>
-                               
-                                <td >DA</td>
-                              
-                               
-                                <td >NE</td>
-                               
+                                <td class="active">Da</td>
+                                <td class="red">Ne</td>
                                 <td style="width: 50px;">
                                     <div class="o-flex o-flex--center">
                                         <a href="#" class=" mr-">
                                             <svg height="18" width="18" viewBox="0 0 18 18">
-                                                <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd" />
+                                                <path d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2ZM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4Z" fill="#069c9e" fill-rule="evenodd"></path>
                                             </svg>
                                         </a>
-
                                         <a href="#">
                                             <svg width="25" viewBox="0 0 48 48">
                                                 <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
@@ -183,7 +239,7 @@
                     </table>
                 </div>
             </div>
-          </div>          
+        </div>
 
     </div>
 </main>
@@ -197,4 +253,14 @@
             x.style.display = "none";
         }
     }
+
+    $(document).ready(function () {
+        $("#LotDodajAdd").click(function () {
+            $("#LotDodajAddEdit").addClass("is-active");
+        });
+
+        $("#LotDodajClose").click(function () {
+            $("#LotDodajAddEdit").removeClass("is-active");
+        });
+    });
 </script>
