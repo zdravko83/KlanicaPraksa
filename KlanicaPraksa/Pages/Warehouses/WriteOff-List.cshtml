@@ -393,14 +393,18 @@
                 <div class="grid-wrapper grid-wrapper-two-row">
                     <div class="cart border-top-radius-none border-bottom-radius-none">
                         <div class="cart__header" style="border-bottom: 1px solid #444444;">
-                            <h4 class="mb--">UNOS TEŽINE</h4>
+                            <h4 class="mb--">STAVKE LAGERA ZA KOREKCIJU</h4>
                         </div>
                         <div class="cart__header cart__header--grid o-flex o-flex--center pt--">
-                            <div class="input-box o-flex o-flex--center mb0 w-100">
-                                <span class="mr-">Težina :</span>
+                            <div class="input-box o-flex o-flex--center mb0">
+                                <span class="mr-">Ukupna ežina :</span>
                                 <input type="text" class="input input--primary" value="0.00">
                             </div>
-                            <button class="button button--primary">
+                            <div class="input-box o-flex o-flex--center mb0">
+                                <span class="mr-">Razlika :</span>
+                                <input type="text" class="input input--primary" value="0.00">
+                            </div>
+                            <button class="button button--primary button-small">
                                 <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
                                 <path fill="#fff" d="M448 71.9c-17.3-13.4-41.5-9.3-54.1 9.1L214 344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8-15.6 15.5-16.4 41.6-1.7 58.1 0 0 120.4 133.6 137.7 147 17.3 13.4 41.5 9.3 54.1-9.1l206.3-301.7c12.6-18.5 8.7-44.2-8.6-57.5z" />
                 </svg>
@@ -408,19 +412,528 @@
                                     SAČUVAJ
                                 </strong>
                             </button>
-
+                            <div class="input-box o-flex o-flex--center mb0">
+                                <span class="mr-">LOT Pretraga :</span>
+                                <input type="text" class="input input--primary" value="0.00">
+                            </div>
+                            <a href="#" class="button button--green-circle">
+                                <img src="/images/_leftleft.png" alt="" style="margin-right: 3px;">
+                            </a>
+                            <a href="#" class="button button--green-circle">
+                                <img src="/images/_left.png" alt="" style="margin-right: 3px;">
+                            </a>
+                            <div class="number-wrapper">
+                                1 - 5 od 5
+                            </div>
+                            <div class="input-box mb0">
+                                <select name="" id="" class="input input--primary">
+                                    <option value="">20</option>
+                                    <option value="">22</option>
+                                    <option value="">25</option>
+                                </select>
+                            </div>
+                            <a href="#" class="button button--green-circle">
+                                <img src="/images/_right.png" alt="" style="margin-left: 3px;">
+                            </a>
+                            <a href="#" class="button button--green-circle">
+                                <img src="/images/_rightright.png" alt="" style="margin-left: 3px;">
+                            </a>
+                        </div>
+                        <div class="cart__body">
+                            <div class="table-responsive">
+                                <table class="table mb0">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 40px;"></th>
+                                            <th></th>
+                                            <th style="width: 70px;">LOT</th>
+                                            <th>NAZIV</th>
+                                            <th>MAGACIN</th>
+                                            <th style="width: 40px;">KG</th>
+                                            <th style="width: 90px;">UZETA TEZINA</th>
+                                            <th style="width: 90px;">NOVA TEZINA</th>
+                                            <th style="width: 100px;">UZETO SVE?</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td style="width: 30px;">
+                                                <div class="check-box">
+                                                    <input id="check24" type="checkbox" name="">
+                                                    <label for="check24">
+                                                        <span class="check-icon"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>300</td>
+                                            <td>KLS/01802</td>
+                                            <td>100001 (Tovljenici) - Ohlađeno</td>
+                                            <td>0.00</td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <select name="" id="" class="input input--primary">
+                                                        <option value="">Da</option>
+                                                        <option value="">Ne</option>
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </td>     
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td style="width: 30px;">
+                                                <div class="check-box">
+                                                    <input id="check25" type="checkbox" name="">
+                                                    <label for="check25">
+                                                        <span class="check-icon"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>299</td>
+                                            <td>KLS/01802</td>
+                                            <td>100001 (Tovljenici) - Ohlađeno</td>
+                                            <td>0.00</td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <select name="" id="" class="input input--primary">
+                                                        <option value="">Da</option>
+                                                        <option value="">Ne</option>
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td style="width: 30px;">
+                                                <div class="check-box">
+                                                    <input id="check26" type="checkbox" name="">
+                                                    <label for="check26">
+                                                        <span class="check-icon"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>298</td>
+                                            <td>KLS/01802</td>
+                                            <td>100001 (Tovljenici) - Ohlađeno</td>
+                                            <td>0.00</td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <select name="" id="" class="input input--primary">
+                                                        <option value="">Da</option>
+                                                        <option value="">Ne</option>
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td style="width: 30px;">
+                                                <div class="check-box">
+                                                    <input id="check27" type="checkbox" name="">
+                                                    <label for="check27">
+                                                        <span class="check-icon"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>297</td>
+                                            <td>KLS/01802</td>
+                                            <td>100001 (Tovljenici) - Ohlađeno</td>
+                                            <td>0.00</td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <select name="" id="" class="input input--primary">
+                                                        <option value="">Da</option>
+                                                        <option value="">Ne</option>
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td style="width: 30px;">
+                                                <div class="check-box">
+                                                    <input id="check28" type="checkbox" name="">
+                                                    <label for="check28">
+                                                        <span class="check-icon"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>296</td>
+                                            <td>KLS/01802</td>
+                                            <td>100001 (Tovljenici) - Ohlađeno</td>
+                                            <td>0.00</td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <select name="" id="" class="input input--primary">
+                                                        <option value="">Da</option>
+                                                        <option value="">Ne</option>
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td style="width: 30px;">
+                                                <div class="check-box">
+                                                    <input id="check29" type="checkbox" name="">
+                                                    <label for="check29">
+                                                        <span class="check-icon"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>295</td>
+                                            <td>KLS/01802</td>
+                                            <td>100001 (Tovljenici) - Ohlađeno</td>
+                                            <td>0.00</td>                                
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <select name="" id="" class="input input--primary">
+                                                        <option value="">Da</option>
+                                                        <option value="">Ne</option>
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td style="width: 30px;">
+                                                <div class="check-box">
+                                                    <input id="check30" type="checkbox" name="">
+                                                    <label for="check30">
+                                                        <span class="check-icon"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>294</td>
+                                            <td>KLS/01802</td>
+                                            <td>100001 (Tovljenici) - Ohlađeno</td>
+                                            <td>0.00</td>                 
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <select name="" id="" class="input input--primary">
+                                                        <option value="">Da</option>
+                                                        <option value="">Ne</option>
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td style="width: 30px;">
+                                                <div class="check-box">
+                                                    <input id="check31" type="checkbox" name="">
+                                                    <label for="check31">
+                                                        <span class="check-icon"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>293</td>
+                                            <td>KLS/01802</td>
+                                            <td>100001 (Tovljenici) - Ohlađeno</td>
+                                            <td>0.00</td>        
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <select name="" id="" class="input input--primary">
+                                                        <option value="">Da</option>
+                                                        <option value="">Ne</option>
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td style="width: 30px;">
+                                                <div class="check-box">
+                                                    <input id="check32" type="checkbox" name="">
+                                                    <label for="check32">
+                                                        <span class="check-icon"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>292</td>
+                                            <td>KLS/01802</td>
+                                            <td>100001 (Tovljenici) - Ohlađeno</td>
+                                            <td>0.00</td>     
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <select name="" id="" class="input input--primary">
+                                                        <option value="">Da</option>
+                                                        <option value="">Ne</option>
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td style="width: 30px;">
+                                                <div class="check-box">
+                                                    <input id="check33" type="checkbox" name="">
+                                                    <label for="check33">
+                                                        <span class="check-icon"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>291</td>
+                                            <td>KLS/01802</td>
+                                            <td>100001 (Tovljenici) - Ohlađeno</td>
+                                            <td>0.00</td>                                          
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <select name="" id="" class="input input--primary">
+                                                        <option value="">Da</option>
+                                                        <option value="">Ne</option>
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td style="width: 30px;">
+                                                <div class="check-box">
+                                                    <input id="check34" type="checkbox" name="">
+                                                    <label for="check34">
+                                                        <span class="check-icon"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>290</td>
+                                            <td>KLS/01802</td>
+                                            <td>100001 (Tovljenici) - Ohlađeno</td>
+                                            <td>0.00</td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <select name="" id="" class="input input--primary">
+                                                        <option value="">Da</option>
+                                                        <option value="">Ne</option>
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td style="width: 30px;">
+                                                <div class="check-box">
+                                                    <input id="check35" type="checkbox" name="">
+                                                    <label for="check35">
+                                                        <span class="check-icon"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>289</td>
+                                            <td>KLS/01802</td>
+                                            <td>100001 (Tovljenici) - Ohlađeno</td>
+                                            <td>0.00</td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td> 
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <select name="" id="" class="input input--primary">
+                                                        <option value="">Da</option>
+                                                        <option value="">Ne</option>
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td style="width: 30px;">
+                                                <div class="check-box">
+                                                    <input id="check36" type="checkbox" name="">
+                                                    <label for="check36">
+                                                        <span class="check-icon"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>288</td>
+                                            <td>KLS/01802</td>
+                                            <td>100001 (Tovljenici) - Ohlađeno</td>
+                                            <td>0.00</td>   
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <input type="text" class="input input--primary" value="0">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-box o-flex o-flex--center mb0">
+                                                    <select name="" id="" class="input input--primary">
+                                                        <option value="">Da</option>
+                                                        <option value="">Ne</option>
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                     <div class="cart border-top-radius-none">
                         <div class="cart__header" style="border-bottom: 1px solid #444444;">
-                            <h4 class="mb--">ULAZNE STAVKE</h4>
+                            <h4 class="mb--">STAVKE POPISA</h4>
                         </div>
                         <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--" style="border-bottom: 1px solid #444444;">
+                            <a href="#" class="button button--green-circle">
+                                <svg width="30" viewBox="0 0 24 24">
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                    <path fill="#fff" d="M7 7V3a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-4v3.993c0 .556-.449 1.007-1.007 1.007H3.007A1.006 1.006 0 0 1 2 20.993l.003-12.986C2.003 7.451 2.452 7 3.01 7H7zm2 0h6.993C16.549 7 17 7.449 17 8.007V15h3V4H9v3zm-.497 11 5.656-5.657-1.414-1.414-4.242 4.243L6.38 13.05l-1.414 1.414L8.503 18z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="button button--green-circle">
+                                <svg width="34" viewBox="0 0 512 512">
+                                    <path fill="#fff" d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48Zm75.31 260.69a16 16 0 1 1-22.62 22.62L256 278.63l-52.69 52.68a16 16 0 0 1-22.62-22.62L233.37 256l-52.68-52.69a16 16 0 0 1 22.62-22.62L256 233.37l52.69-52.68a16 16 0 0 1 22.62 22.62L278.63 256Z" />
+                                </svg>
+                            </a>
+
                             <div class="input-box input-box--search mb0 w-100 relative">
                                 <svg width="20" viewBox="0 0 512 512">
                                     <path fill="#7d7d7d" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z" />
                                 </svg>
                                 <input type="text" class="input input--secondary" placeholder="Pretraga. . .">
+                            </div>
+
+                            <div class="input-box o-flex o-flex--center mb0 w-100">
+                                <span class="mr-">GRUPNO:</span>
+                                <select name="" id="" class="input input--primary">
+                                    <option value="">Da</option>
+                                    <option value="">Ne</option>
+                                </select>
                             </div>
 
                             <a href="#" class="button button--green-circle">
@@ -450,32 +963,12 @@
                                 <span class="mr-">TEŽINE:</span>
                                 <input type="text" class="input input--primary" value="16787.06" style="min-width: 120px;">
                             </div>
-                        </div>
-                        <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--">
-                            <a href="#" class="button button--green-circle">
-                                <svg width="30" viewBox="0 0 24 24">
-                                    <path d="M0 0h24v24H0z" fill="none" />
-                                    <path fill="#fff" d="M7 7V3a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-4v3.993c0 .556-.449 1.007-1.007 1.007H3.007A1.006 1.006 0 0 1 2 20.993l.003-12.986C2.003 7.451 2.452 7 3.01 7H7zm2 0h6.993C16.549 7 17 7.449 17 8.007V15h3V4H9v3zm-.497 11 5.656-5.657-1.414-1.414-4.242 4.243L6.38 13.05l-1.414 1.414L8.503 18z" />
-                                </svg>
-                            </a>
-                            <a href="#" class="button button--green-circle">
-                                <svg width="34" viewBox="0 0 512 512">
-                                    <path fill="#fff" d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48Zm75.31 260.69a16 16 0 1 1-22.62 22.62L256 278.63l-52.69 52.68a16 16 0 0 1-22.62-22.62L233.37 256l-52.68-52.69a16 16 0 0 1 22.62-22.62L256 233.37l52.69-52.68a16 16 0 0 1 22.62 22.62L278.63 256Z" />
-                                </svg>
-                            </a>
-
-                            <div class="input-box o-flex o-flex--center mb0 w-100">
-                                <span class="mr-">GRUPNO:</span>
-                                <select name="" id="" class="input input--primary">
-                                    <option value="">Da</option>
-                                    <option value="">Ne</option>
-                                </select>
-                            </div>
 
                             <a href="#" class="button button--green-circle">
                                 <img src="/images/_delete.png" alt="">
                             </a>
                         </div>
+                        
                         <div class="cart__body">
                             <div class="table-responsive">
                                 <table class="table mb0">
@@ -483,13 +976,11 @@
                                         <tr>
                                             <th></th>
                                             <th></th>
-                                            <th>R.BR.</th>
                                             <th>LOT</th>
                                             <th>ARTIKAL</th>
-                                            <th>UŠNA MARKICA</th>
-                                            <th style="width:50px">DEPO</th>
-                                            <th>KG</th>
-
+                                            <th style="width:50px">MAGACIN</th>
+                                            <th style="width:50px">OTPISANO</th>
+                                            <th style="width:40px;"></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -497,394 +988,366 @@
                                             <td>1</td>
                                             <td style="width: 30px;">
                                                 <div class="check-box">
-                                                    <input id="check24" type="checkbox" name="">
-                                                    <label for="check24">
+                                                    <input id="check1" type="checkbox" name="">
+                                                    <label for="check1">
                                                         <span class="check-icon"></span>
                                                     </label>
                                                 </div>
                                             </td>
-                                            <td>300</td>
                                             <td>KLS/01802</td>
                                             <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
+                                            <td>0.00</td>
+                                          
                                             <td>99.43</td>
+                                            <td>
+                                                <div class="o-flex o-flex--center">
+                                                    <a href="#">
+                                                        <svg width="25" viewBox="0 0 48 48">
+                                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
                                             <td style="width: 30px;">
                                                 <div class="check-box">
-                                                    <input id="check25" type="checkbox" name="">
-                                                    <label for="check25">
+                                                    <input id="check2" type="checkbox" name="">
+                                                    <label for="check2">
                                                         <span class="check-icon"></span>
                                                     </label>
                                                 </div>
                                             </td>
-                                            <td>299</td>
                                             <td>KLS/01802</td>
                                             <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
+                                            <td>0.00</td>
+                                          
                                             <td>99.43</td>
+                                            <td>
+                                                <div class="o-flex o-flex--center">
+                                                    <a href="#">
+                                                        <svg width="25" viewBox="0 0 48 48">
+                                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
                                             <td style="width: 30px;">
                                                 <div class="check-box">
-                                                    <input id="check26" type="checkbox" name="">
-                                                    <label for="check26">
+                                                    <input id="check3" type="checkbox" name="">
+                                                    <label for="check3">
                                                         <span class="check-icon"></span>
                                                     </label>
                                                 </div>
                                             </td>
-                                            <td>298</td>
                                             <td>KLS/01802</td>
                                             <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
+                                            <td>0.00</td>
+                                          
                                             <td>99.43</td>
+                                            <td>
+                                                <div class="o-flex o-flex--center">
+                                                    <a href="#">
+                                                        <svg width="25" viewBox="0 0 48 48">
+                                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
                                             <td style="width: 30px;">
                                                 <div class="check-box">
-                                                    <input id="check27" type="checkbox" name="">
-                                                    <label for="check27">
+                                                    <input id="check4" type="checkbox" name="">
+                                                    <label for="check4">
                                                         <span class="check-icon"></span>
                                                     </label>
                                                 </div>
                                             </td>
-                                            <td>297</td>
                                             <td>KLS/01802</td>
                                             <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
+                                            <td>0.00</td>
+                                          
                                             <td>99.43</td>
+                                            <td>
+                                                <div class="o-flex o-flex--center">
+                                                    <a href="#">
+                                                        <svg width="25" viewBox="0 0 48 48">
+                                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
                                             <td style="width: 30px;">
                                                 <div class="check-box">
-                                                    <input id="check28" type="checkbox" name="">
-                                                    <label for="check28">
+                                                    <input id="check5" type="checkbox" name="">
+                                                    <label for="check5">
                                                         <span class="check-icon"></span>
                                                     </label>
                                                 </div>
                                             </td>
-                                            <td>296</td>
                                             <td>KLS/01802</td>
                                             <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
+                                            <td>0.00</td>
+                                          
                                             <td>99.43</td>
+                                            <td>
+                                                <div class="o-flex o-flex--center">
+                                                    <a href="#">
+                                                        <svg width="25" viewBox="0 0 48 48">
+                                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>6</td>
                                             <td style="width: 30px;">
                                                 <div class="check-box">
-                                                    <input id="check29" type="checkbox" name="">
-                                                    <label for="check29">
+                                                    <input id="check6" type="checkbox" name="">
+                                                    <label for="check6">
                                                         <span class="check-icon"></span>
                                                     </label>
                                                 </div>
                                             </td>
-                                            <td>295</td>
                                             <td>KLS/01802</td>
                                             <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
+                                            <td>0.00</td>
+                                          
                                             <td>99.43</td>
+                                            <td>
+                                                <div class="o-flex o-flex--center">
+                                                    <a href="#">
+                                                        <svg width="25" viewBox="0 0 48 48">
+                                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>7</td>
                                             <td style="width: 30px;">
                                                 <div class="check-box">
-                                                    <input id="check30" type="checkbox" name="">
-                                                    <label for="check30">
+                                                    <input id="check7" type="checkbox" name="">
+                                                    <label for="check7">
                                                         <span class="check-icon"></span>
                                                     </label>
                                                 </div>
                                             </td>
-                                            <td>294</td>
                                             <td>KLS/01802</td>
                                             <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
+                                            <td>0.00</td>
+                                          
                                             <td>99.43</td>
+                                            <td>
+                                                <div class="o-flex o-flex--center">
+                                                    <a href="#">
+                                                        <svg width="25" viewBox="0 0 48 48">
+                                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>8</td>
                                             <td style="width: 30px;">
                                                 <div class="check-box">
-                                                    <input id="check31" type="checkbox" name="">
-                                                    <label for="check31">
+                                                    <input id="check8" type="checkbox" name="">
+                                                    <label for="check8">
                                                         <span class="check-icon"></span>
                                                     </label>
                                                 </div>
                                             </td>
-                                            <td>293</td>
                                             <td>KLS/01802</td>
                                             <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
+                                            <td>0.00</td>
+                                          
                                             <td>99.43</td>
+                                            <td>
+                                                <div class="o-flex o-flex--center">
+                                                    <a href="#">
+                                                        <svg width="25" viewBox="0 0 48 48">
+                                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>9</td>
                                             <td style="width: 30px;">
                                                 <div class="check-box">
-                                                    <input id="check32" type="checkbox" name="">
-                                                    <label for="check32">
+                                                    <input id="check9" type="checkbox" name="">
+                                                    <label for="check9">
                                                         <span class="check-icon"></span>
                                                     </label>
                                                 </div>
                                             </td>
-                                            <td>292</td>
                                             <td>KLS/01802</td>
                                             <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
+                                            <td>0.00</td>
+                                          
                                             <td>99.43</td>
+                                            <td>
+                                                <div class="o-flex o-flex--center">
+                                                    <a href="#">
+                                                        <svg width="25" viewBox="0 0 48 48">
+                                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>10</td>
                                             <td style="width: 30px;">
                                                 <div class="check-box">
-                                                    <input id="check33" type="checkbox" name="">
-                                                    <label for="check33">
+                                                    <input id="check10" type="checkbox" name="">
+                                                    <label for="check10">
                                                         <span class="check-icon"></span>
                                                     </label>
                                                 </div>
                                             </td>
-                                            <td>291</td>
                                             <td>KLS/01802</td>
                                             <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
+                                            <td>0.00</td>
+                                          
                                             <td>99.43</td>
+                                            <td>
+                                                <div class="o-flex o-flex--center">
+                                                    <a href="#">
+                                                        <svg width="25" viewBox="0 0 48 48">
+                                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>11</td>
                                             <td style="width: 30px;">
                                                 <div class="check-box">
-                                                    <input id="check34" type="checkbox" name="">
-                                                    <label for="check34">
+                                                    <input id="check11" type="checkbox" name="">
+                                                    <label for="check11">
                                                         <span class="check-icon"></span>
                                                     </label>
                                                 </div>
                                             </td>
-                                            <td>290</td>
                                             <td>KLS/01802</td>
                                             <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
+                                            <td>0.00</td>
+                                          
                                             <td>99.43</td>
+                                            <td>
+                                                <div class="o-flex o-flex--center">
+                                                    <a href="#">
+                                                        <svg width="25" viewBox="0 0 48 48">
+                                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>12</td>
                                             <td style="width: 30px;">
                                                 <div class="check-box">
-                                                    <input id="check35" type="checkbox" name="">
-                                                    <label for="check35">
+                                                    <input id="check12" type="checkbox" name="">
+                                                    <label for="check12">
                                                         <span class="check-icon"></span>
                                                     </label>
                                                 </div>
                                             </td>
-                                            <td>289</td>
                                             <td>KLS/01802</td>
                                             <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
+                                            <td>0.00</td>
+                                          
                                             <td>99.43</td>
+                                            <td>
+                                                <div class="o-flex o-flex--center">
+                                                    <a href="#">
+                                                        <svg width="25" viewBox="0 0 48 48">
+                                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>13</td>
                                             <td style="width: 30px;">
                                                 <div class="check-box">
-                                                    <input id="check36" type="checkbox" name="">
-                                                    <label for="check36">
+                                                    <input id="check13" type="checkbox" name="">
+                                                    <label for="check13">
                                                         <span class="check-icon"></span>
                                                     </label>
                                                 </div>
                                             </td>
-                                            <td>288</td>
                                             <td>KLS/01802</td>
                                             <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
+                                            <td>0.00</td>
+                                          
                                             <td>99.43</td>
+                                            <td>
+                                                <div class="o-flex o-flex--center">
+                                                    <a href="#">
+                                                        <svg width="25" viewBox="0 0 48 48">
+                                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>14</td>
                                             <td style="width: 30px;">
                                                 <div class="check-box">
-                                                    <input id="check37" type="checkbox" name="">
-                                                    <label for="check37">
+                                                    <input id="check14" type="checkbox" name="">
+                                                    <label for="check14">
                                                         <span class="check-icon"></span>
                                                     </label>
                                                 </div>
                                             </td>
-                                            <td>287</td>
                                             <td>KLS/01802</td>
                                             <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
+                                            <td>0.00</td>
+                                          
                                             <td>99.43</td>
-                                        </tr>
-                                        <tr>
-                                            <td>15</td>
-                                            <td style="width: 30px;">
-                                                <div class="check-box">
-                                                    <input id="check38" type="checkbox" name="">
-                                                    <label for="check38">
-                                                        <span class="check-icon"></span>
-                                                    </label>
+                                            <td>
+                                                <div class="o-flex o-flex--center">
+                                                    <a href="#">
+                                                        <svg width="25" viewBox="0 0 48 48">
+                                                            <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                            <path d="M0 0h48v48H0z" fill="none"></path>
+                                                        </svg>
+                                                    </a>
                                                 </div>
                                             </td>
-                                            <td>286</td>
-                                            <td>KLS/01802</td>
-                                            <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
-                                            <td>99.43</td>
-                                        </tr>
-                                        <tr>
-                                            <td>16</td>
-                                            <td style="width: 30px;">
-                                                <div class="check-box">
-                                                    <input id="check39" type="checkbox" name="">
-                                                    <label for="check39">
-                                                        <span class="check-icon"></span>
-                                                    </label>
-                                                </div>
-                                            </td>
-                                            <td>285</td>
-                                            <td>KLS/01802</td>
-                                            <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
-                                            <td>99.43</td>
-                                        </tr>
-                                        <tr>
-                                            <td>17</td>
-                                            <td style="width: 30px;">
-                                                <div class="check-box">
-                                                    <input id="check40" type="checkbox" name="">
-                                                    <label for="check40">
-                                                        <span class="check-icon"></span>
-                                                    </label>
-                                                </div>
-                                            </td>
-                                            <td>284</td>
-                                            <td>KLS/01802</td>
-                                            <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
-                                            <td>99.43</td>
-                                        </tr>
-                                        <tr>
-                                            <td>18</td>
-                                            <td style="width: 30px;">
-                                                <div class="check-box">
-                                                    <input id="check41" type="checkbox" name="">
-                                                    <label for="check41">
-                                                        <span class="check-icon"></span>
-                                                    </label>
-                                                </div>
-                                            </td>
-                                            <td>283</td>
-                                            <td>KLS/01802</td>
-                                            <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
-                                            <td>99.43</td>
-                                        </tr>
-                                        <tr>
-                                            <td>19</td>
-                                            <td style="width: 30px;">
-                                                <div class="check-box">
-                                                    <input id="check42" type="checkbox" name="">
-                                                    <label for="check42">
-                                                        <span class="check-icon"></span>
-                                                    </label>
-                                                </div>
-                                            </td>
-                                            <td>282</td>
-                                            <td>KLS/01802</td>
-                                            <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
-                                            <td>99.43</td>
-                                        </tr>
-                                        <tr>
-                                            <td>20</td>
-                                            <td style="width: 30px;">
-                                                <div class="check-box">
-                                                    <input id="check43" type="checkbox" name="">
-                                                    <label for="check43">
-                                                        <span class="check-icon"></span>
-                                                    </label>
-                                                </div>
-                                            </td>
-                                            <td>281</td>
-                                            <td>KLS/01802</td>
-                                            <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
-                                            <td>99.43</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td style="width: 30px;">
-                                                <div class="check-box">
-                                                    <input id="check44" type="checkbox" name="">
-                                                    <label for="check44">
-                                                        <span class="check-icon"></span>
-                                                    </label>
-                                                </div>
-                                            </td>
-                                            <td>280</td>
-                                            <td>KLS/01802</td>
-                                            <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
-                                            <td>99.43</td>
-                                        </tr>
-                                        <tr>
-                                            <td>22</td>
-                                            <td style="width: 30px;">
-                                                <div class="check-box">
-                                                    <input id="check45" type="checkbox" name="">
-                                                    <label for="check45">
-                                                        <span class="check-icon"></span>
-                                                    </label>
-                                                </div>
-                                            </td>
-                                            <td>279</td>
-                                            <td>KLS/01802</td>
-                                            <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
-                                            <td>99.43</td>
-                                        </tr>
-                                        <tr>
-                                            <td>23</td>
-                                            <td style="width: 30px;">
-                                                <div class="check-box">
-                                                    <input id="check46" type="checkbox" name="">
-                                                    <label for="check46">
-                                                        <span class="check-icon"></span>
-                                                    </label>
-                                                </div>
-                                            </td>
-                                            <td>278</td>
-                                            <td>KLS/01802</td>
-                                            <td>100001 (Tovljenici) - Ohlađeno</td>
-                                            <td>RS_2022093002058001</td>
-                                            <td>Depo 1</td>
-                                            <td>99.43</td>
-                                        </tr>
-
+                                        </tr>       
                                     </tbody>
                                 </table>
                             </div>
