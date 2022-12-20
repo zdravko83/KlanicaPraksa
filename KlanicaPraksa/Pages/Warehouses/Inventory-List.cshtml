@@ -37,7 +37,7 @@
                         <div class="col-xs-12 col-md-6">
                             <div class="input-box">
                                 <p>LOT :</p>
-                                <input type="text" class="input input--primary" placeholder=".000">
+                                <input type="text" class="input input--primary">
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-6">
@@ -84,9 +84,922 @@
         </div>
     </div>
 </div>
+<!--popup unos na lager-->
+<div id="UnosNaLagerAddEdit" class="popup popup--big ">
+    <div class="popup__overlay"></div>
+    <a id="UnosNaLagerClose" class="close-popup button button--green-circle">
+        <img src="/images/menu-icon-white-png-5.jpg" alt="">
+    </a>
+    <div class="popup__content">
+        <div class="grid-wrapper grid wrapper-two-row">
 
-      
+            <div class="grid-wrapper">
+                <div class="cart">
+                    <div class="cart__header">
+                        <h4>PODACI O POPISU</h4>
+                    </div>
+                    <div class="cart__body" style="display: block; border:none">
+                        <form action="" class="o-flex o-flex--center">
+                            <div class="row w-100">
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="input-box input-box--date relative">
+                                        <span class="mr-">Datum Popisa:</span>
+                                        <svg width="28" viewBox="0 0 139 139" xml:space="preserve">
+                                        <path fill="444444" d="M113.8 22.905h-13.514v-5.406c0-3.215-2.631-5.845-5.846-5.845s-5.844 2.63-5.844 5.845v5.406h-38.19v-5.406c0-3.215-2.63-5.845-5.845-5.845s-5.845 2.63-5.845 5.845v5.406H25.202c-5.533 0-10.035 4.501-10.035 10.034v74.122c0 5.533 4.501 10.034 10.035 10.034h79.632c10.478 0 19-8.522 19-19V32.939c0-5.533-4.501-10.034-10.034-10.034zm-88.598 8h13.521c.077 3.149 2.671 5.702 5.838 5.702 3.166 0 5.759-2.553 5.837-5.702h38.205c.078 3.149 2.67 5.702 5.837 5.702s5.761-2.553 5.839-5.702H113.8c1.104 0 2.034.932 2.034 2.034v15.624H23.167V32.939c0-1.103.932-2.034 2.035-2.034zm-2.035 76.156V56.438h92.667V91.5H99.487l-.12 17.595H25.202c-1.103 0-2.035-.932-2.035-2.034zm84.203 1.727.064-9.288h8.299c-.585 4.558-3.963 8.244-8.363 9.288z"></path>
+                                        <path fill="444444" d="M46.491 75.32c.04-3.665 1.347-6.345 3.445-8.132 2.099-1.743 4.951-2.592 8.039-2.592 7.999 0 10.652 5.363 10.652 7.998 0 6.524-3.644 6.524-3.644 6.658v.089c0 .358 4.514.358 4.514 7.284 0 3.798-2.534 9.785-11.563 9.785-12.396 0-12.434-9.831-12.236-12.153h7.523c-.04 1.654.317 2.903 1.069 3.708.752 1.027 1.901 1.386 3.287 1.386 2.257 0 3.683-.938 3.683-3.485 0-2.727-1.861-3.218-3.683-3.218-1.149 0-1.703.135-2.297.225v-6.078c.594.045 1.228.179 2.297.179 1.664 0 3.762-.401 3.762-2.813 0-1.967-1.98-2.727-3.603-2.727-2.139 0-3.881 1.295-3.802 3.887h-7.443zM81.264 78.135h-6.455v-6.434c3.999.09 7.96-1.607 8.196-6.747H89.5v31.099h-8.236V78.135z"></path>
+                                      </svg>
+                                        <input type="date" class="input input--primary">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="input-box">
+                                        <span class="mr-">Tip Popisa:</span>
+                                        <select name="" id="" class="input input--primary">
+                                            <option value=""></option>
+                                            <option value="">Izmereno KG</option>
+                                        </select>
+                                    </div>
+                                </div>
 
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="input-box">
+                                        <span class="mr-">Napomena:</span>
+                                        <input type="text" class="input input--primary">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="grid-wrapper grid-wrapper-two-columns">
+                <div class="grid-wrapper-two-row">
+                    <div class="cart">
+                        <div class="cart__header o-flex o-flex--center o-flex--justify pb--" style="border-bottom: 1px solid #444444;">
+                            <h3 class="mb0 h4">ARTIKALI NA LAGERU: </h3>
+
+                        </div>
+                        <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--" style="border-bottom: 1px solid #444444;">
+                            <div class="input-box input-box--search mb0 w-100 relative">
+                                <svg width="20" viewBox="0 0 512 512">
+                                    <path fill="#7d7d7d" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z"></path>
+                                </svg>
+                                <input type="text" class="input input--secondary" placeholder="Pretraga. . .">
+                            </div>
+
+                            <a href="#" class="button button--green-circle">
+                                <img src="/images/_leftleft.png" alt="" style="margin-right: 3px;">
+                            </a>
+                            <a href="#" class="button button--green-circle">
+                                <img src="/images/_left.png" alt="" style="margin-right: 3px;">
+                            </a>
+                            <div class="number-wrapper w-100 o-flex--justify-center">
+                                1 - 5 od 5
+                            </div>
+
+                            <a href="#" class="button button--green-circle">
+                                <img src="/images/_right.png" alt="" style="margin-left: 3px;">
+                            </a>
+                            <a href="#" class="button button--green-circle">
+                                <img src="/images/_rightright.png" alt="" style="margin-left: 3px;">
+                            </a>
+
+                        </div>
+
+                        <div class="cart__body">
+                            <div class="table-responsive">
+                                <table class="table mb0">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>ARTIKAL</th>
+                                            <th>KOM</th>
+                                            <th>KG</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>4000(SVINJSKA POLUTKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>301006.46</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>400219(SPZP III kategorije) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>72944.64</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>7520(JETRA SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>18979.53</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>7526(PLUĆA SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>9743.09</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+
+                                            <td>5174(KOSTI SVINJSKE NE JESTIVE) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>9229.20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+
+                                            <td>4069(NEOBRAĐENA SLANINA EKSTRA KAT SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>8100.30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+
+                                            <td>4329(OBRAĐENA SLANINA EKSTRA KAT SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>6715.40</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+
+                                            <td>4000(SVINJSKA POLUTKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>301006.46</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+
+                                            <td>400219(SPZP III kategorije) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>72944.64</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>7520(JETRA SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>18979.53</td>>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>7526(PLUĆA SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>9743.09</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>5174(KOSTI SVINJSKE NE JESTIVE) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>9229.20</td>
+                                        </tr>
+                                        
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <div class="cart__header o-flex o-flex--center o-flex--justify pb--" style="border-bottom: 1px solid #444444;">
+                            <h3 class="mb0 h4">ARTIKALI NA LAGERU: </h3>
+
+                        </div>
+                        <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--" style="border-bottom: 1px solid #444444;">
+                            <div class="input-box input-box--search mb0 w-100 relative">
+                                <svg width="20" viewBox="0 0 512 512">
+                                    <path fill="#7d7d7d" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z"></path>
+                                </svg>
+                                <input type="text" class="input input--secondary" placeholder="Pretraga. . .">
+                            </div>
+
+                            <a href="#" class="button button--green-circle">
+                                <img src="/images/_leftleft.png" alt="" style="margin-right: 3px;">
+                            </a>
+                            <a href="#" class="button button--green-circle">
+                                <img src="/images/_left.png" alt="" style="margin-right: 3px;">
+                            </a>
+                            <div class="number-wrapper w-100 o-flex--justify-center">
+                                1 - 5 od 5
+                            </div>
+
+                            <a href="#" class="button button--green-circle">
+                                <img src="/images/_right.png" alt="" style="margin-left: 3px;">
+                            </a>
+                            <a href="#" class="button button--green-circle">
+                                <img src="/images/_rightright.png" alt="" style="margin-left: 3px;">
+                            </a>
+
+                        </div>
+
+                        <div class="cart__body">
+                            <div class="table-responsive">
+                                <table class="table mb0">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>ARTIKAL</th>
+                                            <th>KOM</th>
+                                            <th>KG</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>4000(SVINJSKA POLUTKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>301006.46</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>400219(SPZP III kategorije) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>72944.64</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>7520(JETRA SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>18979.53</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>7526(PLUĆA SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>9743.09</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+
+                                            <td>5174(KOSTI SVINJSKE NE JESTIVE) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>9229.20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+
+                                            <td>4069(NEOBRAĐENA SLANINA EKSTRA KAT SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>8100.30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+
+                                            <td>4329(OBRAĐENA SLANINA EKSTRA KAT SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>6715.40</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-wrapper grid-wrapper-two-row">
+                    <div class="cart border-top-radius-none border-bottom-radius-none">
+                        <div class="cart__header" style="border-bottom: 1px solid #444444;">
+                            <h4 class="mb--">STAVKE LAGERA ZA KOREKCIJU</h4>
+                        </div>
+                        <div class="cart__header cart__header--grid o-flex o-flex--center pt--">
+                            <div class="input-box o-flex o-flex--center mb0 w-100">
+                                <span class="mr-">Ukupno:</span>
+                                <input type="text" class="input input--primary" value="0.00">
+                            </div>
+                            <div class="input-box o-flex o-flex--center mb0 w-100">
+                                <span class="mr-">Razlika:</span>
+                                <input type="text" class="input input--primary" value="0.00">
+                            </div>
+                            <button class="button button--primary">
+                                <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
+                                <path fill="#fff" d="M448 71.9c-17.3-13.4-41.5-9.3-54.1 9.1L214 344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8-15.6 15.5-16.4 41.6-1.7 58.1 0 0 120.4 133.6 137.7 147 17.3 13.4 41.5 9.3 54.1-9.1l206.3-301.7c12.6-18.5 8.7-44.2-8.6-57.5z"></path>
+                                </svg>
+                                <strong>
+                                    SAČUVAJ
+                                </strong>
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="cart border-top-radius-none">
+                        <div class="cart__header" style="border-bottom: 1px solid #444444;">
+                            <h4 class="mb--">STAVKE POPISA</h4>
+                        </div>
+                        <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--" style="border-bottom: 1px solid #444444;">
+
+                            <div class="input-box input-box--search mb0 w-100 relative">
+                                <svg width="40" viewBox="0 0 512 512">
+                                    <path fill="#7d7d7d" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z"></path>
+                                </svg>
+                                <input type="text" class="input input--secondary" placeholder="Pretraga. . .">
+                            </div>
+
+
+                            <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--">
+                                <a href="#" class="button button--green-circle">
+                                    <svg width="30" viewBox="0 0 24 24">
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                        <path fill="#fff" d="M7 7V3a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-4v3.993c0 .556-.449 1.007-1.007 1.007H3.007A1.006 1.006 0 0 1 2 20.993l.003-12.986C2.003 7.451 2.452 7 3.01 7H7zm2 0h6.993C16.549 7 17 7.449 17 8.007V15h3V4H9v3zm-.497 11 5.656-5.657-1.414-1.414-4.242 4.243L6.38 13.05l-1.414 1.414L8.503 18z"></path>
+                                    </svg>
+                                </a>
+                                <a href="#" class="button button--green-circle">
+                                    <svg width="34" viewBox="0 0 512 512">
+                                        <path fill="#fff" d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48Zm75.31 260.69a16 16 0 1 1-22.62 22.62L256 278.63l-52.69 52.68a16 16 0 0 1-22.62-22.62L233.37 256l-52.68-52.69a16 16 0 0 1 22.62-22.62L256 233.37l52.69-52.68a16 16 0 0 1 22.62 22.62L278.63 256Z"></path>
+                                    </svg>
+                                </a>
+
+
+
+                                <a href="#" class="button button--green-circle">
+                                    <img src="/images/_delete.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cart__body">
+                            <div class="table-responsive">
+                                <table class="table mb0">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th>LOT</th>
+                                            <th>ŠIFRA ARTKAL</th>
+                                            <th>ARTIKAL</th>
+                                            <th>MAGACIN </th>
+                                            <th>KOMORA</th>
+                                            <th>NOVA KOL</th>
+                                            <th>RAZLIKA</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td style="width: 30px;">
+                                                <div class="check-box">
+                                                    <input id="check24" type="checkbox" name="">
+                                                    <label for="check24">
+                                                        <span class="check-icon"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>POPM/00012</td>
+                                            <td>4000</td>
+                                            <td>SVINJSKA POLUTKA</td>
+                                            <td>TOPLE POLUTKE SA KLANJA </td>
+                                            <td>KOMORA 1</td>
+                                            <td>.00</td>
+                                            <td>.00</td>
+                                            <td>
+                                                <a href="#">
+                                                    <svg width="25" viewBox="0 0 48 48">
+                                                        <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                        <path d="M0 0h48v48H0z" fill="none"></path>
+                                                    </svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td style="width: 30px;">
+                                                <div class="check-box">
+                                                    <input id="check25" type="checkbox" name="">
+                                                    <label for="check25">
+                                                        <span class="check-icon"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>POPM/00012</td>
+                                            <td>4000</td>
+                                            <td>SVINJSKA POLUTKA</td>
+                                            <td>TOPLE POLUTKE SA KLANJA </td>
+                                            <td>KOMORA 1</td>
+                                            <td>.00</td>
+                                            <td>.00</td>
+                                            <td>
+                                                <a href="#">
+                                                    <svg width="25" viewBox="0 0 48 48">
+                                                        <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                        <path d="M0 0h48v48H0z" fill="none"></path>
+                                                    </svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-text-center">
+                    <button class="button button--primary button--small ml-">
+                        <img src="/images/_submit.png" alt="" width="26" class="ml">
+                        <strong>
+                            PROKNJIŽI
+                        </strong>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--popup korekcija lagera-->
+<div id="KorekcijaLageraAddEdit" class="popup popup--big ">
+    <div class="popup__overlay"></div>
+    <a id="KorekcijalageraClose" class="close-popup button button--green-circle">
+        <img src="/images/menu-icon-white-png-5.jpg" alt="">
+    </a>
+    <div class="popup__content">
+        <div class="grid-wrapper grid wrapper-two-row">
+
+            <div class="grid-wrapper">
+                <div class="cart">
+                    <div class="cart__header">
+                        <h4>PODACI O POPISU</h4>
+                    </div>
+                    <div class="cart__body" style="display: block; border:none">
+                        <form action="" class="o-flex o-flex--center">
+                            <div class="row w-100">
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="input-box input-box--date relative">
+                                        <span class="mr-">Datum Popisa:</span>
+                                        <svg width="28" viewBox="0 0 139 139" xml:space="preserve">
+                                        <path fill="444444" d="M113.8 22.905h-13.514v-5.406c0-3.215-2.631-5.845-5.846-5.845s-5.844 2.63-5.844 5.845v5.406h-38.19v-5.406c0-3.215-2.63-5.845-5.845-5.845s-5.845 2.63-5.845 5.845v5.406H25.202c-5.533 0-10.035 4.501-10.035 10.034v74.122c0 5.533 4.501 10.034 10.035 10.034h79.632c10.478 0 19-8.522 19-19V32.939c0-5.533-4.501-10.034-10.034-10.034zm-88.598 8h13.521c.077 3.149 2.671 5.702 5.838 5.702 3.166 0 5.759-2.553 5.837-5.702h38.205c.078 3.149 2.67 5.702 5.837 5.702s5.761-2.553 5.839-5.702H113.8c1.104 0 2.034.932 2.034 2.034v15.624H23.167V32.939c0-1.103.932-2.034 2.035-2.034zm-2.035 76.156V56.438h92.667V91.5H99.487l-.12 17.595H25.202c-1.103 0-2.035-.932-2.035-2.034zm84.203 1.727.064-9.288h8.299c-.585 4.558-3.963 8.244-8.363 9.288z"></path>
+                                        <path fill="444444" d="M46.491 75.32c.04-3.665 1.347-6.345 3.445-8.132 2.099-1.743 4.951-2.592 8.039-2.592 7.999 0 10.652 5.363 10.652 7.998 0 6.524-3.644 6.524-3.644 6.658v.089c0 .358 4.514.358 4.514 7.284 0 3.798-2.534 9.785-11.563 9.785-12.396 0-12.434-9.831-12.236-12.153h7.523c-.04 1.654.317 2.903 1.069 3.708.752 1.027 1.901 1.386 3.287 1.386 2.257 0 3.683-.938 3.683-3.485 0-2.727-1.861-3.218-3.683-3.218-1.149 0-1.703.135-2.297.225v-6.078c.594.045 1.228.179 2.297.179 1.664 0 3.762-.401 3.762-2.813 0-1.967-1.98-2.727-3.603-2.727-2.139 0-3.881 1.295-3.802 3.887h-7.443zM81.264 78.135h-6.455v-6.434c3.999.09 7.96-1.607 8.196-6.747H89.5v31.099h-8.236V78.135z"></path>
+                                      </svg>
+                                        <input type="date" class="input input--primary">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="input-box">
+                                        <span class="mr-">Tip Popisa:</span>
+                                        <select name="" id="" class="input input--primary">
+                                            <option value=""></option>
+                                            <option value="">Izmereno KG</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="input-box">
+                                        <span class="mr-">Napomena:</span>
+                                        <input type="text" class="input input--primary">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="grid-wrapper grid-wrapper-two-columns">
+                <div class="grid-wrapper-single-row">
+                    <div class="cart">
+                        <div class="cart__header o-flex o-flex--center o-flex--justify pb--" style="border-bottom: 1px solid #444444;">
+                            <h3 class="mb0 h4">ARTIKALI NA LAGERU: </h3>
+
+                        </div>
+                        <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--" style="border-bottom: 1px solid #444444;">
+                            <div class="input-box input-box--search mb0 w-100 relative">
+                                <svg width="20" viewBox="0 0 512 512">
+                                    <path fill="#7d7d7d" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z"></path>
+                                </svg>
+                                <input type="text" class="input input--secondary" placeholder="Pretraga. . .">
+                            </div>
+
+                            <a href="#" class="button button--green-circle">
+                                <img src="/images/_leftleft.png" alt="" style="margin-right: 3px;">
+                            </a>
+                            <a href="#" class="button button--green-circle">
+                                <img src="/images/_left.png" alt="" style="margin-right: 3px;">
+                            </a>
+                            <div class="number-wrapper w-100 o-flex--justify-center">
+                                1 - 5 od 5
+                            </div>
+
+                            <a href="#" class="button button--green-circle">
+                                <img src="/images/_right.png" alt="" style="margin-left: 3px;">
+                            </a>
+                            <a href="#" class="button button--green-circle">
+                                <img src="/images/_rightright.png" alt="" style="margin-left: 3px;">
+                            </a>
+
+                        </div>
+
+                        <div class="cart__body">
+                            <div class="table-responsive">
+                                <table class="table mb0">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>ARTIKAL</th>
+                                            <th>KOM</th>
+                                            <th>KG</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>4000(SVINJSKA POLUTKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>301006.46</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>400219(SPZP III kategorije) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>72944.64</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>7520(JETRA SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>18979.53</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>7526(PLUĆA SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>9743.09</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+
+                                            <td>5174(KOSTI SVINJSKE NE JESTIVE) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>9229.20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+
+                                            <td>4069(NEOBRAĐENA SLANINA EKSTRA KAT SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>8100.30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+
+                                            <td>4329(OBRAĐENA SLANINA EKSTRA KAT SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>6715.40</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+
+                                            <td>4000(SVINJSKA POLUTKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>301006.46</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+
+                                            <td>400219(SPZP III kategorije) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>72944.64</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>7520(JETRA SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>18979.53</td>>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>7526(PLUĆA SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>9743.09</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>5174(KOSTI SVINJSKE NE JESTIVE) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>9229.20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>4069(NEOBRAĐENA SLANINA EKSTRA KAT SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>8100.30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>4329(OBRAĐENA SLANINA EKSTRA KAT SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>6715.40</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>4000(SVINJSKA POLUTKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>301006.46</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16</td>
+                                            <td>400219(SPZP III kategorije) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>72944.64</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17</td>
+                                            <td>7520(JETRA SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>18979.53</td>>
+                                        </tr>
+                                        <tr>
+                                            <td>18</td>
+                                            <td>7526(PLUĆA SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>9743.09</td>
+                                        </tr>
+                                        <tr>
+                                            <td>19</td>
+                                            <td>5174(KOSTI SVINJSKE NE JESTIVE) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>9229.20</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>20</td>
+                                            <td>4069(NEOBRAĐENA SLANINA EKSTRA KAT SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>8100.30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>21</td>
+                                            <td>4329(OBRAĐENA SLANINA EKSTRA KAT SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>6715.40</td>
+                                        </tr>
+                                        <tr>
+                                            <td>22</td>
+                                            <td>4000(SVINJSKA POLUTKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>301006.46</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23</td>
+                                            <td>400219(SPZP III kategorije) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>72944.64</td>
+                                        </tr>
+                                        <tr>
+                                            <td>24</td>
+                                            <td>7520(JETRA SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>18979.53</td>>
+                                        </tr>
+                                        <tr>
+                                            <td>25</td>
+                                            <td>7526(PLUĆA SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>9743.09</td>
+                                        </tr>
+                                        <tr>
+                                            <td>26</td>
+                                            <td>5174(KOSTI SVINJSKE NE JESTIVE) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>9229.20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>27</td>
+                                            <td>4069(NEOBRAĐENA SLANINA EKSTRA KAT SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>8100.30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>28</td>
+                                            <td>4329(OBRAĐENA SLANINA EKSTRA KAT SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>6715.40</td>
+                                        </tr>
+                                        <tr>
+                                            <td>29</td>
+                                            <td>4000(SVINJSKA POLUTKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>301006.46</td>
+                                        </tr>
+                                        <tr>
+                                            <td>30</td>
+                                            <td>400219(SPZP III kategorije) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>72944.64</td>
+                                        </tr>
+                                        <tr>
+                                            <td>31</td>
+                                            <td>7520(JETRA SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>18979.53</td>>
+                                        </tr>
+                                        <tr>
+                                            <td>32</td>
+                                            <td>7526(PLUĆA SVINJSKA) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>9743.09</td>
+                                        </tr>
+                                        <tr>
+                                            <td>33</td>
+                                            <td>5174(KOSTI SVINJSKE NE JESTIVE) - OHLAĐENO</td>
+                                            <td>1</td>
+                                            <td>9229.20</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-wrapper grid-wrapper-two-row">
+                    <div class="cart border-top-radius-none border-bottom-radius-none">
+                        <div class="cart__header" style="border-bottom: 1px solid #444444;">
+                            <h4 class="mb--">STAVKE LAGERA ZA KOREKCIJU</h4>
+                        </div>
+                        <div class="cart__header cart__header--grid o-flex o-flex--center pt--">
+                            <div class="input-box o-flex o-flex--center mb0 w-100">
+                                <span class="mr-">Ukupna težina:</span>
+                                <input type="text" class="input input--primary" value="0.00">
+                            </div>
+                            <div class="input-box o-flex o-flex--center mb0 w-100">
+                                <span class="mr-">Razlika:</span>
+                                <input type="text" class="input input--primary" value="0.00">
+                            </div>
+                            <button class="button button--primary">
+                                <svg width="30" viewBox="0 0 512 512" xml:space="preserve" class="mr-">
+                                <path fill="#fff" d="M448 71.9c-17.3-13.4-41.5-9.3-54.1 9.1L214 344.2l-99.1-107.3c-14.6-16.6-39.1-17.4-54.7-1.8-15.6 15.5-16.4 41.6-1.7 58.1 0 0 120.4 133.6 137.7 147 17.3 13.4 41.5 9.3 54.1-9.1l206.3-301.7c12.6-18.5 8.7-44.2-8.6-57.5z"></path>
+                                </svg>
+                                <strong>
+                                    SAČUVAJ
+                                </strong>
+                            </button>
+
+                        </div>
+                        <div class="cart__body">
+                            <div class="table-responsive">
+                                <table class="table mb0">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th>LOT</th>
+                                            <th>ŠIFRA</th>
+                                            <th>NAZIV</th>
+                                            <th>MAGACIN </th>
+                                            <th>KOMORA</th>
+                                            <th>KGL</th>
+                                            <th>UZETA TEŽINA</th>
+                                            <th>NOVA TEŽINA</th>
+                                            <th>UZETO SVE</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td style="width: 30px;">
+                                                <div class="check-box">
+                                                    <input id="check24" type="checkbox" name="">
+                                                    <label for="check24">
+                                                        <span class="check-icon"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>POPM/00012</td>
+                                            <td>4000</td>
+                                            <td>SVINJSKA POLUTKA</td>
+                                            <td>TOPLE POLUTKE SA KLANJA </td>
+                                            <td>KOMORA 1</td>
+                                            <td>.00</td>
+                                            <td>.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                               
+                                
+                                
+                           
+                    </div>
+                    <div class="cart border-top-radius-none">
+                        <div class="cart__header" style="border-bottom: 1px solid #444444;">
+                            <h4 class="mb--">STAVKE LAGERA ZA KOREKCIJU</h4>
+                        </div>
+                        <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--" style="border-bottom: 1px solid #444444;">
+
+                            <div class="input-box input-box--search mb0 w-100 relative">
+                                <svg width="40" viewBox="0 0 512 512">
+                                    <path fill="#7d7d7d" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z"></path>
+                                </svg>
+                                <input type="text" class="input input--secondary" placeholder="Pretraga. . .">
+                            </div>
+
+
+                            <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--">
+                                <a href="#" class="button button--green-circle">
+                                    <svg width="30" viewBox="0 0 24 24">
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                        <path fill="#fff" d="M7 7V3a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-4v3.993c0 .556-.449 1.007-1.007 1.007H3.007A1.006 1.006 0 0 1 2 20.993l.003-12.986C2.003 7.451 2.452 7 3.01 7H7zm2 0h6.993C16.549 7 17 7.449 17 8.007V15h3V4H9v3zm-.497 11 5.656-5.657-1.414-1.414-4.242 4.243L6.38 13.05l-1.414 1.414L8.503 18z"></path>
+                                    </svg>
+                                </a>
+                                <a href="#" class="button button--green-circle">
+                                    <svg width="34" viewBox="0 0 512 512">
+                                        <path fill="#fff" d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48Zm75.31 260.69a16 16 0 1 1-22.62 22.62L256 278.63l-52.69 52.68a16 16 0 0 1-22.62-22.62L233.37 256l-52.68-52.69a16 16 0 0 1 22.62-22.62L256 233.37l52.69-52.68a16 16 0 0 1 22.62 22.62L278.63 256Z"></path>
+                                    </svg>
+                                </a>
+
+
+
+                                <a href="#" class="button button--green-circle">
+                                    <img src="/images/_delete.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cart__body">
+                            <div class="table-responsive">
+                                <table class="table mb0">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th>LOT</th>
+                                            <th>ŠIFRA ARTKAL</th>
+                                            <th>ARTIKAL</th>
+                                            <th>MAGACIN </th>
+                                            <th>KOMORA</th>
+                                            <th>NOVA KOL</th>
+                                            <th>RAZLIKA</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td style="width: 30px;">
+                                                <div class="check-box">
+                                                    <input id="check24" type="checkbox" name="">
+                                                    <label for="check24">
+                                                        <span class="check-icon"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>POPM/00012</td>
+                                            <td>4000</td>
+                                            <td>SVINJSKA POLUTKA</td>
+                                            <td>TOPLE POLUTKE SA KLANJA </td>
+                                            <td>KOMORA 1</td>
+                                            <td>.00</td>
+                                            <td>.00</td>
+                                            <td>
+                                                <a href="#">
+                                                    <svg width="25" viewBox="0 0 48 48">
+                                                        <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                        <path d="M0 0h48v48H0z" fill="none"></path>
+                                                    </svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td style="width: 30px;">
+                                                <div class="check-box">
+                                                    <input id="check25" type="checkbox" name="">
+                                                    <label for="check25">
+                                                        <span class="check-icon"></span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>POPM/00012</td>
+                                            <td>4000</td>
+                                            <td>SVINJSKA POLUTKA</td>
+                                            <td>TOPLE POLUTKE SA KLANJA </td>
+                                            <td>KOMORA 1</td>
+                                            <td>.00</td>
+                                            <td>.00</td>
+                                            <td>
+                                                <a href="#">
+                                                    <svg width="25" viewBox="0 0 48 48">
+                                                        <path fill="#444" d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"></path>
+                                                        <path d="M0 0h48v48H0z" fill="none"></path>
+                                                    </svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-text-center">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
 
 <main>
     <div class="grid-wrapper grid-wrapper-five-row">
@@ -155,6 +1068,12 @@
                     <a href="#" class="button button--green-circle">
                         <img src="/images/_sync.png" alt="">
                     </a>
+                </div>
+                <div class="input-box input-box--search mb0 w-100 relative">
+                    <svg width="20" viewBox="0 0 512 512">
+                        <path fill="#7d7d7d" d="M464 428 339.92 303.9a160.48 160.48 0 0 0 30.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0 0 94.58-30.72L428 464ZM209.32 319.69a110.38 110.38 0 1 1 110.37-110.37 110.5 110.5 0 0 1-110.37 110.37Z"></path>
+                    </svg>
+                    <input type="text" class="input input--secondary" placeholder="PRETRAGA . . .">
                 </div>
                 <div class="cart__header cart__header--grid o-flex o-flex--center o-flex--right">
                     <a href="#" class="button button--green-circle">
@@ -233,13 +1152,13 @@
                     <h3 class="mb--">STAVKE POPISA</h3>
                 </div>
                 <div class="cart__header cart__header--grid o-flex o-flex--center pb-">
-                    <a id="StavkePrijemaAdd" class="button button--primary button--small w-100">
+                    <a id="UnosNaLagerAdd" class="button button--primary button--small w-100">
                         <img src="/images/_add.png" alt="" width="26" class="mr">
                         <strong>
                             UNOS NA LAGER
                         </strong>
                     </a>
-                    <a id="DodatneStavkeAdd" class="button button--primary button--small w-100">
+                    <a id="KorekcijaLageraAdd" class="button button--primary button--small w-100">
                         <img src="/images/_add.png" alt="" width="26">
                         <strong>
                             KOREKCIJE LAGERA
@@ -299,6 +1218,8 @@
     
     
 </main>
+
+@section Scripts {
 <script>
     // prikazivanje menija za pretragu
     function myFunction() {
@@ -327,6 +1248,25 @@
                 $("#DodajLotAddEdit").removeClass("is-active");
             });
         });
-</script>
+        
+        $(document).ready(function () {
+            $("#UnosNaLagerAdd").click(function () {
+                $("#UnosNaLagerAddEdit").addClass("is-active");
+            });
 
+            $("#UnosNaLagerClose").click(function () {
+                $("#UnosNaLagerAddEdit").removeClass("is-active");
+            });
+        });
+         $(document).ready(function () {
+            $("#KorekcijaLageraAdd").click(function () {
+                $("#KorekcijaLageraAddEdit").addClass("is-active");
+            });
+
+            $("#KorekcijaLageraClose").click(function () {
+                $("#KorekcijaLageraAddEdit").removeClass("is-active");
+            });
+        });
+</script>
+}
  
