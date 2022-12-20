@@ -52,9 +52,6 @@
                 <div class="cart cart--accordion border-bottom-radius-none border-top-radius-none">
                     <div class="cart__header o-flex o-flex--center o-flex--justify">
                         <a href="#" onclick="myFunctionLot()" class="search-trigger o-flex o-flex--center text-decoration-none clr-dark h4"><img class="mr-" src="~/images/arrow-down.png" alt="">LOT:<span class="clr-green font-16 ml-">RAS/01076</span></a>
-
-                    </div>
-                    <div id="Lot" class="cart__body">
                         <div class="o-flex o-flex--center">
                             <a href="#" class="button button--green-circle mr-">
                                 <img src="/images/_add.png" alt="">
@@ -63,6 +60,8 @@
                                 <img src="/images/_sync.png" alt="">
                             </a>
                         </div>
+                    </div>
+                    <div id="Lot" class="cart__body">                       
                          <div class="table-responsive">
                             <table class="table mb0">
                                 <thead>
@@ -130,7 +129,7 @@
 
                 <!--Artikli-->
                 <div class="cart cart--accordion border-bottom-radius-none border-top-radius-none">
-                    <div class="cart__header o-flex o-flex--center o-flex--justify pb-">
+                    <div class="cart__header o-flex o-flex--center o-flex--justify">
                         <a href="#" onclick="myFunctionArtikli()" class="search-trigger o-flex o-flex--center text-decoration-none clr-dark h4"><img class="mr-" src="~/images/arrow-down.png" alt="">ARTIKLI:<span class="clr-green font-16 ml-">Neobrađena slanina ekstra kat svinjska</span></a>
                     </div>
                     
@@ -234,22 +233,23 @@
                 </div>
                 <!--Komore-->
                 <div class="cart cart--accordion border-bottom-radius-none border-top-radius-none">
-                    <div class="cart__header o-flex o-flex--center o-flex--justify pb-">
-                        <a href="#" onclick="myFunctionKomore()" class="search-trigger-flex o-flex--center text-decoration-none clr-dark h4"><img class="mr-" src="~/images/arrow-down.png" alt="">KOMORE: <span class="clr-green font-16 ml-">KOMORA 1</span></a>
-                    </div>
-                    <div id="Komore" class="cart__body">
+                    <div class="cart__header o-flex o-flex--center o-flex--justify">
+                        <a href="#" onclick="myFunctionKomore()" class="search-trigger o-flex o-flex--center text-decoration-none clr-dark h4"><img class="mr-" src="~/images/arrow-down.png" alt="">KOMORE :<span class="clr-green font-16 ml-">KOMORA 1</span></a>
                         <div class="o-flex o-flex--center">
                             <a href="#" class="button button--green-circle mr-">
                                 <img src="/images/_add.png" alt="">
                             </a>
                         </div>
+                    </div>
+                    <div id="Komore" class="cart__body">
+                        
                         <div class="table-responsive">
                             <table class="table mb0">
                                 <thead>
                                     <tr>
                                         <th></th>
                                         <th>ŠIFRA</th>
-                                         <th>KOMORA</th>
+                                        <th>KOMORA</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -304,23 +304,23 @@
             <!--Dobavljači i artikli sa lagera-->
             <div class="grid-wrapper grid-wrapper-two-row">
                 <div class="cart border-bottom-radius-none border-top-radius-none">
-                    <div class="cart__header">
+                    <div class="cart__header o-flex o-flex--center o-flex--justify">
                         <a href="#" onclick="myFunctionDobavljac()" class="accordion-trigger o-flex o-flex--center text-decoration-none clr-dark h4"><img class="mr-" src="~/images/arrow-down.png" alt="">DOBAVLJAČI</a>
-                    </div>
-                    <div id="Dobavljači" class="cart__body">
-                          <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--">
-                        <a href="#" class="button button--green-circle">
-                            <svg width="30" viewBox="0 0 24 24">
-                                <path d="M0 0h24v24H0z" fill="none" />
-                                <path fill="#fff" d="M7 7V3a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-4v3.993c0 .556-.449 1.007-1.007 1.007H3.007A1.006 1.006 0 0 1 2 20.993l.003-12.986C2.003 7.451 2.452 7 3.01 7H7zm2 0h6.993C16.549 7 17 7.449 17 8.007V15h3V4H9v3zm-.497 11 5.656-5.657-1.414-1.414-4.242 4.243L6.38 13.05l-1.414 1.414L8.503 18z" />
-                            </svg>
-                        </a>
-                        <a href="#" class="button button--green-circle">
-                            <svg width="34" viewBox="0 0 512 512">
-                                <path fill="#fff" d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48Zm75.31 260.69a16 16 0 1 1-22.62 22.62L256 278.63l-52.69 52.68a16 16 0 0 1-22.62-22.62L233.37 256l-52.68-52.69a16 16 0 0 1 22.62-22.62L256 233.37l52.69-52.68a16 16 0 0 1 22.62 22.62L278.63 256Z" />
-                            </svg>
-                        </a>
+                        <div class="cart__header cart__header--grid o-flex o-flex--center pt-- pb--">
+                            <a href="#" class="button button--green-circle">
+                                <svg width="30" viewBox="0 0 24 24">
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                    <path fill="#fff" d="M7 7V3a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-4v3.993c0 .556-.449 1.007-1.007 1.007H3.007A1.006 1.006 0 0 1 2 20.993l.003-12.986C2.003 7.451 2.452 7 3.01 7H7zm2 0h6.993C16.549 7 17 7.449 17 8.007V15h3V4H9v3zm-.497 11 5.656-5.657-1.414-1.414-4.242 4.243L6.38 13.05l-1.414 1.414L8.503 18z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="button button--green-circle">
+                                <svg width="34" viewBox="0 0 512 512">
+                                    <path fill="#fff" d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48Zm75.31 260.69a16 16 0 1 1-22.62 22.62L256 278.63l-52.69 52.68a16 16 0 0 1-22.62-22.62L233.37 256l-52.68-52.69a16 16 0 0 1 22.62-22.62L256 233.37l52.69-52.68a16 16 0 0 1 22.62 22.62L278.63 256Z" />
+                                </svg>
+                            </a>
                         </div>
+                    </div>
+                    <div id="Dobavljači" class="cart__body pt-">                        
                          <div class="table-responsive">
                             <table class="table mb0">
                                 <thead>
@@ -480,7 +480,7 @@
                     </div> 
                 </div>
                 <!--IZMERENE STAVKE-->
-                <div class="cart o-flex o-flex--column border-bottom-radius-none border-top-radius-none">
+                <div class="cart o-flex o-flex--column border-bottom-radius-none border-top-radius-none" style="border-bottom: 1px solid #444444;">
                     <div class="cart__header">
                         <div class="cart__header pb-">
                             <h4 class="mb0">IZMERENE STAVKE</h4>
